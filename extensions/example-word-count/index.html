@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- extensions/example-word-count/  Sat, 30 Oct 2021 04:57:29 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Example word count - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Example word count";
+      var mkdocs_page_input_path = "extensions/example-word-count.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/extensions/example-word-count/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Example word count</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#example-word-count">Example - Word Count</a>
+                    </li>
+
+                    <li><a class="toctree-l4" href="#overview">Overview</a></li>
+
+                    <li>
+                      <a class="toctree-l4" href="#run-the-extension"
+                        >Run the Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#update-the-status-bar"
+                        >Update the Status Bar</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#subscribing-to-events"
+                        >Subscribing to Events</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#customizing-the-status-bar"
+                        >Customizing the Status Bar</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#disposing-extension-resources"
+                        >Disposing Extension Resources</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#installing-your-extension-locally"
+                        >Installing your Extension Locally</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#publishing-your-extension"
+                        >Publishing your Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../samples/index.html">Samples</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../yocode/index.html">Yocode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Extensions &raquo;</li>
+
+                <li>Example word count</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="example-word-count">Example - Word Count</h1>
+                <p>
+                  This document assumes you have read
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/example-hello-world.md"
+                    >Your First Extension</a
+                  >
+                  which covers the basics of VS Code extensibility.
+                </p>
+                <p>
+                  Word Count is an end to end tutorial to show you how to create
+                  an extension to aid in Markdown authoring. Before we get into
+                  how all of this works, let's have a quick demo of the core
+                  features you will be building so you know what to expect.
+                </p>
+                <p>
+                  Whenever a <code>Markdown</code> file is edited, a status bar
+                  message is added. The message includes the current word count
+                  and updates as you type and move from file to file:
+                </p>
+                <p>
+                  <img
+                    alt="Word Count on Status Bar"
+                    src="../images/example-word-count/wordcountevent2.gif"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> The finished sample is available from
+                    <a href="https://github.com/microsoft/vscode-wordcount"
+                      >this GitHub repository</a
+                    >
+                    should you have any issues.
+                  </p>
+                </blockquote>
+                <h2 id="overview">Overview</h2>
+                <p>
+                  This example has three sections which will take you through a
+                  set of related concepts:
+                </p>
+                <ol>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/example-word-count.md#update-the-status-bar"
+                      >Update the Status Bar</a
+                    >
+                    - display custom text in the VS Code <code>Status Bar</code>
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/example-word-count.md#subscribing-to-events"
+                      >Subscribing to Events</a
+                    >
+                    - updating the <code>Status Bar</code> based on editor
+                    events
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/example-word-count.md#disposing-extension-resources"
+                      >Disposing Extension Resources</a
+                    >
+                    - release resources like event subscriptions or UI handles
+                  </li>
+                </ol>
+                <p>
+                  First make sure you have the latest VS Code extension
+                  generator installed then run it:
+                </p>
+                <pre><code class="bash">npm install -g yo generator-code
+yo code
+</code></pre>
+
+                <p>
+                  This will open up the extension generator - we will base this
+                  example on the TypeScript <code>New Extension</code> option.
+                  For now, fill in the fields the same way you see them
+                  completed in the image below (using 'WordCount' as the
+                  extension name and your own name as the publisher).
+                </p>
+                <p>
+                  <img
+                    alt="Yo Code Word Count Example Output"
+                    src="../images/example-word-count/yo1.png"
+                  />
+                </p>
+                <p>
+                  You can now open VS Code as described in the generator output:
+                </p>
+                <pre><code class="bash">cd WordCount
+code .
+</code></pre>
+
+                <h2 id="run-the-extension">Run the Extension</h2>
+                <p>
+                  Before we go on, we can run the extension to make sure
+                  everything works as expected by pressing
+                  <code>kb(workbench.action.debug.start)</code>. As you saw in
+                  the previous "Hello World" walkthrough, VS Code opens another
+                  window (the
+                  <strong>[Extension Development Host]</strong> window) in which
+                  your extension will be loaded. You should find the "Hello
+                  World" command in the Command Palette (press
+                  <code>kb(workbench.action.showCommands)</code>) and when you
+                  select it, you will see an information box at the top of the
+                  window saying "Hello World".
+                </p>
+                <p>
+                  Now that you have confirmed that the extension is running
+                  properly, you can keep the extension development window open
+                  if you like. To test out any changes that you make to your
+                  extension, you can either press
+                  <code>kb(workbench.action.debug.continue)</code> again in the
+                  development window or reload the extension development window
+                  by pressing <code>kbstyle(Ctrl+R)</code> (Mac:
+                  <code>kbstyle(Cmd+R)</code>).
+                </p>
+                <h2 id="update-the-status-bar">Update the Status Bar</h2>
+                <p>
+                  Replace the contents of the generated
+                  <code>extension.ts</code> file with the code shown below. It
+                  declares and instantiates a <code>WordCounter</code> class
+                  which can count words and shows them in the VS Code Status
+                  Bar. The "Hello Word" command will call
+                  <code>updateWordCount</code> when invoked.
+                </p>
+                <pre><code class="javascript">// The module 'vscode' contains the VS Code extensibility API
+// Import the necessary extensibility types to use in your code below
+import {window, commands, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument} from 'vscode';
+
+// This method is called when your extension is activated. Activation is
+// controlled by the activation events defined in package.json.
+export function activate(context: ExtensionContext) {
+
+    // Use the console to output diagnostic information (console.log) and errors (console.error).
+    // This line of code will only be executed once when your extension is activated.
+    console.log('Congratulations, your extension &quot;WordCount&quot; is now active!');
+
+    // create a new word counter
+    let wordCounter = new WordCounter();
+
+    let disposable = commands.registerCommand('extension.sayHello', () =&gt; {
+        wordCounter.updateWordCount();
+    });
+
+    // Add to a list of disposables which are disposed when this extension is deactivated.
+    context.subscriptions.push(wordCounter);
+    context.subscriptions.push(disposable);
+}
+
+class WordCounter {
+
+    private _statusBarItem: StatusBarItem;
+
+    public updateWordCount() {
+
+        // Create as needed
+        if (!this._statusBarItem) {
+            this._statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left);
+        }
+
+        // Get the current text editor
+        let editor = window.activeTextEditor;
+        if (!editor) {
+            this._statusBarItem.hide();
+            return;
+        }
+
+        let doc = editor.document;
+
+        // Only update status if an Markdown file
+        if (doc.languageId === &quot;markdown&quot;) {
+            let wordCount = this._getWordCount(doc);
+
+            // Update the status bar
+            this._statusBarItem.text = wordCount !== 1 ? `${wordCount} Words` : '1 Word';
+            this._statusBarItem.show();
+        } else { 
+            this._statusBarItem.hide();
+        }
+    }
+
+    public _getWordCount(doc: TextDocument): number {
+
+        let docContent = doc.getText();
+
+        // Parse out unwanted whitespace so the split is accurate
+        docContent = docContent.replace(/(&lt; ([^&gt;]+)&lt;)/g, '').replace(/\s+/g, ' ');
+        docContent = docContent.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+        let wordCount = 0;
+        if (docContent != &quot;&quot;) {
+            wordCount = docContent.split(&quot; &quot;).length;
+        }
+
+        return wordCount;
+    }
+
+    dispose() {
+        this._statusBarItem.dispose();
+    }
+}
+</code></pre>
+
+                <p>Now let's try our updates to the extension.</p>
+                <p>
+                  We have the compilation of the TypeScript file set on a watch
+                  (in the extension's .vscode\tasks.json file) so there is no
+                  need to re-build. Hit <code>kbstyle(Ctrl+R)</code> in the
+                  <strong>[Extension Development Host]</strong> window where
+                  your code is running and the extension will reload (you can
+                  also just <code>kb(workbench.action.debug.start)</code> from
+                  your primary development window). We still need to activate
+                  the code in the same way as before with the "Hello World"
+                  command. Assuming you are in a Markdown file, your Status Bar
+                  will display the word count.
+                </p>
+                <p>
+                  <img
+                    alt="Working Word Count"
+                    src="../images/example-word-count/wordcount2.png"
+                  />
+                </p>
+                <p>
+                  This is a good start but it would be cooler if the count
+                  updated as your file changed.
+                </p>
+                <h2 id="subscribing-to-events">Subscribing to Events</h2>
+                <p>Let's hook your helper class up to a set of events.</p>
+                <ul>
+                  <li>
+                    <code>onDidChangeTextEditorSelection</code> - Event is
+                    raised as the cursor position changes
+                  </li>
+                  <li>
+                    <code>onDidChangeActiveTextEditor</code> - Event is raised
+                    as the active editor changes.
+                  </li>
+                </ul>
+                <p>
+                  To do this, we'll add a new class into the
+                  <code>extension.ts</code> file. It will set up subscriptions
+                  to those events and ask the <code>WordCounter</code> to update
+                  the word count. Also note how this class manages the
+                  subscription as Disposables and how it stops listing when
+                  being disposed itself.
+                </p>
+                <p>
+                  Add the <code>WordCounterController</code> as shown below to
+                  the bottom of the <code>extension.ts</code> file.
+                </p>
+                <pre><code class="javascript">class WordCounterController {
+
+    private _wordCounter: WordCounter;
+    private _disposable: Disposable;
+
+    constructor(wordCounter: WordCounter) {
+        this._wordCounter = wordCounter;
+
+        // subscribe to selection change and editor activation events
+        let subscriptions: Disposable[] = [];
+        window.onDidChangeTextEditorSelection(this._onEvent, this, subscriptions);
+        window.onDidChangeActiveTextEditor(this._onEvent, this, subscriptions);
+
+        // update the counter for the current file
+        this._wordCounter.updateWordCount();
+
+        // create a combined disposable from both event subscriptions
+        this._disposable = Disposable.from(...subscriptions);
+    }
+
+    dispose() {
+        this._disposable.dispose();
+    }
+
+    private _onEvent() {
+        this._wordCounter.updateWordCount();
+    }
+}
+</code></pre>
+
+                <p>
+                  We no longer want the Word Count extension to be loaded when a
+                  command is invoked but instead be available for each
+                  <em>Markdown</em> file.
+                </p>
+                <p>
+                  First, replace the body of the <code>activate</code> function
+                  with this:
+                </p>
+                <pre><code class="javascript">// Use the console to output diagnostic information (console.log) and errors (console.error).
+// This line of code will only be executed once when your extension is activated.
+console.log('Congratulations, your extension &quot;WordCount&quot; is now active!');
+
+// create a new word counter
+let wordCounter = new WordCounter();
+let controller = new WordCounterController(wordCounter);
+
+// Add to a list of disposables which are disposed when this extension is deactivated.
+context.subscriptions.push(controller);
+context.subscriptions.push(wordCounter);
+</code></pre>
+
+                <p>
+                  Second, we must make sure the extension is activated upon the
+                  opening of a <code>Markdown</code> file. To do this, we'll
+                  need to modify the <code>package.json</code> file. Previously
+                  the extension was activated via the
+                  <code>extension.sayHello</code> command which we no longer
+                  need and so we can delete the entire
+                  <code>contributes</code> attribute from
+                  <code>package.json</code>:
+                </p>
+                <pre><code class="json">    &quot;contributes&quot;: {
+        &quot;commands&quot;:
+            [{
+                &quot;command&quot;: &quot;extension.sayHello&quot;,
+                &quot;title&quot;: &quot;Hello World&quot;
+            }
+        ]
+    },
+</code></pre>
+
+                <p>
+                  Now change your extension so that it is activated upon the
+                  opening of a <em>Markdown</em> file by updating the
+                  <code>activationEvents</code> attribute to this:
+                </p>
+                <pre><code class="json">    &quot;activationEvents&quot;: [
+        &quot;onLanguage:markdown&quot;
+    ]
+</code></pre>
+
+                <p>
+                  The
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensionAPI/activation-events.md#activationeventsonlanguage"
+                    ><code>onLanguage:${language}</code></a
+                  >
+                  event takes the language id, in this case "markdown", and will
+                  be raised whenever a file of that language is opened.
+                </p>
+                <p>
+                  Run the extension by either doing a window reload
+                  <code>kbstyle(Ctrl+R)</code> or with
+                  <code>kb(workbench.action.debug.start)</code> and then start
+                  editing a Markdown file. You should now should have a live
+                  updating Word Count.
+                </p>
+                <p>
+                  <img
+                    alt="Word Count Updating on Events"
+                    src="../images/example-word-count/wordcountevent2.gif"
+                  />
+                </p>
+                <p>
+                  If you set a breakpoint on the <code>activate</code> function,
+                  you'll notice that it is only called once when the first
+                  Markdown file is opened. The
+                  <code>WordCountController</code> constructor runs and
+                  subscribes to the editor events so that the
+                  <code>updateWordCount</code> function is called as Markdown
+                  files are opened and their text changes.
+                </p>
+                <h2 id="customizing-the-status-bar">
+                  Customizing the Status Bar
+                </h2>
+                <p>
+                  We've seen how you can display formatted text on the Status
+                  Bar. VS Code allows you to customize your Status Bar additions
+                  even further with color, icons, tooltips and more. Using
+                  IntelliSense, you can see the various
+                  <code>StatusBarItem</code> fields. Another great resource for
+                  learning about the VS Code extensibility APIs is the
+                  <code>vscode.d.ts</code> type declaration file included in
+                  your generated Extension project. Open
+                  <code>node_modules\vscode\vscode.d.ts</code> in the editor,
+                  you'll see the complete VS Code extensibility API with
+                  comments.
+                </p>
+                <p>
+                  <img
+                    alt="vscode-d-ts file"
+                    src="../images/example-word-count/vscode-d-ts.png"
+                  />
+                </p>
+                <p>Replace the StatusBarItem update code with:</p>
+                <pre><code class="javascript">    // Update the status bar
+    this._statusBarItem.text = wordCount !== 1 ? `$(pencil) ${wordCount} Words` : '$(pencil) 1 Word';
+    this._statusBarItem.show();
+</code></pre>
+
+                <p>
+                  to display a
+                  <a href="https://octicons.github.com/">GitHub Octicon</a>
+                  <code>pencil</code> icon to the left of the calculated word
+                  count.
+                </p>
+                <p>
+                  <img
+                    alt="Word Count with pencil icon"
+                    src="../images/example-word-count/wordcount-pencil.png"
+                  />
+                </p>
+                <h2 id="disposing-extension-resources">
+                  Disposing Extension Resources
+                </h2>
+                <p>
+                  Now we'll take a deeper look at how extensions should handle
+                  VS Code resources through
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensionAPI/patterns-and-principles.md#disposables"
+                    >Disposables</a
+                  >.
+                </p>
+                <p>
+                  When an extension is activated, it is passed an
+                  <code>ExtensionContext</code> object which has a
+                  <code>subscriptions</code> collection of Disposables.
+                  Extensions can add their Disposable objects to this collection
+                  and VS Code will dispose of those objects when the extension
+                  is deactivated.
+                </p>
+                <p>
+                  Many VS Code APIs which create workspace or UI objects (e.g.
+                  <code>registerCommand</code>) return a Disposable and
+                  extensions can remove these elements from VS Code by calling
+                  their dispose method directly.
+                </p>
+                <p>
+                  Events are another example where <code>onDid*</code> event
+                  subscriber methods return a Disposable. Extensions unsubscribe
+                  to an event by disposing the event's Disposable. In our
+                  example, <code>WordCountController</code> handles the event
+                  subscription Disposables directly by keeping its own
+                  Disposable collection which it cleans up on deactivation.
+                </p>
+                <pre><code class="javascript">    // subscribe to selection change and editor activation events
+    let subscriptions: Disposable[] = [];
+    window.onDidChangeTextEditorSelection(this._onEvent, this, subscriptions);
+    window.onDidChangeActiveTextEditor(this._onEvent, this, subscriptions);
+
+    // create a combined disposable from both event subscriptions
+    this._disposable = Disposable.from(...subscriptions);
+</code></pre>
+
+                <h2 id="installing-your-extension-locally">
+                  Installing your Extension Locally
+                </h2>
+                <p>
+                  So far, the extension you have written only runs in a special
+                  instance of VS Code, the Extension Development Host instance.
+                  To make your extension available to all VS Code instances,
+                  copy the extension folder contents to a new folder under
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/yocode.md#your-extensions-folder"
+                    >your <code>.vscode/extensions</code> folder</a
+                  >.
+                </p>
+                <h2 id="publishing-your-extension">
+                  Publishing your Extension
+                </h2>
+                <p>
+                  Read about how to
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/publish-extension.md"
+                    >Share an Extension</a
+                  >.
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>Read on to find out about:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/yocode.md"
+                      >Extension Generator</a
+                    >
+                    - Learn about other options in the Yo Code extension
+                    generator.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/overview.md"
+                      >Extension API</a
+                    >
+                    - Get an overview of the Extension API.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/publish-extension.md"
+                      >Publishing Tool</a
+                    >
+                    - Learn how to publish an extension to the public
+                    Marketplace.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/vscode-api.md#window"
+                      >Editor API</a
+                    >
+                    - Learn more about Text Documents, Text Editors and editing
+                    text.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/samples.md"
+                      >Additional Extension Examples</a
+                    >
+                    - Take a look at our list of example extension projects.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../overview/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Overview"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../example-language-server/index.html"
+                  class="btn btn-neutral"
+                  title="Example language server"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- extensions/example-word-count/  Sat, 30 Oct 2021 04:57:30 -->
+</html>

@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- languages/tsql/  Sat, 30 Oct 2021 04:58:06 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tsql - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Tsql";
+      var mkdocs_page_input_path = "languages/tsql.md";
+      var mkdocs_page_url = "https://vscode.readthedocs.io/languages/tsql/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../csharp/index.html">Csharp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../dockerfile/index.html">Dockerfile</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../identifiers/index.html">Identifiers</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../javascript/index.html">Javascript</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../jsconfig/index.html">Jsconfig</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../markdown/index.html">Markdown</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../python/index.html">Python</a>
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Tsql</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#transact-sql-in-vs-code"
+                        >Transact-SQL in VS Code</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#install-t-sql-support"
+                        >Install T-SQL support</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#connect-and-execute-t-sql"
+                        >Connect and Execute T-SQL</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#view-and-save-results"
+                        >View and Save Results</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#t-sql-intellisense"
+                        >T-SQL IntelliSense</a
+                      >
+                    </li>
+
+                    <li><a class="toctree-l4" href="#linting">Linting</a></li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#peek-definitiongo-to-definition"
+                        >Peek Definition/Go to Definition</a
+                      >
+                    </li>
+
+                    <li><a class="toctree-l4" href="#snippets">Snippets</a></li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#further-reading"
+                        >Further Reading</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../typescript/index.html">Typescript</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Languages &raquo;</li>
+
+                <li>Tsql</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="transact-sql-in-vs-code">Transact-SQL in VS Code</h1>
+                <p>
+                  Turn Visual Studio Code into a powerful editor for
+                  <a
+                    href="https://msdn.microsoft.com/en-us/library/bb510741.aspx"
+                    >Transact-SQL</a
+                  >
+                  (T-SQL) development with the
+                  <a href="https://aka.ms/mssql-marketplace">mssql</a> extension
+                  available in the VS Code Marketplace. The
+                  <a href="https://aka.ms/mssql-marketplace">mssql</a> extension
+                  is optimized to work with SQL Server running on-premises, in
+                  any cloud, Azure SQL Database, and Azure SQL Data Warehouse.
+                </p>
+                <p>
+                  Connect to SQL databases, type T-SQL code, execute T-SQL code,
+                  view results, and save results as JSON or CSV files. While
+                  typing T-SQL code, you get rich T-SQL language features like
+                  T-SQL IntelliSense (code completion), syntax highlighting,
+                  linting, code navigation and code snippets.
+                </p>
+                <blockquote>
+                  <p>
+                    <a href="https://code.visualstudio.com/download"
+                      >Download VS Code</a
+                    >
+                    - If you haven't downloaded VS Code yet, quickly install for
+                    your platform (Linux, Mac or Windows).
+                  </p>
+                </blockquote>
+                <h2 id="install-t-sql-support">Install T-SQL support</h2>
+                <p>
+                  Add T-SQL language support to VS Code by installing the
+                  <a href="https://aka.ms/mssql-marketplace">mssql</a> extension
+                  from the VS Code marketplace as follows:
+                </p>
+                <ol>
+                  <li>
+                    Open the <strong>Extensions</strong> view from VS Code Side
+                    Bar (<code>kb(workbench.view.extensions)</code>).
+                  </li>
+                  <li>
+                    Type "mssql" in the search bar, click
+                    <strong>Install</strong>, and reload VS Code when prompted.
+                  </li>
+                </ol>
+                <p>
+                  <img
+                    alt="install mssql extension"
+                    src="../images/tsql/install-mssql.png"
+                  />
+                </p>
+                <h2 id="connect-and-execute-t-sql">
+                  Connect and Execute T-SQL
+                </h2>
+                <p>
+                  Easily connect to SQL Server running on-premises, in any
+                  cloud, Azure SQL Database, and Azure SQL Data Warehouse. Then,
+                  execute your T-SQL statements and batches to view results and
+                  messages - all within VS Code. Your recent connections are
+                  saved across sessions so you can quickly connect to your
+                  databases again.
+                </p>
+                <p>
+                  <img alt="execute tsql" src="../images/tsql/execute.gif" />
+                </p>
+                <h2 id="view-and-save-results">View and Save Results</h2>
+                <p>
+                  View results and messages when you execute your T-SQL code.
+                  Save results as a JSON or CSV file to use the data in your
+                  applications with just a few clicks.
+                </p>
+                <p><img alt="save tsql" src="../images/tsql/save.gif" /></p>
+                <h2 id="t-sql-intellisense">T-SQL IntelliSense</h2>
+                <p>
+                  As you type T-SQL code in the editor, VS Code provides
+                  intelligent code completion for T-SQL keywords, suggestions
+                  for schema object names (tables, columns, views), and
+                  parameter help for functions and procedures when connected to
+                  a database.
+                </p>
+                <p>
+                  <img
+                    alt="tsql intellisense"
+                    src="../images/tsql/intellisense.gif"
+                  />
+                </p>
+                <h2 id="linting">Linting</h2>
+                <p>
+                  Linting is the analysis of your T-SQL code for potential
+                  syntax errors. Use Visual Studio Code to quickly navigate to
+                  the errors and warnings in your T-SQL code as you type.
+                </p>
+                <p>
+                  <img alt="tsql linting" src="../images/tsql/linting.gif" />
+                </p>
+                <h2 id="peek-definitiongo-to-definition">
+                  Peek Definition/Go to Definition
+                </h2>
+                <p>
+                  Use <strong>Peek Definition</strong> and
+                  <strong>Go to Definition</strong> to quickly browse the
+                  definition of schema objects in your database such as tables,
+                  functions, and procedures while typing T-SQL code.
+                </p>
+                <p>
+                  <img
+                    alt="tsql peek definition"
+                    src="../images/tsql/peekdefinition.gif"
+                  />
+                </p>
+                <h2 id="snippets">Snippets</h2>
+                <p>
+                  T-SQL snippets provide code templates for commonly used T-SQL
+                  statements. Type "sql" to get the list of T-SQL snippets.
+                </p>
+                <p>
+                  <img alt="tsql snippets" src="../images/tsql/snippets.gif" />
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <ul>
+                  <li>
+                    Download the free
+                    <a
+                      href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+                      >SQL Server 2016 Developer Edition</a
+                    >.
+                  </li>
+                  <li>
+                    Install the
+                    <a href="https://aka.ms/mssql-marketplace">mssql</a>
+                    extension from the Visual Studio Code Marketplace.
+                  </li>
+                  <li>
+                    <a href="https://aka.ms/sqldev">Build an app</a> using SQL
+                    Server - Get started with SQL Server on macOS, Linux, and
+                    Windows using your favorite programming language.
+                  </li>
+                  <li>
+                    Contribute to the mssql extension on
+                    <a href="https://github.com/Microsoft/vscode-mssql"
+                      >GitHub</a
+                    >. Submit a bug report or a feature suggestion on our
+                    <a href="https://github.com/Microsoft/vscode-mssql/issues"
+                      >GitHub Issue Tracker</a
+                    >.
+                  </li>
+                </ul>
+                <h2 id="further-reading">Further Reading</h2>
+                <ul>
+                  <li>
+                    <a
+                      href="https://msdn.microsoft.com/en-us/library/mt590198(v=sql.1).aspx"
+                      >SQL Server documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://docs.microsoft.com/en-us/sql/linux/"
+                      >SQL Server on Linux documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://blogs.technet.microsoft.com/dataplatforminsider/"
+                      >SQL Server Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://channel9.msdn.com/Tags/sql+server"
+                      >SQL Server Videos</a
+                    >
+                    on Channel9
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../typescript/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Typescript"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../python/index.html"
+                  class="btn btn-neutral"
+                  title="Python"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- languages/tsql/  Sat, 30 Oct 2021 04:58:07 GMT -->
+</html>

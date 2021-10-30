@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- editor/command-line/  Sat, 30 Oct 2021 04:56:45 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Command line - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Command line";
+      var mkdocs_page_input_path = "editor/command-line.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/editor/command-line/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../codebasics/index.html">Codebasics</a>
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Command line</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#command-line">Command Line</a>
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#launching-from-the-command-line"
+                        >Launching from the command line</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#additional-command-line-arguments"
+                        >Additional command line arguments</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#opening-vs-code-with-urls"
+                        >Opening VS Code with URLs</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging/index.html">Debugging</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../intellisense/index.html">Intellisense</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1/index.html">Tasks v1</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../whyvscode/index.html">Whyvscode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Editor &raquo;</li>
+
+                <li>Command line</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="command-line">Command Line</h1>
+                <p>
+                  Visual Studio Code has a powerful command line interface that
+                  lets you control how your launch the editor. You can open or
+                  diff files, install extensions, even change the display
+                  language on startup.
+                </p>
+                <h2 id="launching-from-the-command-line">
+                  Launching from the command line
+                </h2>
+                <p>
+                  You can launch VS Code from the command line to quickly open a
+                  file, folder, or project. Typically, you open VS Code within
+                  the context of a folder. To do this type:
+                </p>
+                <pre><code>code .
+</code></pre>
+
+                <p>
+                  If you are using the Visual Studio Code
+                  <a href="../../insiders.html">Insiders</a> build, you would
+                  type the following command:
+                </p>
+                <pre><code>code-insiders .
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> We have instructions for Mac users in
+                    our
+                    <a href="https://vscode.readthedocs.io/docs/setup/mac.md"
+                      >Setup</a
+                    >
+                    topic that enable you to start VS Code from within a
+                    terminal. We add the VS Code executable to the
+                    <code>PATH</code> environment variable on Windows and Linux
+                    automatically during installation.
+                  </p>
+                </blockquote>
+                <p>
+                  Sometimes you will want to open or create a file. If the
+                  specified file does not exist, VS Code will create them for
+                  you:
+                </p>
+                <pre><code>code index.html style.css readme.md
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> You can have as many file names as you
+                    want separated by spaces.
+                  </p>
+                </blockquote>
+                <h2 id="additional-command-line-arguments">
+                  Additional command line arguments
+                </h2>
+                <p>
+                  Here are optional command line arguments you can use when
+                  starting VS Code at the command line via <code>code</code>:
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Argument</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>-h</code> or <code>--help</code></td>
+                      <td>Print usage</td>
+                    </tr>
+                    <tr>
+                      <td><code>-v</code> or <code>--version</code></td>
+                      <td>
+                        Print VS Code version (for example, 1.12.2) and GitHub
+                        commit id.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>-n</code> or <code>--new-window</code></td>
+                      <td>
+                        Opens a new session of VS Code instead of restoring the
+                        previous session (default).
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>-r</code> or <code>--reuse-window</code></td>
+                      <td>
+                        Forces opening a file or folder in the last active
+                        window.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>-g</code> or <code>--goto</code></td>
+                      <td>
+                        When used with <em>file:line[:character]</em>, opens a
+                        file at a specific line and optional character position.
+                        This argument is provided since some operating systems
+                        permit <code>:</code> in a file name.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><em>file</em></td>
+                      <td>
+                        Name of a file to open. If the file doesn't exist, it
+                        will be created and marked as edited. You can specify
+                        multiple files by separating each file name with a
+                        space.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><em>file:line[:character]</em></td>
+                      <td>
+                        Name of a file to open at the specified line and
+                        optional character position. You can specify multiple
+                        files in this manner, but you must use the
+                        <code>-g</code> argument (once) before using the
+                        <em>file:line[:character]</em> specifier.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><em>folder</em></td>
+                      <td>
+                        Name of a folder to open. You can specify multiple
+                        folders and there will be an instance for each folder.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>-d</code> or <code>--diff</code></td>
+                      <td>
+                        Open a file difference editor. Requires two file paths
+                        as arguments.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>-w</code> or <code>--wait</code></td>
+                      <td>
+                        Wait for the window to be closed before returning.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--locale &lt;locale&gt;</code></td>
+                      <td>
+                        Set the
+                        <a
+                          href="https://vscode.readthedocs.io/docs/getstarted/locales.md"
+                          >display language</a
+                        >
+                        (locale) for the VS Code session. (for example,
+                        <code>en-US</code> or <code>zh-TW</code>)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--user-data-dir &lt;dir&gt;</code></td>
+                      <td>
+                        Specifies the directory that user data is kept in,
+                        useful when running as root.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Extensions</strong></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><code>--install-extension &lt;ext&gt;</code></td>
+                      <td>
+                        Install an extension. Provide the full extension name
+                        <code>publisher.extension</code> as an argument.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--uninstall-extension &lt;ext&gt;</code></td>
+                      <td>
+                        Uninstall an extension. Provide the full extension name
+                        <code>publisher.extension</code> as an argument.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--disable-extensions</code></td>
+                      <td>
+                        Disable all installed extensions. Extensions will still
+                        be visible in the
+                        <code>Extensions: Show Installed Extensions</code>
+                        dropdown but they will never be activated.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--extensions-dir &lt;dir&gt;</code></td>
+                      <td>Set the root path for extensions.</td>
+                    </tr>
+                    <tr>
+                      <td><code>--list-extensions</code></td>
+                      <td>List the installed extensions.</td>
+                    </tr>
+                    <tr>
+                      <td><code>--show-versions</code></td>
+                      <td>
+                        Show versions of installed extensions, when using
+                        <code>--list-extensions</code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--enable-proposed-api &lt;ext&gt;</code></td>
+                      <td>
+                        Enables proposed api features for an extension. Provide
+                        the full extension name
+                        <code>publisher.extension</code> as an argument.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Performance</strong></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><code>-p, --performance</code></td>
+                      <td>
+                        Start with the
+                        <strong>Developer: Startup Performance</strong> command
+                        enabled.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--disable-gpu</code></td>
+                      <td>Disable GPU hardware acceleration.</td>
+                    </tr>
+                    <tr>
+                      <td><code>--verbose</code></td>
+                      <td>
+                        Print verbose output (implies <code>--wait</code>).
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><code>--prof-startup</code></td>
+                      <td>Run CPU profiler during startup.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  For both files and folders, you can use absolute or relative
+                  paths. Relative paths are relative to the current directory of
+                  the command prompt where you run <code>code</code>.
+                </p>
+                <p>
+                  If you specify more than one file at the command line, VS Code
+                  will open only a single instance.
+                </p>
+                <h2 id="opening-vs-code-with-urls">
+                  Opening VS Code with URLs
+                </h2>
+                <p>
+                  On Windows and macOS, you can also open projects and files
+                  using the platform's URL handling mechanism. Use the following
+                  URL formats to:
+                </p>
+                <p>Open a project</p>
+                <pre><code>vscode://file/FULL/PATH/TO/PROJECT/
+</code></pre>
+
+                <p>Open a file</p>
+                <pre><code>vscode://file/FULL/PATH/TO/FILE
+</code></pre>
+
+                <p>Open a file to line and column</p>
+                <pre><code>vscode://file/FULL/PATH/TO/FILE:LINE:COLUMN
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    Note: You can use the URL in applications such as browsers
+                    or file explorers that can parse and redirect the URL. For
+                    example on Windows, you could pass a
+                    <code>vscode://</code> URL directly to the Windows Explorer
+                    or to the command line as
+                    <code>start vscode://file/FULL/PATH/TO/FILE</code>.
+                  </p>
+                </blockquote>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>Read on to find out about:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/codebasics.md"
+                      >Basic Editing</a
+                    >
+                    - Learn the basics of the VS Code editor.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/editingevolved.md"
+                      >Code Navigation</a
+                    >
+                    - VS Code lets you quickly understand and move through your
+                    source code.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../debugging/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Debugging"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../codebasics/index.html"
+                  class="btn btn-neutral"
+                  title="Codebasics"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- editor/command-line/  Sat, 30 Oct 2021 04:56:45 -->
+</html>

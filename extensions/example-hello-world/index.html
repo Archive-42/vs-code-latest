@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- extensions/example-hello-world/  Sat, 30 Oct 2021 04:57:27 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Example hello world - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Example hello world";
+      var mkdocs_page_input_path = "extensions/example-hello-world.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/extensions/example-hello-world/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Example hello world</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#example-hello-world">Example - Hello World</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#your-first-extension"
+                        >Your First Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#prerequisites"
+                        >Prerequisites</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#generate-a-new-extension"
+                        >Generate a New Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#running-your-extension"
+                        >Running your Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#the-structure-of-an-extension"
+                        >The Structure of an Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#extension-activation"
+                        >Extension Activation</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#debugging-your-extension"
+                        >Debugging your Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#a-simple-change"
+                        >A Simple Change</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#installing-your-extension-locally"
+                        >Installing your Extension Locally</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#publishing-your-extension"
+                        >Publishing your Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../samples/index.html">Samples</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../yocode/index.html">Yocode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Extensions &raquo;</li>
+
+                <li>Example hello world</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="example-hello-world">Example - Hello World</h1>
+                <h2 id="your-first-extension">Your First Extension</h2>
+                <p>
+                  This document will take you through creating your first VS
+                  Code extension ("Hello World") and will explain the basic VS
+                  Code extensibility concepts.
+                </p>
+                <p>
+                  In this walkthrough, you'll add a new command to VS Code which
+                  will display a simple "Hello World" message. Later in the
+                  walkthrough, you'll interact with the VS Code editor and query
+                  for the user's currently selected text.
+                </p>
+                <h2 id="prerequisites">Prerequisites</h2>
+                <p>
+                  You need
+                  <a href="https://nodejs.org/en/">Node.js</a> installed and
+                  available in your <code>$PATH</code>. Node.js includes
+                  <a href="https://www.npmjs.com/">npm</a>, the Node.js Package
+                  Manager, which will be used to install the extension
+                  generator.
+                </p>
+                <h2 id="generate-a-new-extension">Generate a New Extension</h2>
+                <p>
+                  The simplest way to add your own functionality to VS Code is
+                  through adding a command. A command registers a callback
+                  function which can be invoked from the
+                  <strong>Command Palette</strong> or with a key binding.
+                </p>
+                <p>
+                  We have written a Yeoman generator to help get you started.
+                  Install Yeoman and the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/yocode.md"
+                    >Yeoman VS Code Extension generator</a
+                  >
+                  and scaffold a new extension:
+                </p>
+                <pre><code class="sh">npm install -g yo generator-code
+yo code
+</code></pre>
+
+                <p>
+                  For the hello world extension, you can either create a
+                  <strong>TypeScript</strong> extension or a
+                  <strong>JavaScript</strong> one. For this example, we pick a
+                  <strong>TypeScript</strong> extension.
+                </p>
+                <p>
+                  <img
+                    alt="The command generator"
+                    src="../images/example-hello-world/generator.png"
+                  />
+                </p>
+                <h2 id="running-your-extension">Running your Extension</h2>
+                <ul>
+                  <li>
+                    Launch VS Code, choose <code>File</code> &gt;
+                    <code>Open Folder</code> and pick the folder that you
+                    generated.
+                  </li>
+                  <li>
+                    Press <code>kb(workbench.action.debug.start)</code> or click
+                    on the <code>Debug</code> icon and click <code>Start</code>.
+                  </li>
+                  <li>
+                    A new instance of VS Code will start in a special mode
+                    (<code>Extension Development Host</code>) and
+                    <strong
+                      >this new instance is now aware of your extension</strong
+                    >.
+                  </li>
+                  <li>
+                    Press <code>kb(workbench.action.showCommands)</code> and run
+                    the command named <code>Hello World</code>.
+                  </li>
+                  <li>
+                    Congratulations! You've just created and executed your first
+                    VS Code command!
+                  </li>
+                </ul>
+                <p>
+                  <img
+                    alt="Running VS Code with an extension"
+                    src="../images/example-hello-world/running.png"
+                  />
+                </p>
+                <h2 id="the-structure-of-an-extension">
+                  The Structure of an Extension
+                </h2>
+                <p>
+                  After running, the generated extension should have the
+                  following structure:
+                </p>
+                <pre><code>.
+├── .gitignore
+├── .vscode                     // VS Code integration
+│   ├── launch.json
+│   ├── settings.json
+│   └── tasks.json
+├── .vscodeignore
+├── README.md
+├── src                         // sources
+│   └── extension.ts            // extension.js, in case of JavaScript extension
+├── test                        // tests folder
+│   ├── extension.test.ts       // extension.test.js, in case of JavaScript extension
+│   └── index.ts                // index.js, in case of JavaScript extension
+├── node_modules
+│   ├── vscode                  // language services
+│   └── typescript              // compiler for typescript (TypeScript only)
+├── out                         // compilation output (TypeScript only)
+│   ├── src
+│   |   ├── extension.js
+│   |   └── extension.js.map
+│   └── test
+│       ├── extension.test.js
+│       ├── extension.test.js.map
+│       ├── index.js
+│       └── index.js.map
+├── package.json                // extension's manifest
+├── tsconfig.json               // jsconfig.json, in case of JavaScript extension
+└── vsc-extension-quickstart.md // extension development quick start
+</code></pre>
+
+                <p>
+                  Let's go through the purpose of all these files and explain
+                  what they do:
+                </p>
+                <h3 id="the-extension-manifest-packagejson">
+                  The extension manifest: <code>package.json</code>
+                </h3>
+                <ul>
+                  <li>
+                    Please read the
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-manifest.md"
+                      ><code>package.json</code> extension manifest reference</a
+                    >
+                  </li>
+                  <li>
+                    More information on
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md"
+                      ><code>package.json</code> contribution points</a
+                    >
+                  </li>
+                  <li>
+                    Each VS Code extension must have a
+                    <code>package.json</code> file that describes it and its
+                    capabilities.
+                  </li>
+                  <li>
+                    VS Code reads this file during start-up and reacts to each
+                    <code>contributes</code> section immediately.
+                  </li>
+                </ul>
+                <h4 id="example-typescript-extension-manifest">
+                  Example TypeScript extension manifest
+                </h4>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;myFirstExtension&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;version&quot;: &quot;0.0.1&quot;,
+    &quot;publisher&quot;: &quot;&quot;,
+    &quot;engines&quot;: {
+        &quot;vscode&quot;: &quot;^1.5.0&quot;
+    },
+    &quot;categories&quot;: [
+        &quot;Other&quot;
+    ],
+    &quot;activationEvents&quot;: [
+        &quot;onCommand:extension.sayHello&quot;
+    ],
+    &quot;main&quot;: &quot;./out/src/extension&quot;,
+    &quot;contributes&quot;: {
+        &quot;commands&quot;: [{
+            &quot;command&quot;: &quot;extension.sayHello&quot;,
+            &quot;title&quot;: &quot;Hello World&quot;
+        }]
+    },
+    &quot;scripts&quot;: {
+        &quot;vscode:prepublish&quot;: &quot;tsc -p ./&quot;,
+        &quot;compile&quot;: &quot;tsc -watch -p ./&quot;,
+        &quot;postinstall&quot;: &quot;node ./node_modules/vscode/bin/install&quot;,
+        &quot;test&quot;: &quot;node ./node_modules/vscode/bin/test&quot;
+    },
+    &quot;devDependencies&quot;: {
+       &quot;typescript&quot;: &quot;^2.0.3&quot;,
+        &quot;vscode&quot;: &quot;^1.5.0&quot;,
+        &quot;mocha&quot;: &quot;^2.3.3&quot;,
+        &quot;@types/node&quot;: &quot;^6.0.40&quot;,
+        &quot;@types/mocha&quot;: &quot;^2.2.32&quot;
+   }
+}
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> A JavaScript extension doesn't
+                    require the <code>scripts</code> field as no compilation is
+                    needed.
+                  </p>
+                </blockquote>
+                <ul>
+                  <li>
+                    This specific package.json describes an extension that:
+                  </li>
+                  <li>
+                    <em>contributes</em> an entry to the Command Palette
+                    (<code>kb(workbench.action.showCommands)</code>) with the
+                    label <code>"Hello world"</code> that will invoke a command
+                    <code>"extension.sayHello"</code>.
+                  </li>
+                  <li>
+                    requests to get loaded (<em>activationEvents</em>) when the
+                    command <code>"extension.sayHello"</code> is invoked.
+                  </li>
+                  <li>
+                    has its <em>main</em> JavaScript code in a file called
+                    <code>"./out/src/extension.js"</code>.
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> VS Code
+                    <strong>does not</strong> load the code of an extension
+                    eagerly at start-up. An extension must describe, through the
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/activation-events.md"
+                      ><code>activationEvents</code></a
+                    >
+                    property under what conditions it should get activated
+                    (loaded).
+                  </p>
+                </blockquote>
+                <h3 id="generated-code">Generated Code</h3>
+                <p>
+                  The generated extension's code is in
+                  <code>extension.ts</code> (or <code>extension.js</code> in
+                  case of a JavaScript extension):
+                </p>
+                <pre><code class="javascript">// The module 'vscode' contains the VS Code extensibility API
+// Import the module and reference it with the alias vscode in your code below
+import * as vscode from 'vscode';
+
+// this method is called when your extension is activated
+// your extension is activated the very first time the command is executed
+export function activate(context: vscode.ExtensionContext) {
+
+    // Use the console to output diagnostic information (console.log) and errors (console.error)
+    // This line of code will only be executed once when your extension is activated
+    console.log('Congratulations, your extension &quot;my-first-extension&quot; is now active!');
+
+    // The command has been defined in the package.json file
+    // Now provide the implementation of the command with  registerCommand
+    // The commandId parameter must match the command field in package.json
+    var disposable = vscode.commands.registerCommand('extension.sayHello', () =&gt; {
+        // The code you place here will be executed every time your command is executed
+
+        // Display a message box to the user
+        vscode.window.showInformationMessage('Hello World!');
+    });
+
+    context.subscriptions.push(disposable);
+}
+</code></pre>
+
+                <ul>
+                  <li>
+                    Each extension should export from its main file a function
+                    named <code>activate()</code>, which VS Code will invoke
+                    <strong>only once</strong> when any of the
+                    <code>activationEvents</code> described in the
+                    <code>package.json</code> file occur.
+                  </li>
+                  <li>
+                    If an extension makes use of OS resources (e.g. spawns
+                    processes), the extension can export from its main file a
+                    function named <code>deactivate()</code> where it can do
+                    clean-up work and VS Code will invoke that function on
+                    shutdown.
+                  </li>
+                  <li>
+                    This specific extension imports the <code>vscode</code> API
+                    and then registers a command, associating a function to be
+                    called when the command
+                    <code>"extension.sayHello"</code> gets invoked. The
+                    command's implementation displays a "Hello world" message in
+                    VS Code.
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> The <code>contributes</code> section
+                    of the <code>package.json</code> adds an entry to the
+                    Command Palette. The code in extension.ts/.js defines the
+                    implementation of <code>"extension.sayHello"</code>.
+                  </p>
+                  <p>
+                    <strong>Note:</strong> For TypeScript extensions, the
+                    generated file <code>out/src/extension.js</code> will be
+                    loaded at runtime and executed by VS Code.
+                  </p>
+                </blockquote>
+                <h3 id="miscellaneous-files">Miscellaneous files</h3>
+                <ul>
+                  <li>
+                    <code>.vscode/launch.json</code> defines launching VS Code
+                    in the Extension Development mode. It also points with
+                    <code>preLaunchTask</code> to a task defined in
+                    <code>.vscode/tasks.json</code> that runs the TypeScript
+                    compiler.
+                  </li>
+                  <li>
+                    <code>.vscode/settings.json</code> by default excludes the
+                    <code>out</code> folder. You can modify which file types you
+                    want to hide.
+                  </li>
+                  <li>
+                    <code>.gitignore</code> - Tells Git version control which
+                    patterns to ignore.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/publish-extension.md#advanced-usage"
+                      ><code>.vscodeignore</code></a
+                    >
+                    - Tells the packaging tool which files to ignore when
+                    publishing the extension.
+                  </li>
+                  <li>
+                    <code>README.md</code> - README file describing your
+                    extension for VS Code users.
+                  </li>
+                  <li>
+                    <code>vsc-extension-quickstart.md</code> - A Quick Start
+                    guide for you.
+                  </li>
+                  <li>
+                    <code>test/extension.test.ts</code> - you can put your
+                    extension unit tests in here and run your tests against the
+                    VS Code API (see
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/testing-extensions.md"
+                      >Testing Your Extension</a
+                    >)
+                  </li>
+                </ul>
+                <h2 id="extension-activation">Extension Activation</h2>
+                <p>
+                  Now that the roles of the files included in the extension are
+                  clarified, here is how your extension gets activated:
+                </p>
+                <ul>
+                  <li>
+                    The extension development instance discovers the extension
+                    and reads its <code>package.json</code> file.
+                  </li>
+                  <li>
+                    Later when you press
+                    <code>kb(workbench.action.showCommands)</code>:
+                  </li>
+                  <li>
+                    The registered commands are displayed in the Command
+                    Palette.
+                  </li>
+                  <li>
+                    In this list there is now an entry
+                    <code>"Hello world"</code> that is defined in the
+                    <code>package.json</code>.
+                  </li>
+                  <li>
+                    When selecting the <code>"Hello world"</code> command:
+                  </li>
+                  <li>
+                    The command <code>"extension.sayHello"</code> is invoked:
+                  </li>
+                  <li>
+                    An activation event
+                    <code>"onCommand:extension.sayHello"</code> is created.
+                  </li>
+                  <li>
+                    All extensions listing this activation event in their
+                    <code>activationEvents</code> are activated.
+                    <ul>
+                      <li>
+                        The file at <code>./out/src/extension.js</code> gets
+                        loaded in the JavaScript VM.
+                      </li>
+                      <li>
+                        VS Code looks for an exported function
+                        <code>activate</code> and calls it.
+                      </li>
+                      <li>
+                        The command <code>"extension.sayHello"</code> is
+                        registered and its implementation is now defined.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    The command <code>"extension.sayHello"</code> implementation
+                    function is invoked.
+                  </li>
+                  <li>
+                    The command implementation displays the "Hello World"
+                    message.
+                  </li>
+                </ul>
+                <h2 id="debugging-your-extension">Debugging your Extension</h2>
+                <p>
+                  Set a breakpoint, for example inside the registered command,
+                  and run the <code>"Hello world"</code> command in the
+                  Extension Development VS Code instance.
+                </p>
+                <p>
+                  <img
+                    alt="Debugging the extension"
+                    src="../images/example-hello-world/hitbp.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> For TypeScript extensions, even
+                    though VS Code loads and executes
+                    <code>out/src/extension.js</code>, you are actually able to
+                    debug the original TypeScript code due to the generated
+                    source map <code>out/src/extension.js.map</code> and VS
+                    Code's debugger support for source maps.
+                  </p>
+                  <p>
+                    <strong>Tip:</strong> The Debug Console will show all the
+                    messages you log to the console.
+                  </p>
+                </blockquote>
+                <p>
+                  To learn more about the extension
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/debugging-extensions.md"
+                    >development environment</a
+                  >.
+                </p>
+                <h2 id="a-simple-change">A Simple Change</h2>
+                <p>
+                  In <code>extension.ts</code> (or <code>extension.js</code>, in
+                  a JavaScript extension), try replacing the
+                  <code>extension.sayHello</code> command implementation to show
+                  the number of characters selected in the editor:
+                </p>
+                <pre><code class="javascript">var editor = vscode.window.activeTextEditor;
+if (!editor) {
+    return; // No open text editor
+}
+
+var selection = editor.selection;
+var text = editor.document.getText(selection);
+
+// Display a message box to the user
+vscode.window.showInformationMessage('Selected characters: ' + text.length);
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> Once you make changes to the extension
+                    source code, you need to restart the Extension Development
+                    instance of VS Code. You can do that by using
+                    <code>kbstyle(Ctrl+R)</code> (Mac:
+                    <code>kbstyle(Cmd+R)</code>) in the second instance or by
+                    clicking the Restart button at the top of your primary VS
+                    Code instance.
+                  </p>
+                </blockquote>
+                <p>
+                  <img
+                    alt="Running the modified extension"
+                    src="../images/example-hello-world/selection-length.png"
+                  />
+                </p>
+                <h2 id="installing-your-extension-locally">
+                  Installing your Extension Locally
+                </h2>
+                <p>
+                  So far, the extension you have written only runs in a special
+                  instance of VS Code, the Extension Development instance. To
+                  get your extension running in all instances of VS Code, you
+                  need to copy it to a new folder under your local extensions
+                  folder:
+                </p>
+                <ul>
+                  <li>
+                    Windows: <code>%USERPROFILE%\.vscode\extensions</code>
+                  </li>
+                  <li>Mac/Linux: <code>$HOME/.vscode/extensions</code></li>
+                </ul>
+                <h2 id="publishing-your-extension">
+                  Publishing your Extension
+                </h2>
+                <p>
+                  Read about how to
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/publish-extension.md"
+                    >Share an Extension</a
+                  >.
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>
+                  In this walkthrough, we've seen a very simple extension. For a
+                  more detailed example, see the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/example-word-count.md"
+                    >Word Count Example</a
+                  >
+                  which shows how to target a specific language (Markdown) and
+                  listen to the editor's document changed events.
+                </p>
+                <p>
+                  If you'd like to read more generally about the extension APIs,
+                  try these topics:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/overview.md"
+                      >Extension API Overview</a
+                    >
+                    - Learn about the full VS Code extensibility model.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/patterns-and-principles.md"
+                      >API Principles and Patterns</a
+                    >
+                    - VS Code extensibility is based on several guiding
+                    principles and patterns.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md"
+                      >Contribution Points</a
+                    >
+                    - Details about the various VS Code contribution points.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/activation-events.md"
+                      >Activation Events</a
+                    >
+                    - VS Code activation events reference
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/samples.md"
+                      >Additional Extension Examples</a
+                    >
+                    - Take a look at our list of example extension projects.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../example-language-server/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Example language server"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../example-debuggers/index.html"
+                  class="btn btn-neutral"
+                  title="Example debuggers"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- extensions/example-hello-world/  Sat, 30 Oct 2021 04:57:28 -->
+</html>

@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- extensionAPI/vscode-api-commands/  Sat, 30 Oct 2021 04:57:24 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vscode api commands - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Vscode api commands";
+      var mkdocs_page_input_path = "extensionAPI/vscode-api-commands.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/extensionAPI/vscode-api-commands/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../api-markdown/index.html">Api markdown</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../api-scm/index.html">Api scm</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Vscode api commands</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#complex-commands">Complex Commands</a>
+                    </li>
+
+                    <li><a class="toctree-l4" href="#commands">Commands</a></li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#working-with-the-html-preview"
+                        >Working With the HTML Preview</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../vscode-api/index.html">Vscode api</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>extensionAPI &raquo;</li>
+
+                <li>Vscode api commands</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="complex-commands">Complex Commands</h1>
+                <p>
+                  This document lists the set of Visual Studio Code complex
+                  commands. They are called complex commands because they
+                  require parameters and often return a value. You can use the
+                  commands in conjunction with the
+                  <code>executeCommand</code> API.
+                </p>
+                <p>
+                  The following is a sample of how to preview a HTML document:
+                </p>
+                <pre><code class="javascript">let uri = Uri.parse('file:///some/path/to/file.html');
+let success = await commands.executeCommand('vscode.previewHtml', uri);
+</code></pre>
+
+                <h2 id="commands">Commands</h2>
+                <p>
+                  <code>vscode.executeWorkspaceSymbolProvider</code> - Execute
+                  all workspace symbol provider.
+                </p>
+                <ul>
+                  <li><em>query</em> Search string</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    SymbolInformation-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeDefinitionProvider</code> - Execute all
+                  definition provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position of a symbol</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    Location-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeImplementationProvider</code> - Execute
+                  all implementation providers.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position of a symbol</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    Location-instance.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeHoverProvider</code> - Execute all hover
+                  provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position of a symbol</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    Hover-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeDocumentHighlights</code> - Execute
+                  document highlight provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position in a text document</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    DocumentHighlight-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeReferenceProvider</code> - Execute
+                  reference provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position in a text document</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    Location-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeDocumentRenameProvider</code> - Execute
+                  rename provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position in a text document</li>
+                  <li><em>newName</em> The new symbol name</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to a
+                    WorkspaceEdit.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeSignatureHelpProvider</code> - Execute
+                  signature help provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position in a text document</li>
+                  <li>
+                    <em>triggerCharacter</em> (optional) Trigger signature help
+                    when the user types the character, like <code>,</code> or
+                    <code>(</code>
+                  </li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to SignatureHelp.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeDocumentSymbolProvider</code> - Execute
+                  document symbol provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    SymbolInformation-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeCompletionItemProvider</code> - Execute
+                  completion item provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position in a text document</li>
+                  <li>
+                    <em>triggerCharacter</em> (optional) Trigger completion when
+                    the user types the character, like <code>,</code> or
+                    <code>(</code>
+                  </li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to a
+                    CompletionList-instance.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeCodeActionProvider</code> - Execute code
+                  action provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>range</em> Range in a text document</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    Command-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeCodeLensProvider</code> - Execute CodeLens
+                  provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    CodeLens-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeFormatDocumentProvider</code> - Execute
+                  document format provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>options</em> Formatting options</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    TextEdits.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeFormatRangeProvider</code> - Execute range
+                  format provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>range</em> Range in a text document</li>
+                  <li><em>options</em> Formatting options</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    TextEdits.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeFormatOnTypeProvider</code> - Execute
+                  document format provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li><em>position</em> Position in a text document</li>
+                  <li><em>ch</em> Character that got typed</li>
+                  <li><em>options</em> Formatting options</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    TextEdits.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.executeLinkProvider</code> - Execute document
+                  link provider.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of a text document</li>
+                  <li>
+                    <em>(returns)</em> A promise that resolves to an array of
+                    DocumentLink-instances.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.previewHtml</code> - Render the HTML of the
+                  resource in an editor view.
+                </p>
+                <ul>
+                  <li><em>uri</em> Uri of the resource to preview.</li>
+                  <li>
+                    <em>column</em> (optional) Column in which to preview.
+                  </li>
+                  <li>
+                    <em>label</em> (optional) An human readable string that is
+                    used as title for the preview.
+                  </li>
+                  <li>
+                    <em>options</em> (optional) Options for controlling webview
+                    environment.
+                  </li>
+                </ul>
+                <p>
+                  See
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensionAPI/vscode-api-commands.md#working-with-the-html-preview"
+                    >working with the HTML preview</a
+                  >
+                  for more information about the HTML preview's integration with
+                  the editor and for best practices for extension authors.
+                </p>
+                <p>
+                  <code>vscode.openFolder</code> - Open a folder in the current
+                  window or new window depending on the newWindow argument. Note
+                  that opening in the same window will shutdown the current
+                  extension host process and start a new one on the given folder
+                  unless the newWindow parameter is set to true.
+                </p>
+                <ul>
+                  <li>
+                    <em>uri</em> (optional) Uri of the folder to open. If not
+                    provided, a native dialog will ask the user for the folder
+                  </li>
+                  <li>
+                    <em>newWindow</em> (optional) Whether to open the folder in
+                    a new window or the same. Defaults to opening in the same
+                    window.
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.diff</code> - Opens the provided resources in the
+                  diff editor to compare their contents.
+                </p>
+                <ul>
+                  <li>
+                    <em>left</em> Left-hand side resource of the diff editor
+                  </li>
+                  <li>
+                    <em>right</em> Right-hand side resource of the diff editor
+                  </li>
+                  <li>
+                    <em>title</em> (optional) Human readable title for the diff
+                    editor
+                  </li>
+                  <li>
+                    <em>options</em> (optional) Editor options, see
+                    vscode.TextDocumentShowOptions
+                  </li>
+                </ul>
+                <p>
+                  <code>vscode.open</code> - Opens the provided resource in the
+                  editor. Can be a text or binary file, or a http(s) url. If you
+                  need more control over the options for opening a text file,
+                  use vscode.window.showTextDocument instead.
+                </p>
+                <ul>
+                  <li><em>resource</em> Resource to open</li>
+                  <li><em>column</em> (optional) Column in which to open</li>
+                </ul>
+                <p>
+                  <code>cursorMove</code> - Move cursor to a logical position in
+                  the view
+                </p>
+                <ul>
+                  <li><em>Cursor move argument object</em></li>
+                </ul>
+                <p>
+                  Property-value pairs that can be passed through this argument:
+                </p>
+                <ul>
+                  <li>
+                    'to': A mandatory logical position value providing where to
+                    move the cursor.
+                    <code
+                      >'left', 'right', 'up', 'down' 'wrappedLineStart',
+                      'wrappedLineEnd', 'wrappedLineColumnCenter'
+                      'wrappedLineFirstNonWhitespaceCharacter',
+                      'wrappedLineLastNonWhitespaceCharacter' 'viewPortTop',
+                      'viewPortCenter', 'viewPortBottom',
+                      'viewPortIfOutside'</code
+                    >
+                  </li>
+                  <li>
+                    'by': Unit to move. Default is computed based on 'to' value.
+                    <code>'line', 'wrappedLine', 'character', 'halfLine'</code>
+                  </li>
+                  <li>'value': Number of units to move. Default is '1'.</li>
+                  <li>
+                    'select': If 'true' makes the selection. Default is 'false'.
+                  </li>
+                </ul>
+                <p>
+                  <code>editorScroll</code> - Scroll editor in the given
+                  direction
+                </p>
+                <ul>
+                  <li><em>Editor scroll argument object</em></li>
+                </ul>
+                <p>
+                  Property-value pairs that can be passed through this argument:
+                </p>
+                <ul>
+                  <li>
+                    'to': A mandatory direction value. <code>'up', 'down'</code>
+                  </li>
+                  <li>
+                    'by': Unit to move. Default is computed based on 'to' value.
+                    <code>'line', 'wrappedLine', 'page', 'halfPage'</code>
+                  </li>
+                  <li>'value': Number of units to move. Default is '1'.</li>
+                  <li>
+                    'revealCursor': If 'true' reveals the cursor if it is
+                    outside view port.
+                  </li>
+                </ul>
+                <p>
+                  <code>revealLine</code> - Reveal the given line at the given
+                  logical position
+                </p>
+                <ul>
+                  <li><em>Reveal line argument object</em></li>
+                </ul>
+                <p>
+                  Property-value pairs that can be passed through this argument:
+                </p>
+                <ul>
+                  <li>'lineNumber': A mandatory line number value.</li>
+                  <li>
+                    'at': Logical position at which line has to be revealed .
+                    <code>'top', 'center', 'bottom'</code>
+                  </li>
+                </ul>
+                <p>
+                  <code>editor.unfold</code> - Unfold the content in the editor
+                </p>
+                <ul>
+                  <li><em>Unfold editor argument</em></li>
+                </ul>
+                <p>
+                  Property-value pairs that can be passed through this argument:
+                </p>
+                <ul>
+                  <li>'level': Number of levels to unfold</li>
+                </ul>
+                <p><code>editor.fold</code> - Fold the content in the editor</p>
+                <ul>
+                  <li><em>Fold editor argument</em></li>
+                </ul>
+                <p>
+                  Property-value pairs that can be passed through this argument:
+                </p>
+                <ul>
+                  <li>'levels': Number of levels to fold</li>
+                  <li>
+                    'up': If 'true', folds given number of levels up otherwise
+                    folds down
+                  </li>
+                </ul>
+                <p>
+                  <code>editor.action.showReferences</code> - Show references at
+                  a position in a file
+                </p>
+                <ul>
+                  <li>
+                    <em>uri</em> The text document in which to show references
+                  </li>
+                  <li><em>position</em> The position at which to show</li>
+                  <li><em>locations</em> An array of locations.</li>
+                </ul>
+                <p>
+                  <code>moveActiveEditor</code> - Move the active editor by tabs
+                  or groups
+                </p>
+                <ul>
+                  <li><em>Active editor move argument</em></li>
+                </ul>
+                <p>Argument Properties:</p>
+                <ul>
+                  <li>'to': String value providing where to move.</li>
+                  <li>
+                    'by': String value providing the unit for move. By tab or by
+                    group.
+                  </li>
+                  <li>
+                    'value': Number value providing how many positions or an
+                    absolute position to move.
+                  </li>
+                </ul>
+                <h2 id="working-with-the-html-preview">
+                  Working With the HTML Preview
+                </h2>
+                <h3 id="styling">Styling</h3>
+                <p>
+                  The body element of the displayed HTML is dynamically
+                  annotated with one of the following CSS classes in order to
+                  communicate the kind of color theme VS Code is currently
+                  using: <code>vscode-light</code>, <code>vscode-dark</code>, or
+                  <code>vscode-high-contrast</code>.
+                </p>
+                <h3 id="links">Links</h3>
+                <p>
+                  Links contained in the document will be handled by VS Code
+                  whereby it supports <code>file</code>-resources and
+                  <a
+                    href="https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts#L3295"
+                    >virtual</a
+                  >
+                  resources as well as triggering commands using the
+                  <code>command</code> scheme. Use the query part of a
+                  command-uri to pass along JSON encoded arguments. Note that
+                  URL encoding must be applied.
+                </p>
+                <p>
+                  The snippet below defines a command link that calls the
+                  <em>previewHtml</em> command and passes along an URI:
+                </p>
+                <pre><code class="javascript">  let href = encodeURI('command:vscode.previewHtml?' + JSON.stringify(someUri));
+  let html = '&lt;a href=&quot;' + href + '&quot;&gt;Show Resource...&lt;/a&gt;.';
+</code></pre>
+
+                <h3 id="security-tips">Security Tips</h3>
+                <p>
+                  As an extension author, if you use an HTML preview, you are
+                  responsible for protecting users from potentially malicious
+                  content. The primary danger is that an attacker could craft a
+                  malicious workspace that uses your HTML preview to execute
+                  scripts or perform other insecure activities. In addition to
+                  normal web security best practices, here are a few specific
+                  tips and tricks to help protect users.
+                </p>
+                <h3 id="sanitizing-content">Sanitizing Content</h3>
+                <p>
+                  As a first line of defense, when constructing an HTML document
+                  for the preview, make sure to appropriately sanitize all input
+                  that comes from workspace settings or from files on a user's
+                  system. For HTML content, consider using a whitelist of safe
+                  tags and attributes. Libraries such as
+                  <a href="https://www.npmjs.com/package/sanitize-html"
+                    >sanitize-html</a
+                  >
+                  can help with this.
+                </p>
+                <h3 id="disabling-scripts">Disabling Scripts</h3>
+                <p>
+                  If your preview does not need to execute JavaScript, you can
+                  further enhance security by disabling script execution
+                  entirely. One way to accomplish this is by loading untrusted
+                  content inside of an <code>iframe</code> with the
+                  <code>sandbox</code> attribute set. In this case, the content
+                  would be loaded using the <code>srcdoc</code> attribute:
+                </p>
+                <pre><code class="html">&lt;iframe sandbox srcdoc=&quot;&lt;!DOCTYPE html&gt;...&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+
+                <p>
+                  If your preview still needs to load some local resources such
+                  as images, try using
+                  <code>sandbox="allow-same-origin"</code> instead:
+                </p>
+                <pre><code class="html">&lt;iframe sandbox=&quot;allow-same-origin&quot; srcdoc=&quot;&lt;!DOCTYPE html&gt;...&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+
+                <p>
+                  <code>sandbox="allow-same-origin"</code> disables script
+                  execution inside the <code>iframe</code> but allows loading
+                  resources from a user's system, such as stylesheets and
+                  images. In general, it is best to disable access to local
+                  resources unless your preview absolutely needs it.
+                </p>
+                <h3 id="using-a-content-security-policy">
+                  Using a Content Security Policy
+                </h3>
+                <p>
+                  If your preview's functionality depends on scripts, consider
+                  disabling scripts that come from untrusted user content using
+                  a
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP"
+                    >content security policy</a
+                  >. Content security policy allow fine grained control over
+                  which resources may be loaded.
+                </p>
+                <p>
+                  For example, here's a content security policy that allows
+                  images from anywhere, allows stylesheets from a user's local
+                  system, and disables all scripts:
+                </p>
+                <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'none'; img-src *; style-src 'self'; script-src 'none';&quot;&gt;
+  &lt;title&gt;...&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Content
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                <p>
+                  To selectively enable scripts, the best approach for the HTML
+                  preview is to use a dynamically generated
+                  <a
+                    href="https://developers.google.com/web/fundamentals/security/csp/"
+                    >nonce</a
+                  >
+                  to whitelist certain trusted scripts:
+                </p>
+                <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'none'; img-src *; style-src 'self'; script-src 'nonce-123456';&quot;&gt;
+  &lt;title&gt;...&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Content
+  &lt;script nonce=&quot;123456&quot; src=&quot;file:///path/to/extension/my_trusted_script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../vscode-api/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Vscode api"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../patterns-and-principles/index.html"
+                  class="btn btn-neutral"
+                  title="Patterns and principles"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- extensionAPI/vscode-api-commands/  Sat, 30 Oct 2021 04:57:24 -->
+</html>

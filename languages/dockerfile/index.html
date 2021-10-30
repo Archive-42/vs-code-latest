@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- languages/dockerfile/  Sat, 30 Oct 2021 04:57:53 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dockerfile - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Dockerfile";
+      var mkdocs_page_input_path = "languages/dockerfile.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/languages/dockerfile/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../csharp/index.html">Csharp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Dockerfile</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#working-with-docker">Working with Docker</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#install-the-docker-extension"
+                        >Install the Docker extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#dockerfiles">Dockerfiles</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#docker-compose"
+                        >Docker Compose</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#docker-commands"
+                        >Docker commands</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#dockerfile-linting"
+                        >Dockerfile linting</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#running-commands-on-linux"
+                        >Running commands on Linux</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../identifiers/index.html">Identifiers</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../javascript/index.html">Javascript</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../jsconfig/index.html">Jsconfig</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../markdown/index.html">Markdown</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../python/index.html">Python</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../typescript/index.html">Typescript</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Languages &raquo;</li>
+
+                <li>Dockerfile</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="working-with-docker">Working with Docker</h1>
+                <p>
+                  <a href="https://www.docker.com/">Docker</a> is a very popular
+                  container platform that lets you easily package, deploy, and
+                  consume applications and services. Whether you are a seasoned
+                  Docker developer or just getting started, Visual Studio Code
+                  makes it easy to author <code>Dockerfile</code> and
+                  <code>docker-compose.yml</code> files in your workspace.
+                </p>
+                <h2 id="install-the-docker-extension">
+                  Install the Docker extension
+                </h2>
+                <p>
+                  Docker support for VS Code is provided by an extension. To
+                  install the Docker extension, open the Extension Viewlet by
+                  pressing <code>kb(workbench.view.extensions)</code> and search
+                  for <code>vscode-docker</code> to filter the results. Select
+                  the
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker"
+                    >Docker Support</a
+                  >
+                  extension.
+                </p>
+                <p>
+                  <img
+                    alt="Select Docker extension"
+                    src="../images/docker/installdockerextension.png"
+                  />
+                </p>
+                <p>
+                  While here, you can install many other extensions to make you
+                  more productive with VS Code.
+                </p>
+                <div class="marketplace-extensions-docker"></div>
+
+                <blockquote>
+                  <p>
+                    Tip: The extensions are dynamically queried. Click on an
+                    extension tile to read the description and reviews to decide
+                    which extension is best for you. See more in the
+                    <a href="https://marketplace.visualstudio.com/"
+                      >Marketplace</a
+                    >.
+                  </p>
+                </blockquote>
+                <h2 id="dockerfiles">Dockerfiles</h2>
+                <p>
+                  With Docker, you can build images by specifying the step by
+                  step commands needed to build the image in a
+                  <code>Dockerfile</code>. A Dockerfile is just a text file that
+                  contains the build instructions.
+                </p>
+                <p>
+                  VS Code understands the structure of Dockerfiles as well as
+                  the available set of instructions, meaning we can give you a
+                  great experience when authoring these files in the tool.
+                </p>
+                <ol>
+                  <li>
+                    Create a new file in your workspace named
+                    <code>Dockerfile</code>
+                  </li>
+                  <li>
+                    Press <code>kb(editor.action.triggerSuggest)</code> to bring
+                    up a list of snippets corresponding to valid
+                    <code>Dockerfile</code> commands
+                  </li>
+                </ol>
+                <p>
+                  <img
+                    alt="Dockerfile snippets"
+                    src="../images/docker/dockerfileintellisense.png"
+                  />
+                </p>
+                <ol>
+                  <li>
+                    Press <code>kbstyle(Tab)</code> to move between fields
+                    within the snippet. For example, with the
+                    <code>COPY</code> snippet you can fill in the
+                    <code>source</code> and then press
+                    <code>kbstyle(Tab)</code> to move to the
+                    <code>dest</code> field.
+                  </li>
+                </ol>
+                <p>
+                  <img
+                    alt="Dockerfile snippet navigation"
+                    src="../images/docker/dockerfiletemplate.png"
+                  />
+                </p>
+                <p>
+                  In addition to snippets for authoring your
+                  <code>Dockerfile</code>, Visual Studio Code will provide you
+                  with a description of any Docker command you hover over with
+                  the mouse. For example, when hovering over
+                  <code>WORKDIR</code> you will see the following.
+                </p>
+                <p>
+                  <img
+                    alt="Dockerfile hover tooltip"
+                    src="../images/docker/dockerfiletooltip.png"
+                  />
+                </p>
+                <p>
+                  For more information on Dockerfiles, check out
+                  <a
+                    href="https://docs.docker.com/articles/dockerfile_best-practices/"
+                    >Dockerfile best practices</a
+                  >
+                  on <a href="https://docker.com/">docker.com</a>.
+                </p>
+                <h2 id="docker-compose">Docker Compose</h2>
+                <p>
+                  <a href="https://docs.docker.com/compose/">Docker Compose</a>
+                  lets you define and run multi-container applications with
+                  Docker. You define what the shape of these containers look
+                  like with a file called <code>docker-compose.yml</code>.
+                </p>
+                <p>
+                  Visual Studio Code's experience for authoring
+                  <code>docker-compose.yml</code> is also very rich, providing
+                  IntelliSense for valid Docker compose directives and it will
+                  query Docker Hub for metadata on public Docker images.
+                </p>
+                <ol>
+                  <li>
+                    Create a new file in your workspace called
+                    <code>docker-compose.yml</code>
+                  </li>
+                  <li>Define a new service called <code>web:</code></li>
+                  <li>
+                    On the second line, bring up IntelliSense by pressing
+                    <code>kb(editor.action.triggerSuggest)</code> to see a list
+                    of all valid compose directives.
+                  </li>
+                </ol>
+                <p>
+                  <img
+                    alt="Docker Compose IntelliSense"
+                    src="../images/docker/dockercomposeintellisense.png"
+                  />
+                </p>
+                <ol>
+                  <li>
+                    For the <code>image</code> directive, you can press
+                    <code>kb(editor.action.triggerSuggest)</code> again and VS
+                    Code will query the Docker Hub index for public images.
+                  </li>
+                </ol>
+                <p>
+                  <img
+                    alt="Docker Compose image suggestions"
+                    src="../images/docker/dockercomposeimageintellisense.png"
+                  />
+                </p>
+                <p>
+                  VS Code will first show a list of popular images along with
+                  metadata such as the number of stars and description. If you
+                  continue typing VS Code will query the Docker Hub index for
+                  matching images, including searching public profiles. For
+                  example, searching for <code>Microsoft</code> will show you
+                  all the public Microsoft images.
+                </p>
+                <p>
+                  <img
+                    alt="Docker Compose Microsoft image suggestions"
+                    src="../images/docker/dockercomposesearch.png"
+                  />
+                </p>
+                <h2 id="docker-commands">Docker commands</h2>
+                <p>
+                  Many of the most common Docker and docker-compose commands are
+                  built right into the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>).
+                </p>
+                <p>
+                  <img
+                    alt="intelliSense"
+                    src="../images/docker/dockercommands.gif"
+                  />
+                </p>
+                <h2 id="dockerfile-linting">Dockerfile linting</h2>
+                <p>
+                  You can enable linting of Dockerfile files through the
+                  <code>docker.enableLinting</code>
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >setting</a
+                  >. The extension uses the
+                  <a href="https://github.com/projectatomic/dockerfile_lint"
+                    >dockerfile_lint</a
+                  >
+                  rules based linter to analyze the Dockerfile. You can provide
+                  your own customized rules file by using the
+                  <code>docker.linterRuleFile</code> setting. You can find
+                  <a
+                    href="https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files"
+                    >more information</a
+                  >
+                  on how to create rules files as well as
+                  <a
+                    href="https://github.com/projectatomic/dockerfile_lint/tree/master/sample_rules"
+                    >sample rules files</a
+                  >
+                  in the
+                  <a href="https://github.com/projectatomic/dockerfile_lint"
+                    >dockerfile_lint</a
+                  >
+                  project.
+                </p>
+                <p>
+                  <img
+                    alt="linting"
+                    src="../images/docker/dockerfilelinting.gif"
+                  />
+                </p>
+                <h2 id="running-commands-on-linux">
+                  Running commands on Linux
+                </h2>
+                <p>
+                  By default, Docker runs as the root user on Linux, requiring
+                  other users to access it with <code>sudo</code>. This
+                  extension does not assume root access, so you will need to
+                  create a Unix group called "docker" and add users to it.
+                  Instructions can be found here:
+                  <a
+                    href="https://docs.docker.com/engine/installation/linux/ubuntulinux/#/create-a-docker-group"
+                    >Create a Docker group</a
+                  >
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../go/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Go"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a href="../css/index.html" class="btn btn-neutral" title="Css"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- languages/dockerfile/  Sat, 30 Oct 2021 04:57:56 -->
+</html>

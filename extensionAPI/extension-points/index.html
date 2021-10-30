@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- extensionAPI/extension-points/  Sat, 30 Oct 2021 04:57:15 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Extension points - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Extension points";
+      var mkdocs_page_input_path = "extensionAPI/extension-points.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/extensionAPI/extension-points/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../api-markdown/index.html">Api markdown</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../api-scm/index.html">Api scm</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Extension points</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#contribution-points-packagejson"
+                        >Contribution Points - package.json</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesconfiguration"
+                        >contributes.configuration</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#contributesconfigurationdefaults"
+                        >contributes.configurationDefaults</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributescommands"
+                        >contributes.commands</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesmenus"
+                        >contributes.menus</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributeskeybindings"
+                        >contributes.keybindings</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributeslanguages"
+                        >contributes.languages</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesdebuggers"
+                        >contributes.debuggers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesbreakpoints"
+                        >contributes.breakpoints</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesgrammars"
+                        >contributes.grammars</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesthemes"
+                        >contributes.themes</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributessnippets"
+                        >contributes.snippets</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesjsonvalidation"
+                        >contributes.jsonValidation</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesviews"
+                        >contributes.views</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesproblemmatchers"
+                        >contributes.problemMatchers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#contributesproblempatterns"
+                        >contributes.problemPatterns</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../vscode-api/index.html">Vscode api</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>extensionAPI &raquo;</li>
+
+                <li>Extension points</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="contribution-points-packagejson">
+                  Contribution Points - package.json
+                </h1>
+                <p>
+                  This document covers the various contribution points that are
+                  defined in the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensionAPI/extension-manifest.md"
+                    ><code>package.json</code> extension manifest</a
+                  >.
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesconfiguration"
+                      ><code>configuration</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributescommands"
+                      ><code>commands</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesmenus"
+                      ><code>menus</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributeskeybindings"
+                      ><code>keybindings</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributeslanguages"
+                      ><code>languages</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesdebuggers"
+                      ><code>debuggers</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesbreakpoints"
+                      ><code>breakpoints</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesgrammars"
+                      ><code>grammars</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesthemes"
+                      ><code>themes</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributessnippets"
+                      ><code>snippets</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesjsonvalidation"
+                      ><code>jsonValidation</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesviews"
+                      ><code>views</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesproblemmatchers"
+                      ><code>problemMatchers</code></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesproblempatterns"
+                      ><code>problemPatterns</code></a
+                    >
+                  </li>
+                </ul>
+                <h2 id="contributesconfiguration">contributes.configuration</h2>
+                <p>
+                  Contribute configuration keys that will be exposed to the
+                  user. The user will be able to set these configuration options
+                  either from User Settings or from the Workspace Settings.
+                </p>
+                <p>
+                  When contributing configuration keys, a JSON schema describing
+                  these keys is actually contributed. This ensures the user gets
+                  great tooling support when authoring VS Code settings files.
+                </p>
+                <p>
+                  You can read these values from your extension using
+                  <code>vscode.workspace.getConfiguration('myExtension')</code>.
+                </p>
+                <h3 id="example">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;configuration&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;title&quot;: &quot;TypeScript configuration&quot;,
+        &quot;properties&quot;: {
+            &quot;typescript.useCodeSnippetsOnMethodSuggest&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;default&quot;: false,
+                &quot;description&quot;: &quot;Complete functions with their parameter signature.&quot;
+            },
+            &quot;typescript.tsdk&quot;: {
+                &quot;type&quot;: [&quot;string&quot;, &quot;null&quot;],
+                &quot;default&quot;: null,
+                &quot;description&quot;: &quot;Specifies the folder path containing the tsserver and lib*.d.ts files to use.&quot;
+            }
+        }
+    }
+}
+</code></pre>
+
+                <p>
+                  <img
+                    alt="configuration extension point example"
+                    src="../images/extension-points/configuration.png"
+                  />
+                </p>
+                <h2 id="contributesconfigurationdefaults">
+                  contributes.configurationDefaults
+                </h2>
+                <p>
+                  Contribute default language specific editor configurations.
+                  This will override default editor configurations for the
+                  provided language.
+                </p>
+                <p>
+                  The following example contributes default editor
+                  configurations for the <code>markdown</code> language:
+                </p>
+                <h3 id="example_1">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;configurationDefaults&quot;: {
+        &quot;[markdown]&quot;: {
+            &quot;editor.wordWrap&quot;: &quot;on&quot;,
+            &quot;editor.quickSuggestions&quot;: false
+        }
+    }
+}
+</code></pre>
+
+                <h2 id="contributescommands">contributes.commands</h2>
+                <p>
+                  Contribute an entry consisting of a title and a command to
+                  invoke to the Command Palette
+                  (<code>kb(workbench.action.showCommands)</code>).
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> When a command is invoked (from a key
+                    binding or from the Command Palette), VS Code will emit an
+                    activationEvent <code>onCommand:${command}</code>.
+                  </p>
+                </blockquote>
+                <h3 id="example_2">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;commands&quot;: [{
+        &quot;command&quot;: &quot;extension.sayHello&quot;,
+        &quot;title&quot;: &quot;Hello World&quot;
+    }]
+}
+</code></pre>
+
+                <p>
+                  <img
+                    alt="commands extension point example"
+                    src="../images/extension-points/commands.png"
+                  />
+                </p>
+                <h2 id="contributesmenus">contributes.menus</h2>
+                <p>
+                  Contribute a menu item for a command to the editor or
+                  Explorer. The menu item definition contains the command that
+                  should be invoked when selected and the condition under which
+                  the item should show. The latter is defined with the
+                  <code>when</code> clause which uses the key bindings
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md#when-clause-contexts"
+                    >when clause contexts</a
+                  >. In addition to the mandatory <code>command</code> property,
+                  an alternative command can be defined using the
+                  <code>alt</code>-property. It will be shown and invoked when
+                  pressing <code>kbstyle(Alt)</code> while hovering over a menu
+                  item. Last, a <code>group</code>-property defines sorting and
+                  grouping of menu items. The <code>navigation</code> group is
+                  special as it will always be sorted to the top/beginning of a
+                  menu.
+                </p>
+                <p>Currently extension writers can contribute to:</p>
+                <ul>
+                  <li>
+                    The global Command Palette - <code>commandPalette</code>
+                  </li>
+                  <li>
+                    The Explorer context menu - <code>explorer/context</code>
+                  </li>
+                  <li>The editor context menu - <code>editor/context</code></li>
+                  <li>The editor title menu bar - <code>editor/title</code></li>
+                  <li>
+                    The editor title context menu -
+                    <code>editor/title/context</code>
+                  </li>
+                  <li>
+                    The debug callstack view context menu -
+                    <code>debug/callstack/context</code>
+                  </li>
+                  <li>
+                    The
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/api-scm.md#menus"
+                      >SCM title menu</a
+                    >
+                    - <code>scm/title</code>
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/api-scm.md#menus"
+                      >SCM resource groups</a
+                    >
+                    menus - <code>scm/resourceGroup/context</code>
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/api-scm.md#menus"
+                      >SCM resources</a
+                    >
+                    menus - <code>scm/resource/context</code>
+                  </li>
+                  <li>
+                    The
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesviews"
+                      >View title menu</a
+                    >
+                    - <code>view/title</code>
+                  </li>
+                  <li>
+                    The
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-points.md#contributesviews"
+                      >View item menu</a
+                    >
+                    - <code>view/item/context</code>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> When a command is invoked from a
+                    (context) menu, VS Code tries to infer the currently
+                    selected resource and passes that as a parameter when
+                    invoking the command. For instance, a menu item inside the
+                    Explorer is passed the URI of the selected resource and a
+                    menu item inside an editor is passed the URI of the
+                    document.
+                  </p>
+                </blockquote>
+                <p>
+                  In addition to a title, commands can also define icons which
+                  VS Code will show in the editor title menu bar.
+                </p>
+                <h3 id="example_3">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;menus&quot;: {
+        &quot;editor/title&quot;: [{
+            &quot;when&quot;: &quot;resourceLangId == markdown&quot;,
+            &quot;command&quot;: &quot;markdown.showPreview&quot;,
+            &quot;alt&quot;: &quot;markdown.showPreviewToSide&quot;,
+            &quot;group&quot;: &quot;navigation&quot;
+        }]
+    }
+}
+</code></pre>
+
+                <h3
+                  id="context-specific-visibility-of-command-palette-menu-items"
+                >
+                  Context specific visibility of Command Palette menu items
+                </h3>
+                <p>
+                  When registering commands in <code>package.json</code>, they
+                  will automatically be shown in the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>). To allow
+                  more control over command visibility, there is the
+                  <code>commandPalette</code> menu item. It allows you to define
+                  a <code>when</code> condition to control if a command should
+                  be visible in the <strong>Command Palette</strong> or not.
+                </p>
+                <p>
+                  The snippet below makes the 'Hello World' command only visible
+                  in the <strong>Command Palette</strong> when something is
+                  selected in the editor:
+                </p>
+                <pre><code class="json">&quot;commands&quot;: [{
+    &quot;command&quot;: &quot;extension.sayHello&quot;,
+    &quot;title&quot;: &quot;Hello World&quot;
+}],
+&quot;menus&quot;: {
+    &quot;commandPalette&quot;: [{
+        &quot;command&quot;: &quot;extension.sayHello&quot;,
+        &quot;when&quot;: &quot;editorHasSelection&quot;
+    }]
+}
+</code></pre>
+
+                <p>
+                  <img
+                    alt="menus extension point example"
+                    src="../images/extension-points/menus.png"
+                  />
+                </p>
+                <h3 id="sorting-of-groups">Sorting of groups</h3>
+                <p>
+                  Menu items can be sorted into groups. They are sorted in
+                  lexicographical order with the following defaults/rules.
+                </p>
+                <p>The context menu of the editor has these default:</p>
+                <ul>
+                  <li>
+                    <code>navigation</code> - The <code>navigation</code> group
+                    comes first in all cases.
+                  </li>
+                  <li>
+                    <code>1_modification</code> - This group comes next and
+                    contains commands that modify your code.
+                  </li>
+                  <li>
+                    <code>9_cutcopypaste</code> - The last default group with
+                    the basic editing commands.
+                  </li>
+                </ul>
+                <p>
+                  <img
+                    alt="Menu Group Sorting"
+                    src="../images/extension-points/groupSorting.png"
+                  />
+                </p>
+                <p>
+                  You can add menu items to these groups or add new groups of
+                  menu items in between, below, or above. Only the editor
+                  context menu allows this grouping control.
+                </p>
+                <h3 id="sorting-inside-groups">Sorting inside groups</h3>
+                <p>
+                  The order inside a group depends on the title or an
+                  order-attribute. The group-local order of a menu item is
+                  specified by appending <code>@&lt;number&gt;</code> to the
+                  group identifier as shown below:
+                </p>
+                <pre><code class="json">&quot;editor/title&quot;: [{
+    &quot;when&quot;: &quot;editorHasSelection&quot;,
+    &quot;command&quot;: &quot;extension.Command&quot;,
+    &quot;group&quot;: &quot;myGroup@1&quot;
+}]
+</code></pre>
+
+                <h2 id="contributeskeybindings">contributes.keybindings</h2>
+                <p>
+                  Contribute a key binding rule defining what command should be
+                  invoked when the user presses a key combination. See the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md"
+                    >Key Bindings</a
+                  >
+                  topic where key bindings are explained in detail.
+                </p>
+                <p>
+                  Contributing a key binding will cause the Default Keyboard
+                  Shortcuts to display your rule, and every UI representation of
+                  the command will now show the key binding you have added. And,
+                  of course, when the user presses the key combination the
+                  command will be invoked.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> Because VS Code runs on Windows, Mac
+                    and Linux, where modifiers differ, you can use "key" to set
+                    the default key combination and overwrite it with a specific
+                    platform.
+                  </p>
+                  <p>
+                    <strong>Note:</strong> When a command is invoked (from a key
+                    binding or from the Command Palette), VS Code will emit an
+                    activationEvent <code>onCommand:${command}</code>.
+                  </p>
+                </blockquote>
+                <h3 id="example_4">Example</h3>
+                <p>
+                  Defining that <code>kbstyle(Ctrl+F1)</code> under Windows and
+                  Linux and <code>kbstyle(Cmd+F1)</code> under Mac trigger the
+                  <code>"extension.sayHello"</code> command:
+                </p>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;keybindings&quot;: [{
+        &quot;command&quot;: &quot;extension.sayHello&quot;,
+        &quot;key&quot;: &quot;ctrl+f1&quot;,
+        &quot;mac&quot;: &quot;cmd+f1&quot;,
+        &quot;when&quot;: &quot;editorTextFocus&quot;
+    }]
+}
+</code></pre>
+
+                <p>
+                  <img
+                    alt="keybindings extension point example"
+                    src="../images/extension-points/keybindings.png"
+                  />
+                </p>
+                <h2 id="contributeslanguages">contributes.languages</h2>
+                <p>
+                  Contribute the definition of a language. This will introduce a
+                  new language or enrich the knowledge VS Code has about a
+                  language.
+                </p>
+                <p>
+                  In this context, a language is basically a string identifier
+                  that is associated to a file (See
+                  <code>TextDocument.getLanguageId()</code>).
+                </p>
+                <p>
+                  VS Code uses three hints to determine the language a file will
+                  be associated with. Each "hint" can be enriched independently:
+                </p>
+                <ol>
+                  <li>
+                    the extension of the filename (<code>extensions</code>
+                    below)
+                  </li>
+                  <li>the filename (<code>filenames</code> below)</li>
+                  <li>
+                    the first line inside the file (<code>firstLine</code>
+                    below)
+                  </li>
+                </ol>
+                <p>
+                  When a file is opened by the user, these three rules are
+                  applied and a language is determined. VS Code will then emit
+                  an activationEvent <code>onLanguage:${language}</code> (e.g.
+                  <code>onLanguage:python</code> for the example below)
+                </p>
+                <p>
+                  The <code>aliases</code> property contains human readable
+                  names under which the language is known. The first item in
+                  this list will be picked as the language label (as rendered in
+                  the status bar on the right).
+                </p>
+                <p>
+                  The <code>configuration</code> property specifies a path to
+                  the language configuration file. The path is relative to the
+                  extension folder, and is typically
+                  <code>./language-configuration.json</code>. The file uses the
+                  JSON format and can contain the following properties:
+                </p>
+                <ul>
+                  <li><code>comments</code> - Defines the comment symbols</li>
+                  <li>
+                    <code>blockComment</code> - The begin and end token used to
+                    mark a block comment. Used by the 'Toggle Block Comment'
+                    command.
+                  </li>
+                  <li>
+                    <code>lineComment</code> - The begin token used to mark a
+                    line comment. Used by the 'Add Line Comment' command.
+                  </li>
+                  <li>
+                    <code>brackets</code> - Defines the bracket symbols that
+                    influence the indentation of code between the brackets. Used
+                    by the editor to determine or correct the new indentation
+                    level when entering a new line.
+                  </li>
+                  <li>
+                    <code>autoClosingPairs</code> - Defines the open and close
+                    symbols for the auto-close functionality. When an open
+                    symbol is entered, the editor will insert the close symbol
+                    automatically. Auto closing pairs optionally take a
+                    <code>notIn</code> parameter to deactivate a pair inside
+                    strings or comments.
+                  </li>
+                  <li>
+                    <code>surroundingPairs</code> - Defines the open and close
+                    pairs used to surround a selected string.
+                  </li>
+                </ul>
+                <p>
+                  If your language configuration file name is or ends with
+                  <code>language-configuration.json</code>, you will get
+                  validation and editing support in VS Code.
+                </p>
+                <h3 id="example_5">Example</h3>
+                <pre><code class="json">...
+&quot;contributes&quot;: {
+    &quot;languages&quot;: [{
+        &quot;id&quot;: &quot;python&quot;,
+        &quot;extensions&quot;: [ &quot;.py&quot; ],
+        &quot;aliases&quot;: [ &quot;Python&quot;, &quot;py&quot; ],
+        &quot;filenames&quot;: [ ... ],
+        &quot;firstLine&quot;: &quot;^#!/.*\\bpython[0-9.-]*\\b&quot;,
+        &quot;configuration&quot;: &quot;./language-configuration.json&quot;
+    }]
+}
+</code></pre>
+
+                <p>language-configuration.json</p>
+                <pre><code class="json">{
+    &quot;comments&quot;: {
+        &quot;lineComment&quot;: &quot;//&quot;,
+        &quot;blockComment&quot;: [ &quot;/*&quot;, &quot;*/&quot; ]
+    },
+    &quot;brackets&quot;: [
+        [&quot;{&quot;, &quot;}&quot;],
+        [&quot;[&quot;, &quot;]&quot;],
+        [&quot;(&quot;, &quot;)&quot;]
+    ],
+    &quot;autoClosingPairs&quot;: [
+        [&quot;{&quot;, &quot;}&quot;],
+        [&quot;[&quot;, &quot;]&quot;],
+        [&quot;(&quot;, &quot;)&quot;],
+        { &quot;open&quot;: &quot;'&quot;, &quot;close&quot;: &quot;'&quot;, &quot;notIn&quot;: [&quot;string&quot;, &quot;comment&quot;] },
+        { &quot;open&quot;: &quot;/**&quot;, &quot;close&quot;: &quot; */&quot;, &quot;notIn&quot;: [&quot;string&quot;] }
+    ],
+    &quot;surroundingPairs&quot;: [
+        [&quot;{&quot;, &quot;}&quot;],
+        [&quot;[&quot;, &quot;]&quot;],
+        [&quot;(&quot;, &quot;)&quot;],
+        [&quot;&lt;&quot;, &quot;&gt;&quot;],
+        [&quot;'&quot;, &quot;'&quot;]
+    ]
+}
+</code></pre>
+
+                <h2 id="contributesdebuggers">contributes.debuggers</h2>
+                <p>
+                  Contribute a debugger to VS Code. A debugger contribution has
+                  the following properties:
+                </p>
+                <ul>
+                  <li>
+                    <code>type</code> is a unique ID that is used to identify
+                    this debugger in a launch configuration.
+                  </li>
+                  <li>
+                    <code>label</code> is the user visible name of this debugger
+                    in the UI.
+                  </li>
+                  <li>
+                    <code>program</code> the path to the debug adapter that
+                    implements the VS Code debug protocol against the real
+                    debugger or runtime.
+                  </li>
+                  <li>
+                    <code>runtime</code> if the path to the debug adapter is not
+                    an executable but needs a runtime.
+                  </li>
+                  <li>
+                    <code>configurationAttributes</code> is the schema for
+                    launch configuration arguments specific to this debugger.
+                  </li>
+                  <li>
+                    <code>initialConfigurations</code> lists launch
+                    configurations that are used to populate an initial
+                    launch.json.
+                  </li>
+                  <li>
+                    <code>configurationSnippets</code> lists launch
+                    configurations that are available through IntelliSense when
+                    editing a launch.json.
+                  </li>
+                  <li>
+                    <code>variables</code> introduces substitution variables and
+                    binds them to commands implemented by the debugger
+                    extension.
+                  </li>
+                  <li>
+                    <code>languages</code> those languages for which the debug
+                    extension could be considered the "default debugger".
+                  </li>
+                  <li>
+                    <code>adapterExecutableCommand</code> the command ID where
+                    the debug adapters executable path and arguments are
+                    dynamically calculated. The command returns a structure with
+                    this format:
+                    <code
+                      >json command: "&lt;executable&gt;", args: [
+                      "&lt;argument1&gt;", "&lt;argument2&gt;", ... ]</code
+                    >
+                    The attribute <code>command</code> must be a either an
+                    absolute path to an executable or a name of executable
+                    looked up via the PATH environment variable. The special
+                    value <code>node</code> will be mapped to VS Code's built-in
+                    node runtime without being looked up on the PATH.
+                  </li>
+                </ul>
+                <h3 id="example_6">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;debuggers&quot;: [{
+        &quot;type&quot;: &quot;node&quot;,
+        &quot;label&quot;: &quot;Node Debug&quot;,
+
+        &quot;program&quot;: &quot;./out/node/nodeDebug.js&quot;,
+        &quot;runtime&quot;: &quot;node&quot;,
+
+        &quot;languages&quot;: [&quot;javascript&quot;, &quot;typescript&quot;, &quot;javascriptreact&quot;, &quot;typescriptreact&quot;],
+
+        &quot;configurationAttributes&quot;: {
+            &quot;launch&quot;: {
+                &quot;required&quot;: [ &quot;program&quot; ],
+                &quot;properties&quot;: {
+                    &quot;program&quot;: {
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;The program to debug.&quot;
+                    }
+                }
+            }
+        },
+
+        &quot;initialConfigurations&quot;: [{
+            &quot;type&quot;: &quot;node&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;Launch Program&quot;,
+            &quot;program&quot;: &quot;${workspaceRoot}/app.js&quot;
+        }],
+
+        &quot;configurationSnippets&quot;: [
+            {
+                &quot;label&quot;: &quot;Node.js: Attach Configuration&quot;,
+                &quot;description&quot;: &quot;A new configuration for attaching to a running node program.&quot;,
+                &quot;body&quot;: {
+                    &quot;type&quot;: &quot;node&quot;,
+                    &quot;request&quot;: &quot;attach&quot;,
+                    &quot;name&quot;: &quot;${2:Attach to Port}&quot;,
+                    &quot;port&quot;: 5858
+                }
+            }
+        ],
+
+        &quot;variables&quot;: {
+            &quot;PickProcess&quot;: &quot;extension.node-debug.pickNodeProcess&quot;
+        }
+    }]
+}
+</code></pre>
+
+                <p>
+                  For a full walkthrough on how to integrate a
+                  <code>debugger</code> go to
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/example-debuggers.md"
+                    >Debuggers</a
+                  >.
+                </p>
+                <h2 id="contributesbreakpoints">contributes.breakpoints</h2>
+                <p>
+                  Usually a debugger extension will also have a
+                  <code>contributes.breakpoints</code> entry where the extension
+                  lists the language file types for which setting breakpoints
+                  will be enabled.
+                </p>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;breakpoints&quot;: [
+        {
+            &quot;language&quot;: &quot;javascript&quot;
+        },
+        {
+            &quot;language&quot;: &quot;javascriptreact&quot;
+        }
+    ]
+}
+</code></pre>
+
+                <h2 id="contributesgrammars">contributes.grammars</h2>
+                <p>
+                  Contribute a TextMate grammar to a language. You must provide
+                  the <code>language</code> this grammar applies to, the
+                  TextMate <code>scopeName</code> for the grammar and the file
+                  path.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> The file containing the grammar can
+                    be in JSON (filenames ending in .json) or in XML plist
+                    format (all other files).
+                  </p>
+                </blockquote>
+                <h3 id="example_7">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;grammars&quot;: [{
+        &quot;language&quot;: &quot;shellscript&quot;,
+        &quot;scopeName&quot;: &quot;source.shell&quot;,
+        &quot;path&quot;: &quot;./syntaxes/Shell-Unix-Bash.tmLanguage&quot;
+    }]
+}
+</code></pre>
+
+                <p>
+                  See
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/themes-snippets-colorizers.md"
+                    >Adding Language Colorization</a
+                  >
+                  for instructions on using the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/yocode.md"
+                    >yo code extension generator</a
+                  >
+                  to quickly package TextMate .tmLanguage files as VS Code
+                  extensions.
+                </p>
+                <p>
+                  <img
+                    alt="grammars extension point example"
+                    src="../images/extension-points/grammars.png"
+                  />
+                </p>
+                <h2 id="contributesthemes">contributes.themes</h2>
+                <p>
+                  Contribute a TextMate theme to VS Code. You must specify a
+                  label, whether the theme is a dark theme or a light theme
+                  (such that the rest of VS Code changes to match your theme)
+                  and the path to the file (XML plist format).
+                </p>
+                <h3 id="example_8">Example</h3>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;themes&quot;: [{
+        &quot;label&quot;: &quot;Monokai&quot;,
+        &quot;uiTheme&quot;: &quot;vs-dark&quot;,
+        &quot;path&quot;: &quot;./themes/Monokai.tmTheme&quot;
+    }]
+}
+</code></pre>
+
+                <p>
+                  <img
+                    alt="themes extension point example"
+                    src="../images/extension-points/themes.png"
+                  />
+                </p>
+                <p>
+                  See
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/themes-snippets-colorizers.md"
+                    >Changing the Color Theme</a
+                  >
+                  for instructions on using the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/yocode.md"
+                    >yo code extension generator</a
+                  >
+                  to quickly package TextMate .tmTheme files as VS Code
+                  extensions.
+                </p>
+                <h2 id="contributessnippets">contributes.snippets</h2>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;snippets&quot;: [{
+        &quot;language&quot;: &quot;go&quot;,
+        &quot;path&quot;: &quot;./snippets/go.json&quot;
+    }]
+}
+</code></pre>
+
+                <h2 id="contributesjsonvalidation">
+                  contributes.jsonValidation
+                </h2>
+                <p>
+                  Contribute a validation schema for a specific type of
+                  <code>json</code> file. The <code>url</code> value can be
+                  either a local path to a schema file included in the extension
+                  or a remote server URL such as a
+                  <a href="http://schemastore.org/json">json schema store</a>.
+                </p>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;jsonValidation&quot;: [{
+        &quot;fileMatch&quot;: &quot;.jshintrc&quot;,
+        &quot;url&quot;: &quot;http://json.schemastore.org/jshintrc&quot;
+    }]
+}
+</code></pre>
+
+                <h2 id="contributesviews">contributes.views</h2>
+                <p>
+                  Contribute a view to VS Code. You must specify an identifier
+                  and name for the view. You can contribute to following
+                  locations:
+                </p>
+                <ul>
+                  <li><code>explorer</code>: Explorer view in the Side Bar</li>
+                  <li><code>debug</code>: Debug view in the Side Bar</li>
+                </ul>
+                <p>
+                  When the user opens the view, VS Code will then emit an
+                  activationEvent <code>onView:${viewId}</code> (e.g.
+                  <code>onView:nodeDependencies</code> for the example below).
+                  You can also control the visibility of the view by providing
+                  the <code>when</code> context value.
+                </p>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;views&quot;: {
+        &quot;explorer&quot;: [
+            {
+                &quot;id&quot;: &quot;nodeDependencies&quot;,
+                &quot;name&quot;: &quot;Node Dependencies&quot;,
+                &quot;when&quot;: &quot;workspaceHasPackageJSON&quot;
+            }
+        ]
+    }
+}
+</code></pre>
+
+                <p>
+                  <img
+                    alt="views extension point example"
+                    src="../images/extension-points/views.png"
+                  />
+                </p>
+                <p>
+                  Extension writers should register a
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensionAPI/vscode-api.md#TreeDataProvider"
+                    >provider</a
+                  >
+                  programmatically to populate data in the view. Refer to
+                  examples
+                  <a
+                    href="https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample"
+                    >here</a
+                  >.
+                </p>
+                <h2 id="contributesproblemmatchers">
+                  contributes.problemMatchers
+                </h2>
+                <p>
+                  Contribute problem matcher patterns. These contributions work
+                  in both the output panel runner and in the terminal runner.
+                  Below is an example to contribute a problem matcher for the
+                  gcc compiler in an extension:
+                </p>
+                <pre><code class="json">&quot;contributes&quot;: {
+    &quot;problemMatchers&quot;: [
+        {
+            &quot;name&quot;: &quot;gcc&quot;,
+            &quot;owner&quot;: &quot;cpp&quot;,
+            &quot;fileLocation&quot;: [&quot;relative&quot;, &quot;${workspaceRoot}&quot;],
+            &quot;pattern&quot;: {
+                &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,
+                &quot;file&quot;: 1,
+                &quot;line&quot;: 2,
+                &quot;column&quot;: 3,
+                &quot;severity&quot;: 4,
+                &quot;message&quot;: 5
+            }
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  This problem matcher can now be used in a
+                  <code>tasks.json</code> file via a name reference
+                  <code>$gcc</code>. An example looks like this:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;command&quot;: &quot;gcc&quot;,
+    &quot;args&quot;: [&quot;-Wall&quot;, &quot;helloWorld.c&quot;, &quot;-o&quot;, &quot;helloWorld&quot;],
+    &quot;problemMatcher&quot;: &quot;$gcc&quot;
+}
+</code></pre>
+
+                <p>
+                  Also see:
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/tasks.md#defining-a-problem-matcher"
+                    >Defining a Problem Matcher</a
+                  >
+                </p>
+                <h2 id="contributesproblempatterns">
+                  contributes.problemPatterns
+                </h2>
+                <p>
+                  Contributes named problem patterns that can be used in problem
+                  matchers (see above).
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>
+                  To learn more about VS Code extensibility model, try these
+                  topic:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/extension-manifest.md"
+                      >Extension Manifest File</a
+                    >
+                    - VS Code package.json extension manifest file reference
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/activation-events.md"
+                      >Activation Events</a
+                    >
+                    - VS Code activation events reference
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../language-support/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Language support"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../extension-manifest/index.html"
+                  class="btn btn-neutral"
+                  title="Extension manifest"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- extensionAPI/extension-points/  Sat, 30 Oct 2021 04:57:18 -->
+</html>

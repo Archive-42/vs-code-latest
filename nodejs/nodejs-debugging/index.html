@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- nodejs/nodejs-debugging/  Sat, 30 Oct 2021 04:58:15 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nodejs debugging - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Nodejs debugging";
+      var mkdocs_page_input_path = "nodejs/nodejs-debugging.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/nodejs/nodejs-debugging/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extensions/index.html">Extensions</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Nodejs debugging</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#nodejs-debugging-in-vs-code"
+                        >Node.js Debugging in VS Code</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#supported-node-like-runtimes"
+                        >Supported Node-like Runtimes</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#launch-configuration-attributes"
+                        >Launch configuration attributes</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#node-console"
+                        >Node console</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#launch-configuration-support-for-npm-and-other-tools"
+                        >Launch configuration support for 'npm' and other
+                        tools</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#load-environment-variables-from-external-file-node"
+                        >Load environment variables from external file (node)</a
+                      >
+                    </li>
+
+                    <li class="toctree-l3">
+                      <a href="#a-comment">a comment</a>
+                    </li>
+
+                    <li class="toctree-l3">
+                      <a href="#an-empty-value">an empty value:</a>
+                    </li>
+
+                    <li class="toctree-l3">
+                      <a href="#new-lines-expanded-in-quoted-strings"
+                        >new lines expanded in quoted strings:</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#remote-debugging"
+                        >Remote debugging</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#access-loaded-scripts"
+                        >Access Loaded Scripts</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#restarting-debug-sessions-automatically-when-source-is-edited"
+                        >Restarting debug sessions automatically when source is
+                        edited</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#restart-frame-node"
+                        >Restart frame (node)</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#function-breakpoints"
+                        >Function breakpoints</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#breakpoint-hit-counts"
+                        >Breakpoint hit counts</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#breakpoint-validation"
+                        >Breakpoint validation</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#skipping-uninteresting-code-node-chrome"
+                        >Skipping uninteresting code (node, chrome)</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#source-maps">Source maps</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#common-questions"
+                        >Common Questions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Nodejs &raquo;</li>
+
+                <li>Nodejs debugging</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="nodejs-debugging-in-vs-code">
+                  Node.js Debugging in VS Code
+                </h1>
+                <p>
+                  The Visual Studio Code editor has built-in debugging support
+                  for the <a href="https://nodejs.org/">Node.js</a> runtime and
+                  can debug JavaScript, TypeScript, and any other language that
+                  gets transpiled to JavaScript.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Are you new to VS Code?</strong> Learn more and
+                    download a
+                    <a href="../../nodejs.html">faster Node.js editor here</a>.
+                  </p>
+                </blockquote>
+                <p>
+                  This document explains the details of Node.js debugging. The
+                  general debugging feature are described in
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/debugging.md"
+                    >Debugging</a
+                  >.
+                </p>
+                <h2 id="supported-node-like-runtimes">
+                  Supported Node-like Runtimes
+                </h2>
+                <p>
+                  Since the VS Code Node.js debugger communicates to the Node.js
+                  runtimes through <em>wire protocols</em>, the set of supported
+                  runtimes is determined by all runtimes supporting the wire
+                  protocols.
+                </p>
+                <p>
+                  Today two wire protocols exist: - <strong>legacy</strong>: the
+                  original
+                  <a
+                    href="https://github.com/buggerjs/bugger-v8-client/blob/master/PROTOCOL.md"
+                    >V8 Debugger Protocol</a
+                  >
+                  which is currently supported by all runtimes but will most
+                  likely be dropped in Node.js v8.x. -
+                  <strong>inspector</strong>: the new
+                  <a
+                    href="https://chromedevtools.github.io/debugger-protocol-viewer/v8/"
+                    >V8 Inspector Protocol</a
+                  >
+                  is exposed via the <code>--inspect</code> flag in Node.js
+                  versions &gt;= 6.3. It addresses most of the limitations and
+                  scalability issues of the legacy protocol.
+                </p>
+                <p>
+                  Currently these protocols are supported by specific version
+                  ranges of the following runtimes:
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Runtime</th>
+                      <th>'Legacy' Protocol</th>
+                      <th>'Inspector' Protocol</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>io.js</td>
+                      <td>all</td>
+                      <td>no</td>
+                    </tr>
+                    <tr>
+                      <td>node.js</td>
+                      <td>&lt; 8.x</td>
+                      <td>&gt;= 6.3 (Windows: &gt;= 6.9)</td>
+                    </tr>
+                    <tr>
+                      <td>Electron</td>
+                      <td>&lt; 7.4</td>
+                      <td>&gt;= 7.4</td>
+                    </tr>
+                    <tr>
+                      <td>Chakra</td>
+                      <td>all</td>
+                      <td>not yet</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  Although it appears to be possible that the VS Code Node.js
+                  debugger picks the best protocol always automatically, we've
+                  decided for a 'pessimistic approach' with an explicit launch
+                  configuration attribute <code>protocol</code> and the
+                  following values:
+                </p>
+                <ul>
+                  <li>
+                    <strong><code>auto</code></strong
+                    >: tries to automatically detect the protocol used by the
+                    targeted runtime. For configurations of request type
+                    <code>launch</code> and if no
+                    <code>runtimeExecutable</code> is specified, we try to
+                    determine the version by running node from the PATH with an
+                    <code>--version</code> argument. If the version is &gt;= 8.0
+                    the new 'inspector' protocol is used. For configurations of
+                    request type 'attach' we try to connect with the new
+                    protocol and if this works, we use the 'inspector' protocol.
+                    We only switch to the new 'inspector' protocol for versions
+                    &gt;= 6.9 because of severe problems in earlier versions.
+                  </li>
+                  <li>
+                    <strong><code>inspector</code></strong
+                    >: forces the node debugger to use the 'inspector' protocol
+                    based implementation. This is supported by node versions
+                    &gt;= 6.3, but not (yet) by Electron.
+                  </li>
+                  <li>
+                    <strong><code>legacy</code></strong
+                    >: forces the node debugger to use the 'legacy' protocol
+                    based implementation. This is supported by node versions
+                    &lt; v8.0 and Electron versions &lt; 7.4.
+                  </li>
+                </ul>
+                <p>
+                  Starting with VS Code 1.11 the default value for the
+                  <code>protocol</code> attribute is <code>auto</code>.
+                </p>
+                <p>
+                  If your runtime supports both protocols, here are a few
+                  additional reasons for using the
+                  <code>inspector</code> protocol over <code>legacy</code>:
+                </p>
+                <ul>
+                  <li>
+                    It can be more stable when debugging very large JavaScript
+                    objects. The legacy protocol can become painfully slow when
+                    sending large values between the client and server.
+                  </li>
+                  <li>
+                    If you are using an ES6 Proxy in your app, you can prevent a
+                    Node v7+ runtime from crashing when being debugged via the
+                    <code>inspector</code> protocol. This issue is tracked in
+                    <a href="https://github.com/Microsoft/vscode/issues/12749"
+                      >Microsoft/vscode#12749</a
+                    >.
+                  </li>
+                  <li>
+                    Debugging via the <code>inspector</code> protocol can handle
+                    some trickier source map setups. If you have trouble setting
+                    breakpoints in source mapped files, try using
+                    <code>inspector</code>.
+                  </li>
+                </ul>
+                <p>
+                  We try to keep feature parity between both protocol
+                  implementations but this becomes more and more difficult
+                  because the technology underlying <code>legacy</code> is
+                  deprecated whereas the new <code>inspector</code> evolves
+                  quickly. For this reason, we specify the supported protocols
+                  if a features is not supported by both <code>legacy</code> and
+                  <code>inspector</code>.
+                </p>
+                <h2 id="launch-configuration-attributes">
+                  Launch configuration attributes
+                </h2>
+                <p>
+                  The following attributes are supported in launch
+                  configurations of type <code>launch</code> and
+                  <code>attach</code>:
+                </p>
+                <ul>
+                  <li>
+                    <code>protocol</code> - debug protocol to use. See section
+                    'Supported Node-like Runtimes' above.
+                  </li>
+                  <li>
+                    <code>port</code> - debug port to use. See sections
+                    'Attaching to Node.js' and 'Remote Debugging Node.js'.
+                  </li>
+                  <li>
+                    <code>address</code> - TCP/IP address of the debug port. See
+                    sections 'Attaching to Node.js' and 'Remote Debugging
+                    Node.js'.
+                  </li>
+                  <li>
+                    <code>restart</code> - restart session on termination. See
+                    section 'Restarting debug sessions automatically'.
+                  </li>
+                  <li>
+                    <code>timeout</code> - when restarting a session, give up
+                    after this number of milliseconds. See section 'Attaching to
+                    Node.js'.
+                  </li>
+                  <li>
+                    <code>stopOnEntry</code> - break immediately when the
+                    program launches.
+                  </li>
+                  <li>
+                    <code>localRoot</code> - VS Code's root directory. See
+                    sections 'Remote Debugging Node.js' below.
+                  </li>
+                  <li>
+                    <code>remoteRoot</code> - Node's root directory. See
+                    sections 'Remote Debugging Node.js' below.
+                  </li>
+                  <li>
+                    <code>sourceMaps</code> - enable source maps by setting this
+                    to <code>true</code>. See section 'Source Maps'.
+                  </li>
+                  <li>
+                    <code>outFiles</code> - array of glob patterns to look for
+                    in JavaScript files. See section 'Source Maps'.
+                  </li>
+                  <li>
+                    <code>smartStep</code>- try to automatically step over code
+                    that doesn't map to source files. See section 'Smart
+                    Stepping'.
+                  </li>
+                  <li>
+                    <code>skipFiles</code> - automatically skip files covered by
+                    these glob patterns. See section 'Skipping Uninteresting
+                    Code'.
+                  </li>
+                  <li>
+                    <code>trace</code> - enable diagnostic output. Set to
+                    <code>"all"</code> for verbose output.
+                  </li>
+                </ul>
+                <p>
+                  These attributes are only available for launch configurations
+                  of request type <code>launch</code>:
+                </p>
+                <ul>
+                  <li>
+                    <code>program</code> - an absolute path to the Node.js
+                    program to debug.
+                  </li>
+                  <li>
+                    <code>args</code> - arguments passed to the program to
+                    debug. This attribute is of type array and expects
+                    individual arguments as array elements.
+                  </li>
+                  <li>
+                    <code>cwd</code> - launch the program to debug in this
+                    directory.
+                  </li>
+                  <li>
+                    <code>runtimeExecutable</code> - absolute path to the
+                    runtime executable to be used. Default is <code>node</code>.
+                    See section 'Launch configuration support for 'npm' and
+                    other tools'.
+                  </li>
+                  <li>
+                    <code>runtimeArgs</code> - optional arguments passed to the
+                    runtime executable.
+                  </li>
+                  <li>
+                    <code>env</code> - optional environment variables. This
+                    attribute expects environment variables as a list of string
+                    typed key/value pairs.
+                  </li>
+                  <li>
+                    <code>envFile</code> - optional path to a file containing
+                    environment variable definitions.
+                  </li>
+                  <li>
+                    <code>console</code> - kind of console to launch the
+                    program, e.g. <code>internalConsole</code>,
+                    <code>integratedTerminal</code>,
+                    <code>externalTerminal</code>. See section 'Node Console'
+                    below.
+                  </li>
+                </ul>
+                <p>
+                  This attribute is only available for launch configurations of
+                  request type <code>attach</code>:
+                </p>
+                <ul>
+                  <li>
+                    <code>processId</code> - the debugger tries to attach to
+                    this process after having sent a USR1 signal. With this
+                    setting, the debugger can attach to an already running
+                    process that was not started in debug mode. When using the
+                    <code>processId</code> attribute the debug port is
+                    determined automatically based on the node.js version (and
+                    the used protocol) and cannot be configured explicitely. So
+                    don't specify a <code>port</code> attribute.
+                  </li>
+                </ul>
+                <h3 id="launch-configuration-snippets-for-common-scenarios">
+                  Launch configuration snippets for common scenarios
+                </h3>
+                <p>
+                  You can use IntelliSense to add launch configuration snippets
+                  for commonly used Node.js debugging scenarios to the
+                  launch.json.
+                </p>
+                <p>
+                  <img
+                    alt="Launch configuration snippets for node.js"
+                    src="../images/nodejs-debugging/launch-snippets.png"
+                  />
+                </p>
+                <p>Here is the list of all snippets:</p>
+                <ul>
+                  <li>
+                    <strong>Launch Program</strong>: Launch a node.js program in
+                    debug mode. The snippet asks you to enter the name of the
+                    program file.
+                  </li>
+                  <li>
+                    <strong>Launch via NPM</strong>: Launch a node program
+                    through an npm 'debug' script. If you have defined an npm
+                    debug script in your package.json, you can use this directly
+                    from your launch configuration. Make sure that the debug
+                    port used in the npm script, corresponds to the port
+                    specified in the snippet.
+                  </li>
+                  <li>
+                    <strong>Attach</strong>: Attach to the debug port of a
+                    locally running Node.js program. Make sure that the Node.js
+                    program to debug has been started in debug mode and the
+                    debug port used is the same as the one specified in the
+                    snippet.
+                  </li>
+                  <li>
+                    <strong>Attach to Remote Program</strong>: Attach to the
+                    debug port of a Node.js program running on the host
+                    specified by the <code>address</code> attribute. Make sure
+                    that the Node.js program to debug has been started in debug
+                    mode and the debug port used is the same as the one
+                    specified in the snippet. To help VS Code mapping source
+                    files between your workspace and the filesystem of the
+                    remote host, make sure to specify correct paths for the
+                    <code>localRoot</code>and
+                    <code>remoteRoot</code> attributes.
+                  </li>
+                  <li>
+                    <strong>Attach by Process ID</strong>: Open the process
+                    picker to select a node or gulp process for debugging. With
+                    this launch configuration you can even attach to a node or
+                    gulp process that was not started in debug mode.
+                  </li>
+                  <li>
+                    <strong>Nodemon Setup</strong>: Use nodemon to relaunch a
+                    debug session automatically whenever the JavaScript source
+                    has changed. Make sure that you have nodemon installed
+                    globally. Please note that terminating the debug session
+                    only terminates the program to debug, not nodemon itself. To
+                    terminate nodemon, press Control-C in the integrated
+                    terminal.
+                  </li>
+                  <li>
+                    <strong>Mocha Tests</strong>: Debug mocha tests in a
+                    <code>test</code> folder of your project. Make sure that
+                    your project has 'mocha' installed in its node_modules
+                    folder.
+                  </li>
+                  <li>
+                    <strong>Yeoman generator</strong>: Debug a yeoman generator.
+                    The snippet asks you to specify the name of the generator.
+                    Make sure that your project has 'yo' installed in its
+                    node_modules folder and that your generated project has been
+                    installed for debugging by running <code>npm link</code> in
+                    the project folder.
+                  </li>
+                  <li>
+                    <strong>Gulp task</strong>: Debug a gulp task. The snippet
+                    asks you to specify the name of the gulp task. Make sure
+                    that your project has 'gulp' installed in its node_modules
+                    folder.
+                  </li>
+                  <li>
+                    <strong>Electron Main</strong>: Debug the main node.js
+                    process of an Electron application. The snippet assumes that
+                    the Electron executable has been installed inside the
+                    <code>node_modules/.bin</code> directory of the workspace.
+                  </li>
+                </ul>
+                <h2 id="node-console">Node console</h2>
+                <p>
+                  By default, Node.js debug sessions launch the target in the
+                  internal VS Code Debug Console. Since the Debug Console does
+                  not support programs that need to read input from the console,
+                  you can enable either an external terminal or use the VS Code
+                  Integrated Terminal by setting the
+                  <code>console</code> attribute in your launch configuration to
+                  <code>externalTerminal</code> or
+                  <code>integratedTerminal</code> respectively. The default is
+                  <code>internalConsole</code>.
+                </p>
+                <p>
+                  If an external terminal is used, you can configure which
+                  terminal program to use via the
+                  <code>terminal.external.windowsExec</code>,
+                  <code>terminal.external.osxExec</code>, and
+                  <code>terminal.external.linuxExec</code> settings.
+                </p>
+                <h2 id="launch-configuration-support-for-npm-and-other-tools">
+                  Launch configuration support for 'npm' and other tools
+                </h2>
+                <p>
+                  Instead of launching the Node.js program directly with node,
+                  you can use 'npm' scripts or other task runner tools directly
+                  from a launch configuration:
+                </p>
+                <ul>
+                  <li>
+                    Any program available on the PATH (for example 'npm',
+                    'mocha', 'gulp', etc.) can be used for the
+                    <code>runtimeExecutable</code> attribute and arguments can
+                    be passed via <code>runtimeArgs</code>.
+                  </li>
+                  <li>
+                    You do not have to set the <code>program</code> attribute if
+                    your npm script or other tool implicitly specifies the
+                    program to launch.
+                  </li>
+                  <li>
+                    If you specify a debug port via the
+                    <code>port</code> attribute, VS Code will not automatically
+                    add the <code>--inspect-brk=nnnn</code> attribute because
+                    the debug port is typically specified by the npm script or
+                    other tool as well.
+                  </li>
+                </ul>
+                <p>
+                  Let's look at an 'npm' example. If your
+                  <code>package.json</code> has a 'debug' script, for example:
+                </p>
+                <pre><code class="json">  &quot;scripts&quot;: {
+    &quot;debug&quot;: &quot;node --nolazy --inspect-brk=9229 myProgram.js&quot;
+  },
+</code></pre>
+
+                <p>
+                  the corresponding launch configuration would look like this:
+                </p>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;Launch via NPM&quot;,
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;cwd&quot;: &quot;${workspaceRoot}&quot;,
+    &quot;runtimeExecutable&quot;: &quot;npm&quot;,
+    &quot;runtimeArgs&quot;: [
+        &quot;run-script&quot;, &quot;debug&quot;
+    ],
+    &quot;port&quot;: 9229
+}
+</code></pre>
+
+                <h2 id="load-environment-variables-from-external-file-node">
+                  Load environment variables from external file (node)
+                </h2>
+                <p>
+                  The VS Code Node debugger supports loading environment
+                  variables from a file and passing them to the Node.js runtime.
+                  To use this feature, add an attribute <code>envFile</code> to
+                  your launch configuration and specify the absolute path to the
+                  file containing the environment variables:
+                </p>
+                <pre><code class="json">   //...
+   &quot;envFile&quot;: &quot;${workspaceRoot}/.env&quot;,
+   &quot;env&quot;: { &quot;USER&quot;: &quot;john doe&quot; }
+   //...
+````
+
+Any environment variable specified in the `env` dictionary will override variables loaded from the file.
+
+Here is an example of an `.env` file:
+
+</code></pre>
+
+                <p>USER=doe PASSWORD=abc123</p>
+                <h1 id="a-comment">a comment</h1>
+                <h1 id="an-empty-value">an empty value:</h1>
+                <p>empty=</p>
+                <h1 id="new-lines-expanded-in-quoted-strings">
+                  new lines expanded in quoted strings:
+                </h1>
+                <p>lines="foo\nbar"</p>
+                <pre><code>
+## Attaching to Node.js
+
+If you want to attach the VS Code debugger to a Node.js program, launch Node.js as follows:
+
+</code></pre>
+
+                <p>
+                  node --inspect program.js or node --inspect-brk program.js
+                </p>
+                <pre><code>
+With the `--inspect-brk` option, Node.js stops on the first line of the program.
+
+The corresponding launch configuration looks like this:
+
+```json
+{
+    &quot;name&quot;: &quot;Attach to Process&quot;,
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;attach&quot;,
+    &quot;port&quot;: 9229
+}
+</code></pre>
+
+                <p>
+                  If you want to attach to a Node.js process that hasn't been
+                  started in debug mode, you can do this by specifying the
+                  process ID of the Node.js process as a string:
+                </p>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;Attach to Process&quot;,
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;attach&quot;,
+    &quot;processId&quot;: &quot;53426&quot;,
+    &quot;port&quot;: 9229
+}
+</code></pre>
+
+                <p>
+                  Since it is a bit laborious to repeatedly find the process ID
+                  and enter it in the launch configuration, node debug supports
+                  a command variable <code>PickProcess</code> that binds to a
+                  process picker that lets you conveniently pick the process
+                  from a list of node or gulp processes:
+                </p>
+                <p>
+                  <img
+                    alt="Process picker"
+                    src="../images/nodejs-debugging/process-picker.png"
+                  />
+                </p>
+                <p>
+                  By using the <code>PickProcess</code> variable the launch
+                  configuration looks like this:
+                </p>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;Attach to Process&quot;,
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;attach&quot;,
+    &quot;processId&quot;: &quot;${command:PickProcess}&quot;,
+    &quot;port&quot;: 9229
+}
+</code></pre>
+
+                <h2 id="remote-debugging">Remote debugging</h2>
+                <p>
+                  The Node.js debugger supports remote debugging for versions of
+                  Node.js &gt;= 4.x. Specify a remote host via the
+                  <code>address</code> attribute.
+                </p>
+                <p>
+                  By default, VS Code will stream the debugged source from the
+                  remote Node.js folder to the local VS Code and show it in a
+                  read-only editor. You can step through this code, but cannot
+                  modify it. If you want VS Code to open the editable source
+                  from your workspace instead, you can setup a mapping between
+                  the remote and local locations. A <code>localRoot</code> and a
+                  <code>remoteRoot</code> attribute can be used to map paths
+                  between a local VS Code project and a (remote) Node.js folder.
+                  This works even locally on the same system or across different
+                  operating systems. Whenever a code path needs to be converted
+                  from the remote Node.js folder to a local VS Code path, the
+                  <code>remoteRoot</code> path is stripped off the path and
+                  replaced by <code>localRoot</code>. For the reverse
+                  conversion, the <code>localRoot</code> path is replaced by the
+                  <code>remoteRoot</code>.
+                </p>
+                <h2 id="access-loaded-scripts">Access Loaded Scripts</h2>
+                <p>
+                  If you need to set a breakpoint in a script that is not part
+                  of your workspace and therefore cannot be easily located and
+                  opened through normal VS Code file browsing, you can access
+                  the loaded scripts via the
+                  <strong>LOADED SCRIPTS</strong> view in the debug viewlet:
+                </p>
+                <p>
+                  <img
+                    alt="Loaded Scripts Explorer"
+                    src="../images/nodejs-debugging/loaded-scripts-explorer.gif"
+                  />
+                </p>
+                <p>
+                  Alternatively you can use the
+                  <strong>Debug: Open Loaded Script</strong> action
+                  (<code>kb(extension.node-debug.pickLoadedScript)</code>) which
+                  opens a Quick Pick, where you can filter and select the script
+                  to open.
+                </p>
+                <p>
+                  <img
+                    alt="Opening Loaded Script with Quick Pick"
+                    src="../images/nodejs-debugging/loaded-scripts.gif"
+                  />
+                </p>
+                <p>
+                  Scripts are loaded into a read-only editor where you can set
+                  breakpoints. These breakpoints are remembered across debug
+                  sessions but you only have access to the script content while
+                  a debug session is running.
+                </p>
+                <h2
+                  id="restarting-debug-sessions-automatically-when-source-is-edited"
+                >
+                  Restarting debug sessions automatically when source is edited
+                </h2>
+                <p>
+                  The <code>restart</code> attribute of a launch configuration
+                  controls whether the Node.js debugger automatically restarts
+                  after the debug session has ended. This feature is useful if
+                  you use
+                  <a href="https://nodemon.io/"><strong>nodemon</strong></a> to
+                  restart Node.js on file changes. Setting the launch
+                  configuration attribute <code>restart</code> to
+                  <code>true</code> makes the node debugger automatically try to
+                  re-attach to Node.js after Node.js has terminated.
+                </p>
+                <p>
+                  If you have started your program <code>server.js</code> via
+                  <strong>nodemon</strong> on the command line like this:
+                </p>
+                <pre><code class="bash">nodemon --inspect server.js
+</code></pre>
+
+                <p>
+                  you can attach the VS Code debugger to it with the following
+                  launch configuration:
+                </p>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;Attach to node&quot;,
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;attach&quot;,
+    &quot;restart&quot;: true,
+    &quot;port&quot;: 9229
+}
+</code></pre>
+
+                <p>
+                  Alternatively you can start your program
+                  <code>server.js</code> via <strong>nodemon</strong> directly
+                  with a launch config and attach the VS Code debugger:
+                </p>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;Launch server.js via nodemon&quot;,
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;runtimeExecutable&quot;: &quot;nodemon&quot;,
+    &quot;program&quot;: &quot;${workspaceRoot}/server.js&quot;,
+    &quot;restart&quot;: true,
+    &quot;console&quot;: &quot;integratedTerminal&quot;,
+    &quot;internalConsoleOptions&quot;: &quot;neverOpen&quot;
+}
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> Pressing the
+                    <strong>Stop</strong> button stops the debug session and
+                    disconnects from Node.js, but <strong>nodemon</strong> (and
+                    Node.js) will continue to run. To stop
+                    <strong>nodemon</strong>, you will have to kill it from the
+                    command line (which is easily possible if you use the
+                    <code>integratedTerminal</code> as shown above).
+                  </p>
+                  <p>
+                    <strong>Tip:</strong> In case of syntax errors,
+                    <strong>nodemon</strong> will not be able to start Node.js
+                    successfully until the error has been fixed. In this case,
+                    VS Code will continue trying to attach to Node.js but
+                    eventually give up (after 10 seconds). To avoid this, you
+                    can increase the timeout by adding a
+                    <code>timeout</code> attribute with a larger value (in
+                    milliseconds).
+                  </p>
+                </blockquote>
+                <h2 id="restart-frame-node">Restart frame (node)</h2>
+                <p>
+                  The Node debugger supports restarting execution at a stack
+                  frame. This can be useful in situations where you have found a
+                  problem in your source code and you want to rerun a small
+                  portion of the code with modified input values. Stopping and
+                  then restarting the full debug session can be very
+                  time-consuming. The <strong>Restart Frame</strong> action
+                  allows you to re-enter the current function after you have
+                  changed variables with the <strong>Set Value</strong> action:
+                </p>
+                <p>
+                  <img
+                    alt="restart frame"
+                    src="../../../../../az754404.vo.msecnd.net/public/restartFrame.gif"
+                  />
+                </p>
+
+                <p>
+                  Note that <strong>Restart Frame</strong> won't unroll any
+                  state changes, so it may not always work as expected.
+                </p>
+                <p>
+                  Make sure to use a Node.js version &gt;= 5.11 since earlier
+                  versions do not work in all situations.
+                </p>
+                <h2 id="function-breakpoints">Function breakpoints</h2>
+                <p>
+                  The Node.js debugger supports function breakpoints but their
+                  usefulness is limited because:
+                </p>
+                <ul>
+                  <li>
+                    Function breakpoints only work for global, non-native
+                    functions.
+                  </li>
+                  <li>
+                    Function breakpoints can only be created if the function has
+                    been defined (and has been seen by the debugger).
+                  </li>
+                </ul>
+                <h2 id="breakpoint-hit-counts">Breakpoint hit counts</h2>
+                <p>
+                  The 'hit count condition' controls how many times a breakpoint
+                  needs to be hit before it will 'break' execution. The hit
+                  count syntax supported by the Node.js debugger is either an
+                  integer or one of the operators <code>&lt;</code>,
+                  <code>&lt;=</code>, <code>==</code>, <code>&gt;</code>,
+                  <code>&gt;=</code>, <code>%</code> followed by an integer.
+                </p>
+                <p>Some examples:</p>
+                <ul>
+                  <li><code>&gt;10</code> break always after 10 hits</li>
+                  <li><code>&lt;3</code> break on the first two hits only</li>
+                  <li><code>10</code> same as <code>&gt;=10</code></li>
+                  <li><code>%2</code> break on every other hit</li>
+                </ul>
+                <h2 id="breakpoint-validation">Breakpoint validation</h2>
+                <p>
+                  For performance reasons, Node.js parses the functions inside
+                  JavaScript files lazily on first access. As a consequence,
+                  breakpoints don't work in source code areas that haven't been
+                  seen (parsed) by Node.js.
+                </p>
+                <p>
+                  Since this behavior is not ideal for debugging, VS Code passes
+                  the <code>--nolazy</code> option to Node.js automatically.
+                  This prevents the delayed parsing and ensures that breakpoints
+                  can be validated before running the code (so they no longer
+                  "jump").
+                </p>
+                <p>
+                  Since the <code>--nolazy</code> option might increase the
+                  start-up time of the debug target significantly, you can
+                  easily opt out by passing a <code>--lazy</code> as a
+                  <code>runtimeArgs</code> attribute.
+                </p>
+                <p>
+                  When doing so you will find that some of your breakpoints
+                  don't "stick" to the line requested but instead "jump" for the
+                  next possible line in already-parsed code. To avoid confusion,
+                  VS Code always shows breakpoints at the location where Node.js
+                  thinks the breakpoint is. In the
+                  <strong>BREAKPOINTS</strong> section, these breakpoints are
+                  shown with an arrow between requested and actual line number:
+                </p>
+                <p>
+                  <img
+                    alt="Breakpoints View"
+                    src="../images/nodejs-debugging/breakpointsvalidation.png"
+                  />
+                </p>
+                <p>
+                  This breakpoint validation occurs when a session starts and
+                  the breakpoints are registered with Node.js, or when a session
+                  is already running and a new breakpoint is set. In this case,
+                  the breakpoint may "jump" to a different location. After
+                  Node.js has parsed all the code (e.g. by running through it),
+                  breakpoints can be easily re-applied to the requested
+                  locations with the <strong>Reapply</strong> button in the
+                  <strong>BREAKPOINTS</strong> section header. This should make
+                  the breakpoints "jump back" to the requested location.
+                </p>
+                <p>
+                  <img
+                    alt="Breakpoint Actions"
+                    src="../images/nodejs-debugging/breakpointstoolbar.png"
+                  />
+                </p>
+                <h2 id="skipping-uninteresting-code-node-chrome">
+                  Skipping uninteresting code (node, chrome)
+                </h2>
+                <p>
+                  VS Code Node.js debugging has a feature to avoid code that you
+                  don't want to step through (AKA 'Just My Code'). This feature
+                  can be enabled with the <code>skipFiles</code> attribute in
+                  your launch configuration. <code>skipFiles</code> is an array
+                  of glob patterns for script paths to skip.
+                </p>
+                <p>For example using:</p>
+                <pre><code class="typescript">  &quot;skipFiles&quot;: [
+    &quot;${workspaceRoot}/node_modules/**/*.js&quot;,
+    &quot;${workspaceRoot}/lib/**/*.js&quot;
+  ]
+</code></pre>
+
+                <p>
+                  all code in the <code>node_modules</code> and
+                  <code>lib</code> folders in your project will be skipped.
+                </p>
+                <p>
+                  Built-in <strong>core modules</strong> of Node.js can be
+                  referred to by the 'magic name'
+                  <code>&lt;node_internals&gt;</code> in a glob pattern. The
+                  following example skips all internal modules:
+                </p>
+                <pre><code class="json">  &quot;skipFiles&quot;: [
+     &quot;&lt;node_internals&gt;/**/*.js&quot;
+   ]
+</code></pre>
+
+                <p>The exact 'skipping' rules are as follows:</p>
+                <ul>
+                  <li>
+                    If you step into a skipped file, you won't stop there - you
+                    will stop on the next executed line that is not in a skipped
+                    file.
+                  </li>
+                  <li>
+                    If you have set the option to break on thrown exceptions,
+                    then you won't break on exceptions thrown from skipped
+                    files.
+                  </li>
+                  <li>
+                    If you set a breakpoint in a skipped file, you will stop at
+                    that breakpoint, and you will be able to step through it
+                    until you step out of it, at which point normal skipping
+                    behavior will resume.
+                  </li>
+                </ul>
+                <p>
+                  Skipped source is shown in a 'dimmed' style in the CALL STACK
+                  view:
+                </p>
+                <p>
+                  <img
+                    alt="Skipped source is dimmed in call stack view"
+                    src="../images/nodejs-debugging/dimmed-callstack.png"
+                  />
+                </p>
+                <p>
+                  Hovering over the dimmed entries explains why the stack frame
+                  is dimmed.
+                </p>
+                <p>
+                  A context menu item on the call stack,
+                  <strong>Toggle skipping this file</strong> enables you to
+                  easily skip a file at runtime without adding it to your launch
+                  config. This option only persists for the current debugging
+                  session. You can also use it to stop skipping a file that is
+                  skipped by the <code>skipFiles</code> option in your launch
+                  config.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> The <code>legacy</code> protocol
+                    debugger supports negative glob patterns, but they must
+                    <strong>follow</strong> a positive pattern: positive
+                    patterns add to the set of skipped files, while negative
+                    patterns subtract from that set.
+                  </p>
+                </blockquote>
+                <p>
+                  In the following (<code>legacy</code> protocol-only) example
+                  all but a 'math' module is skipped:
+                </p>
+                <pre><code class="typescript">&quot;skipFiles&quot;: [
+    &quot;${workspaceRoot}/node_modules/**/*.js&quot;,
+    &quot;!${workspaceRoot}/node_modules/math/**/*.js&quot;
+]
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> The <code>legacy</code> protocol
+                    debugger has to emulate the <code>skipFiles</code> feature
+                    because the <em>V8 Debugger Protocol</em> does not support
+                    it natively. This might result in slow stepping performance.
+                  </p>
+                </blockquote>
+                <h2 id="source-maps">Source maps</h2>
+                <p>
+                  The Node.js debugger of VS Code supports JavaScript Source
+                  Maps which help debugging of transpiled languages, e.g.
+                  TypeScript or minified/uglified JavaScript. With source maps,
+                  it is possible to single step through or set breakpoints in
+                  the original source. If no source map exists for the original
+                  source or if the source map is broken and cannot successfully
+                  map between the source and the generated JavaScript, then
+                  breakpoints show up as unverified (gray hollow circles).
+                </p>
+                <p>Source maps can be generated with two kinds of inlining:</p>
+                <ul>
+                  <li>
+                    <em>Inlined source maps</em>: the generated JavaScript file
+                    contains the source map as a data URI at the end (instead of
+                    referencing the source map through a file URI).
+                  </li>
+                  <li>
+                    <em>Inlined source</em>: the source map contains the
+                    original source (instead of referencing the source through a
+                    path).
+                  </li>
+                </ul>
+                <p>
+                  VS Code supports both the <em>inlined source maps</em> and the
+                  <em>inlined source</em>.
+                </p>
+                <p>
+                  The source map feature is controlled by the
+                  <code>sourceMaps</code> attribute which defaults to
+                  <code>true</code> starting with VS Code 1.9.0. This means that
+                  node debugging always tries to use source maps (if it can find
+                  any) and as a consequence you can even specify a source file
+                  (e.g. app.ts) with the <code>program</code> attribute.
+                </p>
+                <p>
+                  If you need to disable source maps for some reason, you can
+                  set the <code>sourceMaps</code> attribute to
+                  <code>false</code>.
+                </p>
+                <p>
+                  If the generated (transpiled) JavaScript files do not live
+                  next to their source but in a separate directory, you must
+                  help the VS Code debugger locating them by setting the
+                  <code>outFiles</code> attribute. This attribute takes multiple
+                  glob patterns for including and excluding files from the set
+                  of generated JavaScript files. Whenever you set a breakpoint
+                  in the original source, VS Code tries to find the generated
+                  JavaScript code in the files specified by
+                  <code>outFiles</code>.
+                </p>
+                <p>
+                  Since source maps are not automatically created, you must
+                  configure the transpiler you are using to create them. For
+                  TypeScript this can be done in the following way:
+                </p>
+                <pre><code>tsc --sourceMap --outDir bin app.ts
+</code></pre>
+
+                <p>
+                  This is the corresponding launch configuration for a
+                  TypeScript program:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;name&quot;: &quot;Launch TypeScript&quot;,
+            &quot;type&quot;: &quot;node&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;program&quot;: &quot;app.ts&quot;,
+            &quot;outFiles&quot;: [ &quot;${workspaceRoot}/bin/**/*.js&quot; ]
+        }
+    ]
+}
+</code></pre>
+
+                <h3 id="smart-stepping">Smart stepping</h3>
+                <p>
+                  With the <code>smartStep</code> attribute set to
+                  <code>true</code> in a launch configuration, VS Code will
+                  automatically skip 'uninteresting code' when stepping through
+                  code in the debugger. 'Uninteresting code' is code that is
+                  generated by a transpiling process but is not covered by a
+                  source map so it does not map back to the original source.
+                  This code gets in your way when stepping through source code
+                  in the debugger because it makes the debugger switch between
+                  the original source code and generated code that you are not
+                  really interested in. <code>smartStep</code> will
+                  automatically step through code not covered by a source map
+                  until it reaches a location that is covered by a source map
+                  again.
+                </p>
+                <p>
+                  This is especially useful for cases like async/await
+                  downcompilation in TypeScript, where the compiler injects
+                  helper code that is not covered by a source map.
+                </p>
+                <h3 id="javascript-source-map-tips">
+                  JavaScript source map tips
+                </h3>
+                <p>
+                  A common issue when debugging with source maps is that you'll
+                  set a breakpoint, and it will turn gray. If you hover the
+                  cursor over it, you'll see the message,
+                  <code
+                    >"Breakpoint ignored because generated code not found
+                    (source map problem?)"</code
+                  >. What now? There are a range of issues that can lead to
+                  this. First, a quick explanation of how the Node debug adapter
+                  handles source maps.
+                </p>
+                <p>
+                  When you set a breakpoint in <code>app.ts</code>, the debug
+                  adapter has to figure out the path to <code>app.js</code>, the
+                  transpiled version of your TypeScript file, which is what is
+                  actually running in Node. But, there is not a straightforward
+                  way to figure this out starting from the
+                  <code>.ts</code> file. Instead, the debug adapter uses the
+                  <code>outFiles</code> attribute in the
+                  <code>launch.json</code> to find all the transpiled
+                  <code>.js</code> files, and parses them for a source map,
+                  which contains the locations of its associated
+                  <code>.ts</code> files.
+                </p>
+                <p>
+                  When you build your <code>app.ts</code> file in TypeScript
+                  with source maps enabled, it either produces an
+                  <code>app.js.map</code> file, or a source map inlined as a
+                  base64-encoded string in a comment at the bottom of the
+                  <code>app.js</code> file. To find the <code>.ts</code> files
+                  associated with this map, the debug adapter looks at two
+                  properties in the source map, <code>sources</code>, and
+                  <code>sourceRoot</code>. <code>sourceRoot</code> is optional -
+                  if present, it is prepended to each path in
+                  <code>sources</code>, which is an array of paths. The result
+                  is an array of absolute or relative paths to
+                  <code>.ts</code> files. Relative paths are resolved relative
+                  to the source map.
+                </p>
+                <p>
+                  Finally, the debug adapter searches for the full path of
+                  <code>app.ts</code> in this resulting list of
+                  <code>.ts</code> files. If there's a match, it has found the
+                  source map file to use when mapping <code>app.ts</code> to
+                  <code>app.js</code>. If there is no match, then it can't bind
+                  the breakpoint, and it will turn gray.
+                </p>
+                <p>
+                  Here are some things to try when your breakpoints turn gray:
+                </p>
+                <ul>
+                  <li>
+                    Do you have <code>"sourceMaps": false</code> in your
+                    <code>launch.json</code>?
+                  </li>
+                  <li>
+                    Did you build with source maps enabled? Are there
+                    <code>.js.map</code> files, or inlined source maps in your
+                    <code>.js</code> files?
+                  </li>
+                  <li>
+                    Did you set the <code>outFiles</code> property in your
+                    <code>launch.json</code>? It should be a glob pattern for an
+                    absolute path that matches your <code>.js</code> files.
+                  </li>
+                  <li>
+                    Try the 'inspector' protocol implementation. It can handle
+                    some more of the more complex source map cases.
+                  </li>
+                  <li>
+                    Are the <code>sourceRoot</code> and
+                    <code>sources</code> properties in your source map correct?
+                    Can they be combined to get the correct path to the
+                    <code>.ts</code> file?
+                  </li>
+                  <li>
+                    Are you using Webpack? By default, it outputs paths with a
+                    <code>webpack:///</code> prefix, which the debug adapter
+                    can't resolve. You can change this in your Webpack
+                    configuration with the
+                    <code>devtoolModuleFilenameTemplate</code> option, or try
+                    using the 'inspector' protocol, which provides some extra
+                    options for resolving these paths.
+                  </li>
+                  <li>
+                    Have you opened the folder in VS Code with the incorrect
+                    case? It's possible to open folder <code>foo/</code> from
+                    the command line like <code>code FOO</code> in which case
+                    source maps may not be resolved correctly.
+                  </li>
+                  <li>
+                    Try searching for help with your particular setup on Stack
+                    Overflow or by filing an issue on GitHub.
+                  </li>
+                  <li>
+                    Try adding a <code>debugger</code> statement. If it breaks
+                    into the <code>.ts</code> file there, but breakpoints at
+                    that spot don't bind, that is useful information to include
+                    with a GitHub issue.
+                  </li>
+                </ul>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>
+                  In case you didn't already read the Node.js section, take a
+                  look at:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/nodejs/nodejs-tutorial.md"
+                      >Node.js</a
+                    >
+                    - End to end Node scenario with a sample application
+                  </li>
+                </ul>
+                <p>
+                  To see a tutorial on the basics of Node.js debugging, check
+                  out:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/introvideos/debugging.md"
+                      >Intro Video - Debugging</a
+                    >
+                    - Introductory video showcasing the basics of debugging.
+                  </li>
+                </ul>
+                <p>To learn about VS Code's task running support, go to:</p>
+                <ul>
+                  <li>
+                    <a href="https://vscode.readthedocs.io/docs/editor/tasks.md"
+                      >Tasks</a
+                    >
+                    - Running tasks with Gulp, Grunt and Jake. Showing Errors
+                    and Warnings
+                  </li>
+                </ul>
+                <p>To write your own debugger extension, visit:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/example-debuggers.md"
+                      >Debuggers</a
+                    >
+                    - Steps to create a VS Code debug extension starting from a
+                    mock sample
+                  </li>
+                </ul>
+                <h2 id="common-questions">Common Questions</h2>
+                <p>
+                  <strong
+                    >Q: What Node.js version is required for Node.js
+                    debugging?</strong
+                  >
+                </p>
+                <p>
+                  <strong>A:</strong> The latest LTS version of
+                  <a href="https://nodejs.org/">Node.js</a> is recommended.
+                </p>
+                <p>
+                  <strong
+                    >Q: Can I use nvm (Node Version Manager) with VS
+                    Code?</strong
+                  >
+                </p>
+                <p>
+                  <strong>A:</strong> Yes. If you are managing Node.js versions
+                  with <code>nvm</code>, make sure to restart VS Code after you
+                  have set a Node.js version with
+                  <code>nvm use ...</code> because VS Code will not pick up
+                  changes to environment variables (for example
+                  <code>PATH</code>) that occur after it was launched.
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../nodejs-deployment/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Nodejs deployment"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../javascript-transpilers/index.html"
+                  class="btn btn-neutral"
+                  title="Javascript transpilers"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- nodejs/nodejs-debugging/  Sat, 30 Oct 2021 04:58:18 GMT -->
+</html>

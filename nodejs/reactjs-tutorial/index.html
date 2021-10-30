@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- Mirrored from vscode.readthedocs.io/en/latest/nodejs/reactjs-tutorial/  Sat, 30 Oct 2021 04:58:21 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Reactjs tutorial - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Reactjs tutorial";
+      var mkdocs_page_input_path = "nodejs/reactjs-tutorial.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/nodejs/reactjs-tutorial/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extensions/index.html">Extensions</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Reactjs tutorial</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#using-react-in-vs-code"
+                        >Using React in VS Code</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#welcome-to-react"
+                        >Welcome to React</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#hello-world">Hello World!</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#debugging-react"
+                        >Debugging React</a
+                      >
+                    </li>
+
+                    <li><a class="toctree-l4" href="#linting">Linting</a></li>
+
+                    <li>
+                      <a class="toctree-l4" href="#popular-starter-kits"
+                        >Popular Starter Kits</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#common-questions"
+                        >Common Questions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Nodejs &raquo;</li>
+
+                <li>Reactjs tutorial</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="using-react-in-vs-code">Using React in VS Code</h1>
+                <p>
+                  <a href="https://facebook.github.io/react/">React</a> is a
+                  popular JavaScript library developed by Facebook for building
+                  web application user interfaces. The Visual Studio Code editor
+                  supports React.js IntelliSense and code navigation out of the
+                  box.
+                </p>
+                <p>
+                  <img
+                    alt="welcome to react"
+                    src="../images/reactjs/welcome-to-react.png"
+                  />
+                </p>
+                <h2 id="welcome-to-react">Welcome to React</h2>
+                <p>
+                  We'll be using the <code>create-react-app</code>
+                  <a
+                    href="https://facebook.github.io/react/docs/installation.html#creating-a-new-application"
+                    >generator</a
+                  >
+                  for this tutorial. To install and use the generator as well as
+                  run the React application server, you'll need the
+                  <a href="https://nodejs.org/">Node.js</a> JavaScript runtime
+                  and <a href="https://www.npmjs.com/">npm</a> (the Node.js
+                  package manager) installed. npm is included with Node.js which
+                  you can install from
+                  <a href="https://nodejs.org/en/download/">here</a>.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip</strong>: To test that you have Node.js and npm
+                    correctly install on your machine, you can type
+                    <code>node --version</code> and <code>npm --version</code>.
+                  </p>
+                </blockquote>
+                <p>
+                  To install the <code>create-react-app</code> generator, in a
+                  terminal or command prompt type:
+                </p>
+                <pre><code class="bash">npm install -g create-react-app
+</code></pre>
+
+                <p>
+                  This may take a few minutes to install. You can now create a
+                  new React application by typing:
+                </p>
+                <pre><code class="bash">create-react-app my-app
+</code></pre>
+
+                <p>
+                  where <code>my-app</code> is the name of the folder for your
+                  application. This may take a few minutes to create the React
+                  application and install it's dependencies.
+                </p>
+                <p>
+                  Let's quickly run our React application by navigating to the
+                  new folder and typing <code>npm start</code> to start the web
+                  server and open the application in a browser:
+                </p>
+                <pre><code class="bash">cd my-app
+npm start
+</code></pre>
+
+                <p>
+                  You should see "Welcome to React" on
+                  <code>http://localhost:3000</code> in your browser. We'll
+                  leave the web server running while we look at the application
+                  with VS Code.
+                </p>
+                <p>
+                  To open your React application in VS Code, open another
+                  terminal (or command prompt) and navigate to the
+                  <code>my-app</code> folder and type <code>code .</code>:
+                </p>
+                <pre><code class="bash">cd my-app
+code .
+</code></pre>
+
+                <h3 id="markdown-preview">Markdown Preview</h3>
+                <p>
+                  In the File Explorer, one file you'll see is the application
+                  <code>README.md</code> Markdown file. This has lots of great
+                  information about the application and React in general. A nice
+                  way to review the README is by using the VS Code
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/markdown.md#markdown-preview"
+                    >Markdown Preview</a
+                  >. You can open the preview in either the current editor group
+                  (<strong>Markdown: Open Preview</strong>
+                  <code>kb(markdown.showPreview)</code>) or in a new editor
+                  group to the side (<strong
+                    >Markdown: Open Preview to the Side</strong
+                  >
+                  <code>kb(markdown.showPreviewToSide)</code>). You'll get nice
+                  formatting, hyperlink navigation to headers, and syntax
+                  highlighting in code blocks.
+                </p>
+                <p>
+                  <img
+                    alt="README markdown preview"
+                    src="../images/reactjs/markdown-preview.png"
+                  />
+                </p>
+                <h3 id="syntax-highlighting-and-bracket-matching">
+                  Syntax highlighting and bracket matching
+                </h3>
+                <p>
+                  Now expand the <code>src</code> folder and select the
+                  <code>index.js</code> file. You'll notice that VS Code has
+                  syntax highlighting for the various source code elements and,
+                  if you put the cursor on a parentheses, the matching bracket
+                  is also selected.
+                </p>
+                <p>
+                  <img
+                    alt="react bracket matching"
+                    src="../images/reactjs/bracket-matching.png"
+                  />
+                </p>
+                <h3 id="intellisense">IntelliSense</h3>
+                <p>
+                  As you start typing in <code>index.js</code>, you'll see smart
+                  suggestions or completions.
+                </p>
+                <p>
+                  <img
+                    alt="react suggestions"
+                    src="../images/reactjs/suggestions.png"
+                  />
+                </p>
+                <p>
+                  After you select a suggestion and type <code>.</code>, you see
+                  the types and methods on the object through
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/intellisense.md"
+                    >IntelliSense</a
+                  >.
+                </p>
+                <p>
+                  <img
+                    alt="react intellisense"
+                    src="../images/reactjs/intellisense.png"
+                  />
+                </p>
+                <p>
+                  VS Code uses the TypeScript language service for it's
+                  JavaScript code intelligence and it has a feature called
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/javascript.md#automatic-type-acquisition"
+                    >Automatic Type Acquisition</a
+                  >
+                  (ATA). ATA pulls down the npm Type Declaration files
+                  (<code>*.d.ts</code>) for the npm modules referenced in the
+                  <code>package.json</code>.
+                </p>
+                <p>If you select a method, you'll also get parameter help:</p>
+                <p>
+                  <img
+                    alt="react parameter help"
+                    src="../images/reactjs/parameter-help.png"
+                  />
+                </p>
+                <h3 id="go-to-definition-peek-definition">
+                  Go to Definition, Peek definition
+                </h3>
+                <p>
+                  Through the TypeScript language service, VS Code can also
+                  provide type definition information in the editor through
+                  <strong>Go to Definition</strong>
+                  (<code>kb(editor.action.gotodeclaration)</code>) or
+                  <strong>Peek Definition</strong>
+                  (<code>kb(editor.action.peekImplementation)</code>). Put the
+                  cursor over the <code>App</code>, right click and select
+                  <strong>Peek Definition</strong>. A
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/editingevolved.md#peek"
+                    >Peek window</a
+                  >
+                  will open showing the <code>App</code> definition from
+                  <code>App.js</code>.
+                </p>
+                <p>
+                  <img
+                    alt="react peek definition"
+                    src="../images/reactjs/peek-definition.png"
+                  />
+                </p>
+                <p>
+                  Press <code>kbstyle(Escape)</code> to close the Peek window.
+                </p>
+                <h2 id="hello-world">Hello World!</h2>
+                <p>
+                  Let's update the sample application to "Hello World!". Add the
+                  link to declare a new H1 header and replace the
+                  <code>&lt;App /&gt;</code> tag in
+                  <code>ReactDOM.render</code> with <code>element</code>.
+                </p>
+                <pre><code class="js">import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import './index.css';
+
+var element = React.createElement('h1', { className: 'greeting' }, 'Hello, world!');
+ReactDOM.render(element, document.getElementById('root'));
+registerServiceWorker();
+</code></pre>
+
+                <p>
+                  Once you save the <code>index.js</code> file, the running
+                  instance of the server will update the web page and you'll see
+                  "Hello World!".
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip</strong>: VS Code supports Auto Save, which by
+                    default saves your files after a delay. Check the
+                    <strong>Auto Save</strong> option in the
+                    <strong>File</strong> menu to turn on Auto Save or directly
+                    configure the <code>files.autoSave</code> user
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                      >setting</a
+                    >.
+                  </p>
+                </blockquote>
+                <p>
+                  <img
+                    alt="hello world"
+                    src="../images/reactjs/hello-world.png"
+                  />
+                </p>
+                <h2 id="debugging-react">Debugging React</h2>
+                <p>
+                  To debug the client side React code, we'll need to install the
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome"
+                    >Debugger for Chrome</a
+                  >
+                  extension.
+                </p>
+                <blockquote>
+                  <p>
+                    Note: This tutorial assumes you have the Chrome browser
+                    installed. The builders of the Debugger for Chrome extension
+                    also have versions for the
+                    <a
+                      href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-ios-web"
+                      >Safari on iOS</a
+                    >
+                    and
+                    <a
+                      href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge"
+                      >Edge</a
+                    >
+                    browsers.
+                  </p>
+                </blockquote>
+                <p>
+                  Open the Extensions view
+                  (<code>kb(workbench.view.extensions)</code>) and type 'chrome`
+                  in the search box. You'll see several extensions which
+                  reference Chrome.
+                </p>
+                <p>
+                  <img
+                    alt="debugger for chrome"
+                    src="../images/reactjs/debugger-for-chrome.png"
+                  />
+                </p>
+                <p>
+                  Press the <strong>Install</strong> button for
+                  <strong>Debugger for Chrome</strong>. The button will change
+                  to <strong>Installing</strong> then, after completing the
+                  installation, it will change to <strong>Reload</strong>. Press
+                  <strong>Reload</strong> to restart VS Code and activate the
+                  extension.
+                </p>
+                <h3 id="set-a-breakpoint">Set a breakpoint</h3>
+                <p>
+                  To set a breakpoint in <code>index.js</code>, click on the
+                  gutter to the left of the line numbers. This will set a
+                  breakpoint which will be visible as a red circle.
+                </p>
+                <p>
+                  <img
+                    alt="set a breakpoint"
+                    src="../images/reactjs/breakpoint.png"
+                  />
+                </p>
+                <h3 id="configure-the-chrome-debugger">
+                  Configure the Chrome debugger
+                </h3>
+                <p>
+                  We need to initially configure the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/debugging.md"
+                    >debugger</a
+                  >. To do so, go to the Debug view
+                  (<code>kb(workbench.view.debug)</code>) and click on gear
+                  button to create a <code>launch.json</code> debugger
+                  configuration file. Choose <strong>Chrome</strong> from the
+                  <strong>Select Environment</strong> dropdown. This will create
+                  a <code>launch.json</code> file in a new
+                  <code>.vscode</code> folder in your project which includes
+                  configuration to both launch the website or attach to a
+                  running instance.
+                </p>
+                <p>
+                  We need to make one change for our example: change the port
+                  from <code>8080</code> to <code>3000</code>. Your
+                  <code>launch.json</code> should look like this:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;type&quot;: &quot;chrome&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;Launch Chrome against localhost&quot;,
+            &quot;url&quot;: &quot;http://localhost:3000&quot;,
+            &quot;webRoot&quot;: &quot;${workspaceRoot}&quot;
+        },
+        {
+            &quot;type&quot;: &quot;chrome&quot;,
+            &quot;request&quot;: &quot;attach&quot;,
+            &quot;name&quot;: &quot;Attach to Chrome&quot;,
+            &quot;port&quot;: 9222,
+            &quot;webRoot&quot;: &quot;${workspaceRoot}&quot;
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  Ensure that your development server is running ("npm start").
+                  Then press <code>kb(workbench.action.debug.start)</code> or
+                  the green arrow to launch the debugger and open a new browser
+                  instance. The source code where the breakpoint is set runs on
+                  startup before the debugger was attached so we won't hit the
+                  breakpoint until we refresh the web page. Refresh the page and
+                  you should hit your breakpoint.
+                </p>
+                <p>
+                  <img
+                    alt="hit breakpoint"
+                    src="../images/reactjs/hit-breakpoint.png"
+                  />
+                </p>
+                <p>
+                  You can step through your source code
+                  (<code>kb(workbench.action.debug.stepOver)</code>), inspect
+                  variables such as <code>element</code>, and see the call stack
+                  of the client side React application.
+                </p>
+                <p>
+                  <img
+                    alt="debug variable"
+                    src="../images/reactjs/debug-variable.png"
+                  />
+                </p>
+                <p>
+                  The <strong>Debugger for Chrome</strong> extension README has
+                  lots of information on other configurations, working with
+                  sourcemaps, and troubleshooting. You can review it directly
+                  within VS Code from the <strong>Extensions</strong> view by
+                  clicking on the extension item and opening the
+                  <strong>Details</strong> view.
+                </p>
+                <p>
+                  <img
+                    alt="debugger for chrome readme"
+                    src="../images/reactjs/chrome-debugger-readme.png"
+                  />
+                </p>
+                <h2 id="linting">Linting</h2>
+                <p>
+                  Linters analyze your source code and can warn you about
+                  potential problems before you run your application. The
+                  JavaScript language services included with VS Code has syntax
+                  error checking support by default which you can see in action
+                  in the <strong>Problems</strong> panel (<strong>View</strong>
+                  &gt; <strong>Problems</strong>
+                  <code>kb(workbench.actions.view.problems)</code>).
+                </p>
+                <p>
+                  Try making a small error in your React source code and you'll
+                  see a red squiggle and an error in the
+                  <strong>Problems</strong> panel.
+                </p>
+                <p>
+                  <img
+                    alt="javascript error"
+                    src="../images/reactjs/js-error.png"
+                  />
+                </p>
+                <p>
+                  Linters can provide more sophisticated analysis, enforcing
+                  coding conventions and detecting anti-patterns. A popular
+                  JavaScript linter is <a href="http://eslint.org/">ESLint</a>.
+                  ESLint when combined with the ESLint VS Code
+                  <a
+                    href="https://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint"
+                    >extension</a
+                  >
+                  provides a great in-product linting experience.
+                </p>
+                <p>First install the ESLint command line tool:</p>
+                <pre><code class="bash">npm install -g eslint
+</code></pre>
+
+                <p>
+                  Then install the ESLint extension by going to the
+                  <strong>Extensions</strong> view and typing 'eslint'.
+                </p>
+                <p>
+                  <img
+                    alt="ESLint extension"
+                    src="../images/reactjs/eslint-extension.png"
+                  />
+                </p>
+                <p>
+                  Once the ESLint extension is installed and VS Code reloaded,
+                  you'll want to create an ESLint configuration file
+                  <code>eslintrc.json</code>. You can create one using the
+                  extension's
+                  <strong>ESLint: Create 'eslintrc.json' File</strong> command
+                  from the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>).
+                </p>
+                <p>
+                  <img
+                    alt="create eslintrc"
+                    src="../images/reactjs/create-eslintrc.png"
+                  />
+                </p>
+                <p>
+                  The command will create a <code>.eslintrc.json</code> file in
+                  your project root:
+                </p>
+                <pre><code class="json">{
+    &quot;env&quot;: {
+        &quot;browser&quot;: true,
+        &quot;commonjs&quot;: true,
+        &quot;es6&quot;: true,
+        &quot;node&quot;: true
+    },
+    &quot;parserOptions&quot;: {
+        &quot;ecmaFeatures&quot;: {
+            &quot;jsx&quot;: true
+        },
+        &quot;sourceType&quot;: &quot;module&quot;
+    },
+    &quot;rules&quot;: {
+        &quot;no-const-assign&quot;: &quot;warn&quot;,
+        &quot;no-this-before-super&quot;: &quot;warn&quot;,
+        &quot;no-undef&quot;: &quot;warn&quot;,
+        &quot;no-unreachable&quot;: &quot;warn&quot;,
+        &quot;no-unused-vars&quot;: &quot;warn&quot;,
+        &quot;constructor-super&quot;: &quot;warn&quot;,
+        &quot;valid-typeof&quot;: &quot;warn&quot;
+    }
+}
+</code></pre>
+
+                <p>
+                  ESLint will now analyze open files and shows a warning in
+                  <code>index.js</code> about 'App' being defined but never
+                  used.
+                </p>
+                <p>
+                  <img
+                    alt="App is unused"
+                    src="../images/reactjs/app-is-unused.html"
+                  />
+                </p>
+                <p>
+                  You can modify the ESLint
+                  <a href="http://eslint.org/docs/rules/">rules</a> and the
+                  ESLint extension provides IntelliSense in
+                  <code>eslintrc.json</code>.
+                </p>
+                <p>
+                  <img
+                    alt="eslintrc IntelliSense"
+                    src="../images/reactjs/eslintrc-intellisense.png"
+                  />
+                </p>
+                <p>Let's add an error rule for extra semi-colons:</p>
+                <pre><code class="json"> &quot;rules&quot;: {
+        &quot;no-const-assign&quot;: &quot;warn&quot;,
+        &quot;no-this-before-super&quot;: &quot;warn&quot;,
+        &quot;no-undef&quot;: &quot;warn&quot;,
+        &quot;no-unreachable&quot;: &quot;warn&quot;,
+        &quot;no-unused-vars&quot;: &quot;warn&quot;,
+        &quot;constructor-super&quot;: &quot;warn&quot;,
+        &quot;valid-typeof&quot;: &quot;warn&quot;,
+        &quot;no-extra-semi&quot;:&quot;error&quot;
+    }
+</code></pre>
+
+                <p>
+                  Now when you mistakenly have multiple semicolons on a line,
+                  you'll see an error (red squiggle) in the editor and error
+                  entry in the <strong>Problems</strong> panel.
+                </p>
+                <p>
+                  <img
+                    alt="extra semicolon error"
+                    src="../images/reactjs/extra-semi-error.png"
+                  />
+                </p>
+                <h2 id="popular-starter-kits">Popular Starter Kits</h2>
+                <p>
+                  In this tutorial, we used the
+                  <code>create-react-app</code> generator to create a simple
+                  React application. There are lots of great samples and starter
+                  kits available to help build your first React application.
+                </p>
+                <h3 id="vs-code-react-sample">VS Code React Sample</h3>
+                <p>
+                  This is a
+                  <a href="https://github.com/Microsoft/vscode-react-sample"
+                    >sample</a
+                  >
+                  React application used for a
+                  <a href="https://channel9.msdn.com/events/Build/2017/T6078"
+                    >demo</a
+                  >
+                  at this year's //Build conference. The sample creates a simple
+                  TODO application and includes the source code for a Node.js
+                  <a href="https://expressjs.com/">Express</a> server. It also
+                  shows how to use the
+                  <a href="https://babeljs.io/">Babel</a> ES6 transpiler and
+                  then use <a href="https://webpack.js.org/">webpack</a> to
+                  bundle the site assets.
+                </p>
+                <h3 id="mern-starter">MERN Starter</h3>
+                <p>
+                  If you'd like to see a full MERN (MongoDB, Express, React,
+                  Node.js) stack example, look at the
+                  <a href="http://mern.io/">MERN Starter</a>. You'll need to
+                  install and start
+                  <a href="https://docs.mongodb.com/v3.0/installation/"
+                    >MongoDB</a
+                  >
+                  but you'll quickly have a MERN application running. There is
+                  helpful VS Code-specific documentation at
+                  <a
+                    href="https://github.com/Microsoft/vscode-recipes/tree/master/MERN-Starter"
+                    >vscode-recipes</a
+                  >
+                  which details setting up Node.js server debugging.
+                </p>
+                <h3 id="typescript-react">TypeScript React</h3>
+                <p>
+                  If you're curious about TypeScript and React, you can also
+                  create a TypeScript version of the
+                  <code>create-react-app</code> application. See the details at
+                  <a
+                    href="https://github.com/Microsoft/TypeScript-React-Starter"
+                    >TypeScript-React-Starter</a
+                  >
+                  on the
+                  <a href="http://www.typescriptlang.org/samples/index.html"
+                    >TypeScript Quick Start</a
+                  >
+                  site.
+                </p>
+                <h3 id="angular">Angular</h3>
+                <p>
+                  <a href="https://angular.io/">Angular</a> is another popular
+                  web framework. If you'd like to see an example of Angular
+                  working with VS Code, check out the
+                  <a
+                    href="https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI"
+                    >Chrome Debugging with Angular CLI</a
+                  >
+                  recipe. It will walk you through creating an Angular
+                  application and configuring the <code>launch.json</code> file
+                  for the
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome"
+                    >Debugger for Chrome</a
+                  >
+                  extension.
+                </p>
+                <h2 id="common-questions">Common Questions</h2>
+                <p>
+                  <strong
+                    >Q: Can I get IntelliSense within declarative JSX?</strong
+                  >
+                </p>
+                <p>
+                  <strong>A:</strong> Yes. For example, if you open the
+                  <code>create-react-app</code> project's
+                  <code>app.js</code> file, you can see IntelliSense within the
+                  React JSX in the <code>render()</code> method.
+                </p>
+                <p>
+                  <img
+                    alt="JSX IntelliSense"
+                    src="../images/reactjs/jsx-intellisense.png"
+                  />
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../tasks/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Tasks"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../overview/index.html"
+                  class="btn btn-neutral"
+                  title="Overview"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- Mirrored from vscode.readthedocs.io/en/latest/nodejs/reactjs-tutorial/  Sat, 30 Oct 2021 04:58:25 GMT -->
+</html>

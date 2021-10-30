@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- extensions/example-language-server/  Sat, 30 Oct 2021 04:57:28 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Example language server - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Example language server";
+      var mkdocs_page_input_path = "extensions/example-language-server.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/extensions/example-language-server/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html"
+                    >Example language server</a
+                  >
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#example-language-server"
+                        >Example - Language Server</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#implement-your-own-language-server"
+                        >Implement your own Language Server</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#explaining-the-client"
+                        >Explaining the 'Client'</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#explaining-the-server"
+                        >Explaining the 'Server'</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#adding-a-simple-validation"
+                        >Adding a Simple Validation</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#debugging-both-client-and-server"
+                        >Debugging both Client and Server</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#using-configuration-settings-in-the-server"
+                        >Using Configuration Settings in the Server</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#adding-additional-language-features"
+                        >Adding additional Language Features</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#additional-language-server-features"
+                        >Additional Language Server features</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#incremental-text-document-synchronization"
+                        >Incremental Text Document Synchronization</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#common-questions"
+                        >Common Questions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../samples/index.html">Samples</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../yocode/index.html">Yocode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Extensions &raquo;</li>
+
+                <li>Example language server</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="example-language-server">Example - Language Server</h1>
+                <p>
+                  Language servers allow you to add your own validation logic to
+                  files open in VS Code. Typically you just validate programming
+                  languages. However validating other file types is useful as
+                  well. A language server could, for example, check files for
+                  inappropriate language.
+                </p>
+                <p>
+                  In general, validating a programming language can be
+                  expensive. Especially when validation requires parsing
+                  multiple files and building up abstract syntax trees. To avoid
+                  that performance cost, language servers in VS Code are
+                  executed in a separate process. This architecture also makes
+                  it possible that language servers can be written in other
+                  languages besides TypeScript/JavaScript and that they can
+                  support expensive additional language features like code
+                  completion or <code>Find All References</code>.
+                </p>
+                <p>
+                  The remaining document assumes that you are familiar with
+                  normal
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/overview.md"
+                    >extension development</a
+                  >
+                  for VS Code.
+                </p>
+                <h2 id="implement-your-own-language-server">
+                  Implement your own Language Server
+                </h2>
+                <p>
+                  Language servers can be implemented in any language and follow
+                  the
+                  <a
+                    href="https://github.com/Microsoft/language-server-protocol"
+                    >Language Server Protocol</a
+                  >. However, right now VS Code only provides libraries for
+                  Node.js. Additional libraries will follow in the future. A
+                  good starting point for a language server implementation in
+                  Node.js is the example repository
+                  <a
+                    href="https://github.com/Microsoft/vscode-extension-samples"
+                    >VS Code extension samples</a
+                  >. This repository contains 3 different Language Server
+                  samples:
+                </p>
+                <ul>
+                  <li>
+                    <strong
+                      ><a
+                        href="https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample"
+                        >lsp-sample</a
+                      ></strong
+                    >: Demos how to write a basic language server.
+                  </li>
+                  <li>
+                    <strong
+                      ><a
+                        href="https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-root-sample"
+                        >lsp-multi-root-sample</a
+                      ></strong
+                    >: Demos how to write a language server which is multi
+                    workspace folder aware.
+                  </li>
+                  <li>
+                    <strong
+                      ><a
+                        href="https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample"
+                        >lsp-multi-server-sample</a
+                      ></strong
+                    >: Demos how to write a language server that start a
+                    different server instance per workspace folder.
+                  </li>
+                </ul>
+                <p>
+                  The reminder of the document explains the code in the
+                  lsp-sample. The other two examples add additional aspects
+                  using the same code base as explained in this example.
+                </p>
+                <p>
+                  Clone the
+                  <a
+                    href="https://github.com/Microsoft/vscode-extension-samples"
+                    >repository</a
+                  >
+                  and then do:
+                </p>
+                <pre><code class="bash">&gt; cd lsp-sample
+&gt; npm install
+&gt; code .
+</code></pre>
+
+                <p>
+                  The above installs all dependencies and opens one VS Code
+                  instances containing both the client and server code.
+                </p>
+                <h2 id="explaining-the-client">Explaining the 'Client'</h2>
+                <p>
+                  The client is actually a normal VS Code extension. It contains
+                  a <code>package.json</code> file in the client folder of the
+                  workspace. There are three interesting sections of that file.
+                </p>
+                <p>First look the <code>activationEvents</code>:</p>
+                <pre><code class="json">&quot;activationEvents&quot;: [
+    &quot;onLanguage:plaintext&quot;
+]
+</code></pre>
+
+                <p>
+                  This section tells VS Code to activate the extension as soon
+                  as a plain text file is opened (e.g. a file with the extension
+                  <code>.txt</code>).
+                </p>
+                <p>Next look at the <code>configuration</code> section:</p>
+                <pre><code class="json">&quot;configuration&quot;: {
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;title&quot;: &quot;Example configuration&quot;,
+    &quot;properties&quot;: {
+        &quot;lspSample.maxNumberOfProblems&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;default&quot;: 100,
+            &quot;description&quot;: &quot;Controls the maximum number of problems produced by the server.&quot;
+        }
+    }
+}
+</code></pre>
+
+                <p>
+                  This section contributes <code>configuration</code> settings
+                  to VS Code. The example will explain how these settings are
+                  sent over to the language server on startup and on every
+                  change of the settings.
+                </p>
+                <p>
+                  The last part adds a dependency to the
+                  <code>vscode</code> extension host API and the
+                  <code>vscode-languageclient</code> library:
+                </p>
+                <pre><code class="json">&quot;dependencies&quot;: {
+    &quot;vscode&quot;: &quot;^1.1.5&quot;,
+    &quot;vscode-languageclient&quot;: &quot;^3.3.0&quot;
+}
+</code></pre>
+
+                <p>
+                  As mentioned, the client is implemented as a normal VS Code
+                  extension.
+                </p>
+                <p>
+                  Below is the content of the corresponding extension.ts file:
+                </p>
+                <pre><code class="typescript">/* --------------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ * ------------------------------------------------------------------------------------------ */
+'use strict';
+
+import * as path from 'path';
+
+import { workspace, ExtensionContext } from 'vscode';
+import { LanguageClient, LanguageClientOptions, ServerOptions, TransportKind } from 'vscode-languageclient';
+
+export function activate(context: ExtensionContext) {
+
+    // The server is implemented in node
+    let serverModule = context.asAbsolutePath(path.join('server', 'server.js'));
+    // The debug options for the server
+    let debugOptions = { execArgv: [&quot;--nolazy&quot;, &quot;--debug=6009&quot;] };
+
+    // If the extension is launched in debug mode then the debug server options are used
+    // Otherwise the run options are used
+    let serverOptions: ServerOptions = {
+        run : { module: serverModule, transport: TransportKind.ipc },
+        debug: { module: serverModule, transport: TransportKind.ipc, options: debugOptions }
+    }
+
+    // Options to control the language client
+    let clientOptions: LanguageClientOptions = {
+        // Register the server for plain text documents
+        documentSelector: [{scheme: 'file', language: 'plaintext'}],
+        synchronize: {
+            // Synchronize the setting section 'languageServerExample' to the server
+            configurationSection: 'lspSample',
+            // Notify the server about file changes to '.clientrc files contain in the workspace
+            fileEvents: workspace.createFileSystemWatcher('**/.clientrc')
+        }
+    }
+
+    // Create the language client and start the client.
+    let disposable = new LanguageClient('lspSample', 'Language Server Example', serverOptions, clientOptions).start();
+
+    // Push the disposable to the context's subscriptions so that the 
+    // client can be deactivated on extension deactivation
+    context.subscriptions.push(disposable);
+}
+</code></pre>
+
+                <h2 id="explaining-the-server">Explaining the 'Server'</h2>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> The 'Server' implementation cloned
+                    from the GitHub repository has the final walkthrough
+                    implementation. To follow the walkthrough, you can create a
+                    new <code>server.ts</code> or modify the contents of the
+                    cloned version.
+                  </p>
+                </blockquote>
+                <p>
+                  In the example, the server is also implemented in TypeScript
+                  and executed using Node.js. Since VS Code already ships with a
+                  Node.js runtime, there is no need to provide your own, unless
+                  you have very specific requirements for the runtime.
+                </p>
+                <p>
+                  The interesting section in the server's
+                  <code>package.json</code> file is:
+                </p>
+                <pre><code class="json">&quot;dependencies&quot;: {
+    &quot;vscode-languageserver&quot;: &quot;^3.3.0&quot;
+}
+</code></pre>
+
+                <p>This pulls in the vscode-languageserver library.</p>
+                <p>
+                  Below is a server implementation that uses the provided simple
+                  text document manager which synchronizes text documents by
+                  always sending the file's full content from VS Code to the
+                  server.
+                </p>
+                <pre><code class="typescript">/* --------------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ * ------------------------------------------------------------------------------------------ */
+'use strict';
+
+import {
+    IPCMessageReader, IPCMessageWriter, createConnection, IConnection, TextDocuments, TextDocument, 
+    Diagnostic, DiagnosticSeverity, InitializeResult, TextDocumentPositionParams, CompletionItem, 
+    CompletionItemKind
+} from 'vscode-languageserver';
+
+// Create a connection for the server. The connection uses Node's IPC as a transport
+let connection: IConnection = createConnection(new IPCMessageReader(process), new IPCMessageWriter(process));
+
+// Create a simple text document manager. The text document manager
+// supports full document sync only
+let documents: TextDocuments = new TextDocuments();
+// Make the text document manager listen on the connection
+// for open, change and close text document events
+documents.listen(connection);
+
+// After the server has started the client sends an initilize request. The server receives
+// in the passed params the rootPath of the workspace plus the client capabilites. 
+let workspaceRoot: string;
+connection.onInitialize((params): InitializeResult =&gt; {
+    workspaceRoot = params.rootPath;
+    return {
+        capabilities: {
+            // Tell the client that the server works in FULL text document sync mode
+            textDocumentSync: documents.syncKind,
+            // Tell the client that the server support code complete
+            completionProvider: {
+                resolveProvider: true
+            }
+        }
+    }
+});
+
+// The content of a text document has changed. This event is emitted
+// when the text document first opened or when its content has changed.
+documents.onDidChangeContent((change) =&gt; {
+    validateTextDocument(change.document);
+});
+
+// The settings interface describe the server relevant settings part
+interface Settings {
+    lspSample: ExampleSettings;
+}
+
+// These are the example settings we defined in the client's package.json
+// file
+interface ExampleSettings {
+    maxNumberOfProblems: number;
+}
+
+// hold the maxNumberOfProblems setting
+let maxNumberOfProblems: number;
+// The settings have changed. Is send on server activation
+// as well.
+connection.onDidChangeConfiguration((change) =&gt; {
+    let settings = &lt;Settings&gt;change.settings;
+    maxNumberOfProblems = settings.lspSample.maxNumberOfProblems || 100;
+    // Revalidate any open text documents
+    documents.all().forEach(validateTextDocument);
+});
+
+function validateTextDocument(textDocument: TextDocument): void {
+    let diagnostics: Diagnostic[] = [];
+    let lines = textDocument.getText().split(/\r?\n/g);
+    let problems = 0;
+    for (var i = 0; i &lt; lines.length &amp;&amp; problems &lt; maxNumberOfProblems; i++) {
+        let line = lines[i];
+        let index = line.indexOf('typescript');
+        if (index &gt;= 0) {
+            problems++;
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index },
+                    end: { line: i, character: index + 10 }
+                },
+                message: `${line.substr(index, 10)} should be spelled TypeScript`,
+                source: 'ex'
+            });
+        }
+    }
+    // Send the computed diagnostics to VSCode.
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+}
+
+connection.onDidChangeWatchedFiles((_change) =&gt; {
+    // Monitored files have change in VSCode
+    connection.console.log('We recevied an file change event');
+});
+
+
+// This handler provides the initial list of the completion items.
+connection.onCompletion((_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] =&gt; {
+    // The pass parameter contains the position of the text document in 
+    // which code complete got requested. For the example we ignore this
+    // info and always provide the same completion items.
+    return [
+        {
+            label: 'TypeScript',
+            kind: CompletionItemKind.Text,
+            data: 1
+        },
+        {
+            label: 'JavaScript',
+            kind: CompletionItemKind.Text,
+            data: 2
+        }
+    ]
+});
+
+// This handler resolve additional information for the item selected in
+// the completion list.
+connection.onCompletionResolve((item: CompletionItem): CompletionItem =&gt; {
+    if (item.data === 1) {
+        item.detail = 'TypeScript details',
+            item.documentation = 'TypeScript documentation'
+    } else if (item.data === 2) {
+        item.detail = 'JavaScript details',
+            item.documentation = 'JavaScript documentation'
+    }
+    return item;
+});
+
+/*
+connection.onDidOpenTextDocument((params) =&gt; {
+    // A text document got opened in VSCode.
+    // params.uri uniquely identifies the document. For documents store on disk this is a file URI.
+    // params.text the initial full content of the document.
+    connection.console.log(`${params.textDocument.uri} opened.`);
+});
+connection.onDidChangeTextDocument((params) =&gt; {
+    // The content of a text document did change in VSCode.
+    // params.uri uniquely identifies the document.
+    // params.contentChanges describe the content changes to the document.
+    connection.console.log(`${params.textDocument.uri} changed: ${JSON.stringify(params.contentChanges)}`);
+});
+connection.onDidCloseTextDocument((params) =&gt; {
+    // A text document got closed in VSCode.
+    // params.uri uniquely identifies the document.
+    connection.console.log(`${params.textDocument.uri} closed.`);
+});
+*/
+
+// Listen on the connection
+connection.listen();
+</code></pre>
+
+                <h2 id="adding-a-simple-validation">
+                  Adding a Simple Validation
+                </h2>
+                <p>
+                  To add document validation to the server, we add a listener to
+                  the text document manager that gets called whenever the
+                  content of a text document changes. It is then up to the
+                  server to decide when the best time is to validate a document.
+                  In the example implementation, the server validates the plain
+                  text document and flags all occurrences of
+                  <code>typescript</code> with a message to spell it
+                  <code>TypeScript</code>. The corresponding code snippet looks
+                  like this:
+                </p>
+                <pre><code class="typescript">// The content of a text document has changed. This event is emitted
+// when the text document first opened or when its content has changed.
+documents.onDidChangeContent((change) =&gt; {
+    let diagnostics: Diagnostic[] = [];
+    let lines = change.document.getText().split(/\r?\n/g);
+    lines.forEach((line, i) =&gt; {
+        let index = line.indexOf('typescript');
+        if (index &gt;= 0) {
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index},
+                    end: { line: i, character: index + 10 }
+                },
+                message: `${line.substr(index, 10)} should be spelled TypeScript`,
+                source: 'ex'
+            });
+        }
+    })
+    // Send the computed diagnostics to VS Code.
+    connection.sendDiagnostics({ uri: change.document.uri, diagnostics });
+});
+</code></pre>
+
+                <h3 id="diagnostics-tips-and-tricks">
+                  Diagnostics Tips and Tricks!
+                </h3>
+                <ul>
+                  <li>
+                    If the start and end positions are the same, VS Code will
+                    squiggle the word at that position.
+                  </li>
+                  <li>
+                    If you want to squiggle until the end of the line, then set
+                    the character of the end position to Number.MAX_VALUE.
+                  </li>
+                </ul>
+                <p>To test the language server do the following:</p>
+                <ul>
+                  <li>
+                    press <code>kb(workbench.action.tasks.build)</code> to start
+                    the build task. The task compiles both the client and the
+                    server.
+                  </li>
+                  <li>
+                    open the debug viewlet, select the
+                    <code>Launch Client</code> launch configuration and press
+                    the <code>Start Debugging</code> button to launch an
+                    additional <code>Extension Development Host</code> instance
+                    of VS Code that executes the extension code.
+                  </li>
+                  <li>
+                    Create a test.txt file in the root folder and paste the
+                    following content:
+                  </li>
+                </ul>
+                <pre><code class="txt">typescript lets you write JavaScript the way you really want to.
+typescript is a typed superset of JavaScript that compiles to plain JavaScript.
+Any browser. Any host. Any OS. Open Source.
+</code></pre>
+
+                <p>
+                  The <code>Extension Development Host</code> instance will then
+                  look like this:
+                </p>
+                <p>
+                  <img
+                    alt="Validating a text file"
+                    src="../images/example-language-server/validation.png"
+                  />
+                </p>
+                <h2 id="debugging-both-client-and-server">
+                  Debugging both Client and Server
+                </h2>
+                <p>
+                  Debugging the client code is as easy as debugging a normal
+                  extension. Set a breakpoint in the client code and debug the
+                  extension by pressing
+                  <code>kb(workbench.action.debug.start)</code>. For a detailed
+                  description about launching and debugging an extension see
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensions/debugging-extensions.md"
+                    >Running and Debugging Your Extension</a
+                  >.
+                </p>
+                <p>
+                  <img
+                    alt="Debugging the client"
+                    src="../images/example-language-server/debugging-client.png"
+                  />
+                </p>
+                <p>
+                  Since the server is started by the
+                  <code>LanguageClient</code> running in the extension (client),
+                  we need to attach a debugger to the running server. To do so,
+                  switch to the Debug viewlet and select the launch
+                  configuration <code>Attach to Server</code> and press
+                  <code>kb(workbench.action.debug.start)</code>. This will
+                  attach the debugger to the server.
+                </p>
+                <p>
+                  <img
+                    alt="Debugging the server"
+                    src="../images/example-language-server/debugging-server.png"
+                  />
+                </p>
+                <h2 id="using-configuration-settings-in-the-server">
+                  Using Configuration Settings in the Server
+                </h2>
+                <p>
+                  When writing the client part of the extension, we already
+                  defined a setting to control the maximum numbers of problems
+                  reported. We also instructed the
+                  <code>LanguageClient</code> to sync these settings to the
+                  server using the synchronization configuration in the
+                  <code>LanguageClientOptions</code>:
+                </p>
+                <pre><code class="typescript">synchronize: {
+    // Synchronize the setting section 'languageClientExample' to the server
+    configurationSection: 'lspSample',
+    // Notify the server about file changes to '.clientrc files contain in the workspace
+    fileEvents: workspace.createFileSystemWatcher('**/.clientrc')
+}
+</code></pre>
+
+                <p>
+                  The only thing we need to do now is to listen to configuration
+                  changes on the server side and if a settings changes,
+                  revalidate the open text documents. To be able to reuse the
+                  validate logic of the document change event handling, we
+                  extract the code into a
+                  <code>validateTextDocument</code> function and modify the code
+                  to honor a <code>maxNumberOfProblems</code> variable:
+                </p>
+                <pre><code class="typescript">function validateTextDocument(textDocument: TextDocument): void {
+    let diagnostics: Diagnostic[] = [];
+    let lines = textDocument.getText().split(/\r?\n/g);
+    let problems = 0;
+    for (var i = 0; i &lt; lines.length &amp;&amp; problems &lt; maxNumberOfProblems; i++) {
+        let line = lines[i];
+        let index = line.indexOf('typescript');
+        if (index &gt;= 0) {
+            problems++;
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index},
+                    end: { line: i, character: index + 10 }
+                },
+                message: `${line.substr(index, 10)} should be spelled TypeScript`,
+                source: 'ex'
+            });
+        }
+    }
+    // Send the computed diagnostics to VS Code.
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+}
+</code></pre>
+
+                <p>
+                  The handling of the configuration change is done by adding a
+                  notification handler for configuration changes to the
+                  connection. The corresponding code looks like this:
+                </p>
+                <pre><code class="typescript">// The settings interface describe the server relevant settings part
+interface Settings {
+    lspSample: ExampleSettings;
+}
+
+// These are the example settings we defined in the client's package.json
+// file
+interface ExampleSettings {
+    maxNumberOfProblems: number;
+}
+
+// hold the maxNumberOfProblems setting
+let maxNumberOfProblems: number;
+// The settings have changed. Is send on server activation
+// as well.
+connection.onDidChangeConfiguration((change) =&gt; {
+    let settings = &lt;Settings&gt;change.settings;
+    maxNumberOfProblems = settings.languageServerExample.maxNumberOfProblems || 100;
+    // Revalidate any open text documents
+    documents.all().forEach(validateTextDocument);
+});
+</code></pre>
+
+                <p>
+                  Starting the client again and changing the setting to maximum
+                  report 1 problem results in the following validation:
+                </p>
+                <p>
+                  <img
+                    alt="Maximum One Problem"
+                    src="../images/example-language-server/validationOneProblem.png"
+                  />
+                </p>
+                <h2 id="adding-additional-language-features">
+                  Adding additional Language Features
+                </h2>
+                <p>
+                  The first interesting feature a language server usually
+                  implements is validation of documents. In that sense, even a
+                  linter counts as a language server and in VS Code linters are
+                  usually implemented as language servers (see
+                  <a href="https://github.com/Microsoft/vscode-eslint"
+                    >eslint</a
+                  >
+                  and
+                  <a href="https://github.com/Microsoft/vscode-jshint"
+                    >jshint</a
+                  >
+                  for examples). But there is more to language servers. They can
+                  provide code complete, Find All References or Go To
+                  Definition. The example code below adds code completion to the
+                  server. It proposes the two words 'TypeScript' and
+                  'JavaScript'.
+                </p>
+                <pre><code class="typescript">// This handler provides the initial list of the completion items.
+connection.onCompletion((textDocumentPosition: TextDocumentPositionParams): CompletionItem[] =&gt; {
+    // The pass parameter contains the position of the text document in 
+    // which code complete got requested. For the example we ignore this
+    // info and always provide the same completion items.
+    return [
+        {
+            label: 'TypeScript',
+            kind: CompletionItemKind.Text,
+            data: 1
+        },
+        {
+            label: 'JavaScript',
+            kind: CompletionItemKind.Text,
+            data: 2
+        }
+    ]
+});
+
+// This handler resolve additional information for the item selected in
+// the completion list.
+connection.onCompletionResolve((item: CompletionItem): CompletionItem =&gt; {
+    if (item.data === 1) {
+        item.detail = 'TypeScript details',
+        item.documentation = 'TypeScript documentation'
+    } else if (item.data === 2) {
+        item.detail = 'JavaScript details',
+        item.documentation = 'JavaScript documentation'
+    }
+    return item;
+});
+</code></pre>
+
+                <p>
+                  The <code>data</code> fields is used to uniquely identify a
+                  completion item in the resolve handler. The data property is
+                  transparent for the protocol. Since the underlying message
+                  passing protocol is JSON based, the data field should only
+                  hold data that is serializable to and from JSON.
+                </p>
+                <p>
+                  All that is missing is to tell VS Code that the server support
+                  code completion requests. To do so, flag the corresponding
+                  capability in the initialize handler:
+                </p>
+                <pre><code class="typescript">connection.onInitialize((params): InitializeResult =&gt; {
+    ...
+    return {
+        capabilities: {
+            ...
+            // Tell the client that the server support code complete
+            completionProvider: {
+                resolveProvider: true
+            }
+        }
+    }
+});
+</code></pre>
+
+                <p>
+                  The screen shot below shows the completed code running on a
+                  plain text file:
+                </p>
+                <p>
+                  <img
+                    alt="Code Complete"
+                    src="../images/example-language-server/codeComplete.png"
+                  />
+                </p>
+                <h2 id="additional-language-server-features">
+                  Additional Language Server features
+                </h2>
+                <p>
+                  The following language features are currently supported in a
+                  language server along with code completions:
+                </p>
+                <ul>
+                  <li>
+                    <em>Document Highlights</em>: highlights all 'equal' symbols
+                    in a text document.
+                  </li>
+                  <li>
+                    <em>Hover</em>: provides hover information for a symbol
+                    selected in a text document.
+                  </li>
+                  <li>
+                    <em>Signature Help</em>: provides signature help for a
+                    symbol selected in a text document.
+                  </li>
+                  <li>
+                    <em>Goto Definition</em>: provides go to definition support
+                    for a symbol selected in a text document.
+                  </li>
+                  <li>
+                    <em>Find References</em>: finds all project-wide references
+                    for a symbol selected in a text document.
+                  </li>
+                  <li>
+                    <em>List Document Symbols</em>: lists all symbols defined in
+                    a text document.
+                  </li>
+                  <li>
+                    <em>List Workspace Symbols</em>: lists all project-wide
+                    symbols.
+                  </li>
+                  <li>
+                    <em>Code Actions</em>: compute commands for a given text
+                    document and range.
+                  </li>
+                  <li>
+                    <em>CodeLens</em>: compute CodeLens statistics for a given
+                    text document.
+                  </li>
+                  <li>
+                    <em>Document Formatting</em>: this includes formatting of
+                    whole documents, document ranges and formatting on type.
+                  </li>
+                  <li><em>Rename</em>: project-wide rename of a symbol.</li>
+                  <li>
+                    <em>Document Links</em>: compute and resolve links inside a
+                    document.
+                  </li>
+                </ul>
+                <p>
+                  The
+                  <a
+                    href="https://vscode.readthedocs.io/docs/extensionAPI/language-support.md"
+                    >Language Extension Guidelines</a
+                  >
+                  topic describes each of the language features above and
+                  provides guidance on how to implement them either through the
+                  language server protocol or by using the extensibility API
+                  directly from your extension.
+                </p>
+                <h2 id="incremental-text-document-synchronization">
+                  Incremental Text Document Synchronization
+                </h2>
+                <p>
+                  The example uses the simple text document manager provided by
+                  the <code>vscode-languageserver</code> module to synchronize
+                  documents between VS Code and the language server.
+                </p>
+                <p>This has two drawbacks:</p>
+                <ul>
+                  <li>
+                    Lots of data transfer since the whole content of a text
+                    document is sent to the server repeatedly.
+                  </li>
+                  <li>
+                    If an existing language library is used, such libraries
+                    usually support incremental document updates to avoid
+                    unnecessary parsing and abstract syntax tree creation.
+                  </li>
+                </ul>
+                <p>
+                  The protocol therefore supports incremental document
+                  synchronization as well.
+                </p>
+                <p>
+                  To make use of incremental document synchronization, a server
+                  needs to install three notification handlers:
+                </p>
+                <ul>
+                  <li>
+                    <em>onDidOpenTextDocument</em>: is called when a text
+                    document is opened in VS Code.
+                  </li>
+                  <li>
+                    <em>onDidChangeTextDocument</em>: is called when the content
+                    of a text document changes in VS Code.
+                  </li>
+                  <li>
+                    <em>onDidCloseTextDocument</em>: is called when a text
+                    document is closed in VS Code.
+                  </li>
+                </ul>
+                <p>
+                  Below is a code snippet that illustrates how to hook these
+                  notification handlers on a connection and how to return the
+                  right capability on initialize:
+                </p>
+                <pre><code class="typescript">connection.onInitialize((params): InitializeResult =&gt; {
+    ...
+    return {
+        capabilities: {
+            // Enable incremental document sync
+            textDocumentSync: TextDocumentSyncKind.Incremental,
+            ...
+        }
+    }
+});
+
+connection.onDidOpenTextDocument((params) =&gt; {
+    // A text document got opened in VS Code.
+    // params.uri uniquely identifies the document. For documents store on disk this is a file URI.
+    // params.text the initial full content of the document.
+});
+
+connection.onDidChangeTextDocument((params) =&gt; {
+    // The content of a text document did change in VS Code.
+    // params.uri uniquely identifies the document.
+    // params.contentChanges describe the content changes to the document.
+});
+
+connection.onDidCloseTextDocument((params) =&gt; {
+    // A text document got closed in VS Code.
+    // params.uri uniquely identifies the document.
+});
+</code></pre>
+
+                <h2 id="next-steps">Next Steps</h2>
+                <p>
+                  To learn more about VS Code's extensibility model, try these
+                  topics:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/vscode-api.md"
+                      >vscode API Reference</a
+                    >
+                    - Learn about deep language integration with VS Code
+                    language services.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensionAPI/language-support.md"
+                      >Language Extension Guideline</a
+                    >
+                    - A guide to implementing VS Code's rich language features.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/samples.md"
+                      >Additional Extension Examples</a
+                    >
+                    - Take a look at our list of example extension projects.
+                  </li>
+                </ul>
+                <h2 id="common-questions">Common Questions</h2>
+                <p>
+                  <strong
+                    >Q: When I try to attach to the server, I get "cannot
+                    connect to runtime process (timeout after 5000ms)"?</strong
+                  >
+                </p>
+                <p>
+                  <strong>A:</strong> You will see this timeout error if the
+                  server isn't running when you try to attach the debugger. The
+                  client starts the language server so make sure you have
+                  started the client in order to have a running server. You may
+                  also need to disable your client breakpoints if they are
+                  interfering with starting the server.
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../example-word-count/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Example word count"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../example-hello-world/index.html"
+                  class="btn btn-neutral"
+                  title="Example hello world"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- extensions/example-language-server/  Sat, 30 Oct 2021 04:57:29 -->
+</html>

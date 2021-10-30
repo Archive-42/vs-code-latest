@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- editor/integrated-terminal/  Sat, 30 Oct 2021 04:57:01 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Integrated terminal - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Integrated terminal";
+      var mkdocs_page_input_path = "editor/integrated-terminal.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/editor/integrated-terminal/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../codebasics/index.html">Codebasics</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../command-line/index.html">Command line</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging/index.html">Debugging</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Integrated terminal</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#integrated-terminal">Integrated Terminal</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#managing-multiple-terminals"
+                        >Managing Multiple Terminals</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#configuration"
+                        >Configuration</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#terminal-display-settings"
+                        >Terminal Display Settings</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#key-bindings"
+                        >Key Bindings</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#common-questions"
+                        >Common Questions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../intellisense/index.html">Intellisense</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1/index.html">Tasks v1</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../whyvscode/index.html">Whyvscode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Editor &raquo;</li>
+
+                <li>Integrated terminal</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="integrated-terminal">Integrated Terminal</h1>
+                <p>
+                  In Visual Studio Code, you can open an integrated terminal,
+                  initially starting at the root of your workspace. This can be
+                  very convenient as you don't have to switch windows or alter
+                  the state of an existing terminal to perform a quick command
+                  line task.
+                </p>
+                <p>To open the terminal:</p>
+                <ul>
+                  <li>
+                    Use the
+                    <code>kb(workbench.action.terminal.toggleTerminal)</code>
+                    keyboard shortcut with the backtick character.
+                  </li>
+                  <li>
+                    Use the <strong>View</strong> |
+                    <strong>Integrated Terminal</strong> menu command.
+                  </li>
+                  <li>
+                    From the
+                    <strong>Command Palette</strong>
+                    (<code>kb(workbench.action.showCommands)</code>), use the
+                    <strong>View:Toggle Integrated Terminal</strong> command.
+                  </li>
+                </ul>
+                <p>
+                  <img
+                    alt="Terminal"
+                    src="../images/integrated-terminal/integrated-terminal.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> You can still open an external shell
+                    with the Explorer
+                    <strong>Open in Command Prompt</strong> command (<strong
+                      >Open in Terminal</strong
+                    >
+                    on Mac or Linux) if you prefer to work outside VS Code.
+                  </p>
+                </blockquote>
+                <h2 id="managing-multiple-terminals">
+                  Managing Multiple Terminals
+                </h2>
+                <p>
+                  You can create multiple terminals open to different locations
+                  and easily navigate between them. Terminal instances can be
+                  added by hitting the plus icon on the top-right of the
+                  <strong>TERMINAL</strong> panel or by triggering the
+                  <code>kb(workbench.action.terminal.new)</code> command. This
+                  creates another entry in the dropdown list that can be used to
+                  switch between them.
+                </p>
+                <p>
+                  <img
+                    alt="Multiple Terminals"
+                    src="../images/integrated-terminal/terminal-multiple-instances.png"
+                  />
+                </p>
+                <p>
+                  Remove terminal instances by pressing the trash can button.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> If you use multiple terminals
+                    extensively, you can add key bindings for the
+                    <code>focusNext</code>, <code>focusPrevious</code> and
+                    <code>kill</code> commands outlined in the
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/integrated-terminal.md#key-bindings"
+                      >Key Bindings section</a
+                    >
+                    to allow navigation between them using only the keyboard.
+                  </p>
+                </blockquote>
+                <h2 id="configuration">Configuration</h2>
+                <p>
+                  The shell used defaults to <code>$SHELL</code> on Linux and
+                  macOS, PowerShell on Windows 10 and cmd.exe on earlier
+                  versions of Windows. These can be overridden manually by
+                  setting <code>terminal.integrated.shell.*</code> in
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >settings</a
+                  >. Arguments can be passed to the terminal shell on Linux and
+                  macOS using the
+                  <code>terminal.integrated.shellArgs.*</code> settings.
+                </p>
+                <h3 id="windows">Windows</h3>
+                <p>
+                  Correctly configuring your shell on Windows is a matter of
+                  locating the right executable and updating the setting. Below
+                  are a list of common shell executables and their default
+                  locations:
+                </p>
+                <pre><code class="json">// 64-bit cmd if available, otherwise 32-bit
+&quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Windows\\sysnative\\cmd.exe&quot;
+// 64-bit PowerShell if available, otherwise 32-bit
+&quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe&quot;
+// Git Bash
+&quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Program Files\\Git\\bin\\bash.exe&quot;
+// Bash on Ubuntu (on Windows)
+&quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Windows\\sysnative\\bash.exe&quot;
+</code></pre>
+
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> To be used as an integrated terminal,
+                    the shell executable must be a console application so that
+                    <code>stdin/stdout/stderr</code> can be redirected.
+                  </p>
+                  <p>
+                    <strong>Tip:</strong> The integrated terminal shell is
+                    running with the permissions of VS Code. If you need to run
+                    a shell command with elevated (administrator) or different
+                    permissions, you can use platform utilities such as
+                    <code>runas.exe</code> within a terminal.
+                  </p>
+                </blockquote>
+                <h3 id="shell-arguments">Shell arguments</h3>
+                <p>You can pass arguments to the shell when it is launched.</p>
+                <p>
+                  For example, to enable running bash as a login shell (which
+                  runs <code>.bash_profile</code>), pass in the
+                  <code>-l</code> argument (with double quotes):
+                </p>
+                <pre><code class="json">// Linux
+&quot;terminal.integrated.shellArgs.linux&quot;: [&quot;-l&quot;]
+</code></pre>
+
+                <h2 id="terminal-display-settings">
+                  Terminal Display Settings
+                </h2>
+                <p>
+                  You can customize the integrated terminal font and line height
+                  with the following settings:
+                </p>
+                <ul>
+                  <li><code>terminal.integrated.fontFamily</code></li>
+                  <li><code>terminal.integrated.fontSize</code></li>
+                  <li><code>terminal.integrated.lineHeight</code></li>
+                </ul>
+                <h2 id="key-bindings">Key Bindings</h2>
+                <p>
+                  The <strong>View: Toggle Integrated Terminal</strong> command
+                  is bound to
+                  <code>kb(workbench.action.terminal.toggleTerminal)</code> to
+                  quickly toggle the integrated terminal panel in and out of
+                  view.
+                </p>
+                <p>
+                  Below are the keyboard shortcuts to quickly navigate within
+                  the integrated terminal:
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Key</th>
+                      <th>Command</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <code
+                          >kb(workbench.action.terminal.toggleTerminal)</code
+                        >
+                      </td>
+                      <td>Show integrated terminal</td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(workbench.action.terminal.new)</code></td>
+                      <td>Create new terminal</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code>kb(workbench.action.terminal.scrollup)</code>
+                      </td>
+                      <td>Scroll up</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code>kb(workbench.action.terminal.scrolldown)</code>
+                      </td>
+                      <td>Scroll down</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code>kb(workbench.action.terminal.scrollupPage)</code>
+                      </td>
+                      <td>Scroll page up</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code
+                          >kb(workbench.action.terminal.scrolldownPage)</code
+                        >
+                      </td>
+                      <td>Scroll page down</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code>kb(workbench.action.terminal.scrollToTop)</code>
+                      </td>
+                      <td>Scroll to top</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code
+                          >kb(workbench.action.terminal.scrollToBottom)</code
+                        >
+                      </td>
+                      <td>Scroll to bottom</td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(workbench.action.terminal.clear)</code></td>
+                      <td>Clear the terminal</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  Other terminal commands are available and can be bound to your
+                  preferred keyboard shortcuts.
+                </p>
+                <p>They are:</p>
+                <ul>
+                  <li>
+                    <code>workbench.action.terminal.focus</code>: Focus the
+                    terminal. This is like toggle but focuses the terminal
+                    instead of hiding it, if it is visible.
+                  </li>
+                  <li>
+                    <code>workbench.action.terminal.focusNext</code>: Focuses
+                    the next terminal instance.
+                  </li>
+                  <li>
+                    <code>workbench.action.terminal.focusPrevious</code>:
+                    Focuses the previous terminal instance.
+                  </li>
+                  <li>
+                    <code>workbench.action.terminal.kill</code>: Remove the
+                    current terminal instance.
+                  </li>
+                  <li>
+                    <code>workbench.action.terminal.runSelectedText</code>: Run
+                    the selected text in the terminal instance.
+                  </li>
+                  <li>
+                    <code>workbench.action.terminal.runActiveFile</code>: Run
+                    the active file in the terminal instance.
+                  </li>
+                </ul>
+                <h3 id="run-selected-text">Run Selected Text</h3>
+                <p>
+                  To use the <code>runSelectedText</code> command, select text
+                  in an editor and run the command
+                  <strong
+                    >Terminal: Run Selected Text in Active Terminal</strong
+                  >
+                  via the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>):
+                </p>
+                <p>
+                  <img
+                    alt="Run selected text"
+                    src="../images/integrated-terminal/terminal_run_selected.png"
+                  />
+                </p>
+                <p>The terminal will attempt to run the selected text.</p>
+                <p>
+                  <img
+                    alt="Run selected text result"
+                    src="../images/integrated-terminal/terminal_run_selected_result.png"
+                  />
+                </p>
+                <p>
+                  If no text is selected in the active editor, the line that the
+                  cursor is on is run in the terminal.
+                </p>
+                <h3 id="copy-paste">Copy &amp; Paste</h3>
+                <p>
+                  The keybindings for copy and paste follow platform standards:
+                </p>
+                <ul>
+                  <li>
+                    Linux: <code>kbstyle(Ctrl+Shift+C)</code> and
+                    <code>kbstyle(Ctrl+Shift+V)</code>
+                  </li>
+                  <li>
+                    Mac: <code>kbstyle(Cmd+C)</code> and
+                    <code>kbstyle(Cmd+V)</code>
+                  </li>
+                  <li>
+                    Windows: <code>kbstyle(Ctrl+C)</code> and
+                    <code>kbstyle(Ctrl+V)</code>
+                  </li>
+                </ul>
+                <h3 id="find">Find</h3>
+                <p>
+                  The Integrated Terminal has basic find functionality which can
+                  be triggered with
+                  <code>kb(workbench.action.terminal.focusFindWidget)</code>.
+                </p>
+                <p>
+                  If you want <code>Ctrl+F</code> to go to the shell instead of
+                  launching the Find widget on Linux and Windows, you will need
+                  to remove the keybinding like so:
+                </p>
+                <pre><code class="js">{ &quot;key&quot;: &quot;ctrl+f&quot;, &quot;command&quot;: &quot;-workbench.action.terminal.focusFindWidget&quot;,
+                      &quot;when&quot;: &quot;terminalFocus&quot; },
+</code></pre>
+
+                <h3 id="rename-terminal-sessions">Rename terminal sessions</h3>
+                <p>
+                  Integrated Terminal sessions can now be renamed using the
+                  <strong>Terminal: Rename</strong>
+                  (<code>workbench.action.terminal.rename</code>) command. The
+                  new name will be displayed in the terminal selection
+                  drop-down.
+                </p>
+                <h3 id="forcing-key-bindings-to-pass-through-the-terminal">
+                  Forcing key bindings to pass through the terminal
+                </h3>
+                <p>
+                  While focus is in the integrated terminal, many key bindings
+                  will not work as the keystrokes are passed to and consumed by
+                  the terminal itself. The
+                  <code>terminal.integrated.commandsToSkipShell</code> setting
+                  can be used to get around this. It contains an array of
+                  command names whose key bindings will skip processing by the
+                  shell and instead be processed by the VS Code key binding
+                  system. By default this includes all terminal key bindings in
+                  addition to a select few commonly used key bindings.
+                </p>
+                <h2 id="common-questions">Common Questions</h2>
+                <h3
+                  id="why-is-vs-code-shortcut-x-not-working-when-the-terminal-has-focus"
+                >
+                  Why is VS Code shortcut X not working when the terminal has
+                  focus?
+                </h3>
+                <p>
+                  Currently the terminal consumes many key bindings, preventing
+                  Visual Studio Code from reacting to them. Some examples are
+                  <code>kbstyle(F1)</code> to open the
+                  <strong>Command Palette</strong> and
+                  <code>kbstyle(Ctrl+P)</code> for
+                  <strong>Quick Open</strong> on Linux and Windows. This is
+                  necessary as various terminal programs and/or shells may
+                  respond to these key bindings themselves. There are plans to
+                  explore a blacklist that would prevent certain key bindings
+                  from being handled by the terminal (see
+                  <a href="https://github.com/Microsoft/vscode/issues/7269"
+                    >#7269</a
+                  >).
+                </p>
+                <h3 id="integrated-terminal-exited-with-code-1-on-windows-10">
+                  Integrated terminal exited with code 1 on Windows 10
+                </h3>
+                <p>
+                  This can happen if you run VS Code in compatibility mode which
+                  may be turned on automatically if you have upgraded Windows.
+                  You can change this by right-clicking the executable and
+                  selecting properties, then uncheck "Run this program in
+                  compatibility mode" in the compatibility tab.
+                </p>
+                <h3 id="can-i-use-cmder-with-the-terminal-on-windows">
+                  Can I use Cmder with the terminal on Windows?
+                </h3>
+                <p>
+                  Yes, to use the <a href="http://cmder.net/">Cmder</a> console
+                  emulator in VS Code, you need to create a
+                  <code>vscode.bat</code> file in your cmder path with the
+                  following contents:
+                </p>
+                <pre><code class="bat">@echo off
+SET CMDER_ROOT=C:\cmder (your path to cmder)
+&quot;%CMDER_ROOT%\vendor\init.bat&quot;
+</code></pre>
+
+                <p>
+                  then in your VS Code user settings, add the following to your
+                  <code>settings.json</code> file:
+                </p>
+                <pre><code class="json">&quot;terminal.integrated.shell.windows&quot;: &quot;C:\\WINDOWS\\sysnative\\cmd.exe&quot;,
+&quot;terminal.integrated.shellArgs.windows&quot;: [&quot;/K&quot;, &quot;C:\\cmder\\vscode.bat&quot;]
+</code></pre>
+
+                <p>
+                  Note: The example above assumes you are running 32-bit VS Code
+                  on 64-bit Windows and need to use <code>sysnative</code>. If
+                  you are running the 64-bit version of VS Code, you would use
+                  <code>System32</code>.
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../intellisense/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Intellisense"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../extension-gallery/index.html"
+                  class="btn btn-neutral"
+                  title="Extension gallery"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- editor/integrated-terminal/  Sat, 30 Oct 2021 04:57:02 -->
+</html>

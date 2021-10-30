@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- editor/accessibility/  Sat, 30 Oct 2021 04:56:36 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Accessibility - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Accessibility";
+      var mkdocs_page_input_path = "editor/accessibility.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/editor/accessibility/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Accessibility</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#accessibility">Accessibility</a>
+                    </li>
+
+                    <li><a class="toctree-l4" href="#zoom">Zoom</a></li>
+
+                    <li>
+                      <a class="toctree-l4" href="#persisted-zoom-level"
+                        >Persisted Zoom Level</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#high-contrast-theme"
+                        >High Contrast Theme</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#keyboard-navigation"
+                        >Keyboard Navigation</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#tab-navigation"
+                        >Tab Navigation</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#tab-trapping"
+                        >Tab trapping</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#screen-readers"
+                        >Screen Readers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#accessibility-help"
+                        >Accessibility Help</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#debugger-accessibility"
+                        >Debugger Accessibility</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#current-known-issues"
+                        >Current Known Issues</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../codebasics/index.html">Codebasics</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../command-line/index.html">Command line</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging/index.html">Debugging</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../intellisense/index.html">Intellisense</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1/index.html">Tasks v1</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../whyvscode/index.html">Whyvscode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Editor &raquo;</li>
+
+                <li>Accessibility</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="accessibility">Accessibility</h1>
+                <p>
+                  Visual Studio Code has many features to help make the editor
+                  accessible to all users. Zoom and High Contrast colors improve
+                  editor visibility, keyboard-only navigation allows use without
+                  a mouse and the editor has been optimized for screen readers.
+                </p>
+                <h2 id="zoom">Zoom</h2>
+                <p>
+                  You can increase the Zoom level in VS Code with the
+                  <strong>View</strong> &gt; <strong>Zoom In</strong> command
+                  (<code>kb(workbench.action.zoomIn)</code>). The zoom level
+                  increases by 20% each time the command is executed. The
+                  <strong>View</strong> &gt;
+                  <strong>Zoom Out</strong>
+                  (<code>kb(workbench.action.zoomOut)</code>) command lets you
+                  decrease the Zoom level.
+                </p>
+                <p>
+                  <img
+                    alt="Zoomed in editor"
+                    src="../images/accessibility/zoomed-in.png"
+                  />
+                </p>
+                <h2 id="persisted-zoom-level">Persisted Zoom Level</h2>
+                <p>
+                  When you adjust the zoom level with the
+                  <strong>View</strong> &gt;
+                  <strong>Zoom In / Out</strong> commands, the zoom level is
+                  persisted in the <code>window.zoomLevel</code>
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >setting</a
+                  >. The default value is 0 and each increment increases the
+                  zoom level by 20%.
+                </p>
+                <h2 id="high-contrast-theme">High Contrast Theme</h2>
+                <p>
+                  We support a High Contrast color theme on all platforms. Use
+                  <strong>File</strong> &gt; <strong>Preferences</strong> &gt;
+                  <strong>Color Theme</strong> to display the
+                  <strong>Select Color Theme</strong> drop-down and select the
+                  <strong>High Contrast</strong> theme.
+                </p>
+                <p>
+                  <img
+                    alt="High Contrast Theme"
+                    src="../images/accessibility/high-contrast.png"
+                  />
+                </p>
+                <h2 id="keyboard-navigation">Keyboard Navigation</h2>
+                <p>
+                  You will find that VS Code provides an exhaustive list of
+                  commands in the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>) so that you
+                  can run VS Code without using the mouse. Press
+                  <code>kb(workbench.action.showCommands)</code> then type a
+                  command name (e.g. 'git') to filter the list of commands.
+                </p>
+                <p>
+                  VS Code also has many preset keyboard shortcuts for commands.
+                  These are displayed to the right of the command in the
+                  <strong>Command Palette</strong>.
+                </p>
+                <p>
+                  <img
+                    alt="Keyboard shortcuts in Command Palette"
+                    src="../images/accessibility/keyboard-shortcuts.png"
+                  />
+                </p>
+                <p>
+                  You can also set your own keyboard shortcuts.
+                  <strong>File</strong> &gt; <strong>Preferences</strong> &gt;
+                  <strong>Keyboard Shortcuts</strong> brings up the
+                  <strong>Default Keyboard Shortcuts</strong> in the left pane
+                  and your customizable <code>keybindings.json</code> on the
+                  right. See
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md"
+                    >Key Bindings</a
+                  >
+                  for more details on customizing or adding your own keyboard
+                  shortcuts.
+                </p>
+                <h2 id="tab-navigation">Tab Navigation</h2>
+                <p>
+                  You can use the <code>kbstyle(Tab)</code> key to jump between
+                  VS Code UI controls. Use <code>kbstyle(Shift+Tab)</code> to
+                  tab in reverse order. As you tab through the UI controls, you
+                  can see an indicator around the UI element once the element
+                  gains focus.
+                </p>
+                <p>Some areas that support Tab navigation are:</p>
+                <ul>
+                  <li>The View switcher (Files, Search, Git, Debug)</li>
+                  <li>
+                    The header of collapsible sections in a view to
+                    expand/collapse
+                  </li>
+                  <li>Actions in views and sections</li>
+                  <li>Actions for items in the tree</li>
+                </ul>
+                <h2 id="tab-trapping">Tab trapping</h2>
+                <p>
+                  By default, pressing the <code>kbstyle(Tab)</code> within a
+                  source code file inserts the Tab character (or spaces
+                  depending on your Indentation setting) and does not leave the
+                  open file. You can toggle the trapping of
+                  <code>kbstyle(Tab)</code> with
+                  <code>kb(editor.action.toggleTabFocusMode)</code> and
+                  subsequent <code>kbstyle(Tab)</code> keys will move focus out
+                  of the file. When default <code>kbstyle(Tab)</code> trapping
+                  is off, you will see an indicator in the Status Bar.
+                </p>
+                <p>
+                  <img
+                    alt="tab moves focus"
+                    src="../images/accessibility/tab-moves-focus.png"
+                  />
+                </p>
+                <p>
+                  You can also toggle <code>kbstyle(Tab)</code> trapping from
+                  the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>) with the
+                  <strong>Toggle Use of Tab Key for Setting Focus</strong>
+                  action.
+                </p>
+                <p>
+                  Read-only files never trap the <code>kbstyle(Tab)</code> key.
+                  The <strong>Integrated Terminal</strong> panel respects the
+                  <code>kbstyle(Tab)</code> trapping mode and can be toggled
+                  with <code>kb(editor.action.toggleTabFocusMode)</code>.
+                </p>
+                <h2 id="screen-readers">Screen Readers</h2>
+                <p>
+                  VS Code supports screen readers in the editor using a strategy
+                  based on paging the text. We have tested using the
+                  <a href="https://www.nvaccess.org/">NVDA screen reader</a>,
+                  but we expect all screen readers to benefit from this support.
+                </p>
+                <blockquote>
+                  <p>
+                    When using NVDA on Windows, we recommend to install
+                    <a
+                      href="https://files.derekriemer.com/globalEditorTimer-1.0.nvda-addon"
+                      >this plugin</a
+                    >
+                    from
+                    <a href="https://github.com/derekriemer">Derek Riemer</a>,
+                    which increases NVDA's timeout for receiving a caret move
+                    event from 30ms to 200ms. This plugin will no longer be
+                    needed when NVDA ships a new version
+                    <a href="https://github.com/nvaccess/nvda/pull/7201"
+                      >where the built-in timeout is increased from 30ms to
+                      100ms</a
+                    >.
+                  </p>
+                </blockquote>
+                <p>
+                  The
+                  <strong>Go to Next/Previous Error or Warning</strong> actions
+                  (<code>kb(editor.action.marker.next)</code> and
+                  <code>kb(editor.action.marker.prev)</code>) allow screen
+                  readers to announce the error or warning messages.
+                </p>
+                <p>
+                  When the suggestions pop up, they will get announced to screen
+                  readers. It is possible to navigate the suggestions using
+                  <code>kbstyle(Ctrl+Up)</code> and
+                  <code>kbstyle(Ctrl+Down)</code>, you can dismiss the
+                  suggestions with <code>kbstyle(Shift+Escape)</code> and if
+                  suggestions get in your way, you can disable the auto-popup of
+                  suggestions with the
+                  <code>editor.quickSuggestions</code> setting.
+                </p>
+                <p>
+                  The <strong>Go to Next/Previous Difference</strong> actions
+                  (F7 and Shift+F7), when in a diff editor pane, will bring up
+                  the Diff Review Pane, which allows the navigation of the
+                  diffs, presented in a unified patch format. Arrow Up and Arrow
+                  Down can be used to navigate through the unchanged, inserted
+                  or deleted lines. Pressing Enter will return focus to the
+                  modified pane of the diff editor at the selected line number
+                  (or closest still existing line number in case a deleted line
+                  is selected). Use Escape or Shift+Escape to dismiss the Diff
+                  Review Pane.
+                </p>
+                <blockquote>
+                  <p>
+                    The <strong>Integrated Terminal</strong> does not currently
+                    support screen readers. There is an
+                    <a href="https://github.com/Microsoft/vscode/issues/8339"
+                      >open GitHub issue</a
+                    >
+                    tracking this.
+                  </p>
+                </blockquote>
+                <h2 id="accessibility-help">Accessibility Help</h2>
+                <p>
+                  You can press
+                  <code>kb(editor.action.showAccessibilityHelp)</code> to
+                  trigger the <strong>Show Accessibility Help</strong> dialog
+                  while in an editor to check the state of various accessibility
+                  options in VS Code:
+                </p>
+                <p>
+                  <img
+                    alt="accessibility status"
+                    src="../images/accessibility/status.png"
+                  />
+                </p>
+                <h2 id="debugger-accessibility">Debugger Accessibility</h2>
+                <p>
+                  The VS Code debugger UI is user accessible and has the
+                  following features:
+                </p>
+                <ul>
+                  <li>
+                    Changes in debug state are read out (e.g. 'started',
+                    'breakpoint hit', 'terminated', ...).
+                  </li>
+                  <li>All debug actions are keyboard accessible.</li>
+                  <li>
+                    Both the Debug View and Debug Console support Tab
+                    navigation.
+                  </li>
+                  <li>
+                    Debug hover is keyboard accessible
+                    (<code>kb(editor.action.showHover)</code>).
+                  </li>
+                </ul>
+                <h2 id="current-known-issues">Current Known Issues</h2>
+                <p>
+                  VS Code has some known accessibility issues depending on the
+                  platform.
+                </p>
+                <h3 id="windows">Windows</h3>
+                <p>
+                  You can not use the keyboard (right, left arrow keys) to move
+                  between top-level menu items (<strong>File</strong>,
+                  <strong>Edit</strong>, <strong>View</strong>, etc). This is
+                  due to Electron issue
+                  <a href="https://github.com/atom/electron/issues/2504"
+                    >#2504</a
+                  >.
+                </p>
+                <h3 id="mac">Mac</h3>
+                <p>
+                  There is limited screen reader support for the editor with
+                  VoiceOver.
+                </p>
+                <h3 id="linux">Linux</h3>
+                <p>There is no screen reader support for the editor.</p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>Read on to find out about:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/userinterface.md"
+                      >Visual Studio Code User Interface</a
+                    >
+                    - A quick orientation to VS Code.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/codebasics.md"
+                      >Basic Editing</a
+                    >
+                    - Learn about the powerful VS Code editor.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/editingevolved.md"
+                      >Code Navigation</a
+                    >
+                    - Move quickly through your source code.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../codebasics/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Codebasics"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../../customization/keyboard-shortcuts/index.html"
+                  class="btn btn-neutral"
+                  title="Keyboard shortcuts"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- editor/accessibility/  Sat, 30 Oct 2021 04:56:38 -->
+</html>

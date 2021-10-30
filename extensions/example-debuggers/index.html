@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- extensions/example-debuggers/  Sat, 30 Oct 2021 04:57:26 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Example debuggers - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Example debuggers";
+      var mkdocs_page_input_path = "extensions/example-debuggers.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/extensions/example-debuggers/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/codebasics/index.html"
+                    >Codebasics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/command-line/index.html"
+                    >Command line</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks-v1/index.html"
+                    >Tasks v1</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../editor/whyvscode/index.html"
+                    >Whyvscode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Example debuggers</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#example-debuggers">Example - Debuggers</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#the-mock-debug-extension"
+                        >The Mock Debug Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#development-setup-for-mock-debug"
+                        >Development Setup for Mock Debug</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#anatomy-of-the-packagejson-of-a-debug-extension"
+                        >Anatomy of the package.json of a Debug Extension</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#publishing-your-debug-adapter"
+                        >Publishing your Debug Adapter</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../overview/index.html">Overview</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../samples/index.html">Samples</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../yocode/index.html">Yocode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Extensions &raquo;</li>
+
+                <li>Example debuggers</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="example-debuggers">Example - Debuggers</h1>
+                <p>
+                  Since Visual Studio Code implements a generic (language
+                  agnostic) debug UI, it cannot talk to real debuggers directly
+                  but instead relies on debug extensions for implementing the
+                  debugger or runtime specific functionality.
+                </p>
+                <p>
+                  These debug extensions differ from other extensions in that
+                  their implementation is not running in the extension host, but
+                  as a separate standalone program, a so-called
+                  <em>debug adapter</em>. We call these programs adapters
+                  because they "adapt" the API or protocol of a concrete
+                  debugger or runtime to the
+                  <em>VS Code Debug Protocol</em> used by VS Code.
+                </p>
+                <p>
+                  <img
+                    alt="Debugger Architecture"
+                    src="../images/example-debuggers/debug-arch.png"
+                  />
+                </p>
+                <p>
+                  The reasons for implementing the debug adapters as standalone
+                  excutables are twofold: first, it makes it possible to
+                  implement the adapter in the language most suitable for the
+                  given debugger or runtime. Second, a standalone program can
+                  more easily run in elevated mode if this is required by the
+                  underlying debugger or runtime.
+                </p>
+                <p>
+                  In order to avoid problems with local firewalls, VS Code
+                  communicates with the adapter through stdin/stdout instead of
+                  using a more sophisticated mechanism (e.g. sockets).
+                </p>
+                <p>
+                  Every debug extension defines a debug <code>type</code> which
+                  is referenced from a VS Code launch configuration. When a
+                  debug session is started, VS Code looks up the debug extension
+                  based on the debug type and launches the extension's debug
+                  adapter executable as a separate process. When the debug
+                  session ends, the adapter is stopped.
+                </p>
+                <p>
+                  Visual Studio Code ships with two debug extensions for
+                  Node.js: <code>node-debug</code> uses the (deprecated) v8
+                  Debugger Protocol for node versions &lt; 6.3 and
+                  <code>node-debug2</code> uses the Chrome Debugger Protocol
+                  (CDP) supported by node versions &gt;= 6.3. Many more debugger
+                  extensions are available from the
+                  <a
+                    href="https://marketplace.visualstudio.com/vscode/Debuggers"
+                    >VS Code Marketplace</a
+                  >
+                  or you can create a debugger extension yourself.
+                </p>
+                <p>
+                  The rest of this document shows how to develop a debugger
+                  extension.
+                </p>
+                <h2 id="the-mock-debug-extension">The Mock Debug Extension</h2>
+                <p>
+                  Since creating a debug adapter from scratch is a bit heavy for
+                  this tutorial, we will start with a simple debug adapter which
+                  we have created as an educational debug adapter 'starter kit'.
+                  It is called <em>Mock Debug</em> because it does not talk to a
+                  real debugger but it 'mocks' one. So Mock Debug simulates a
+                  debugger and supports step, continue, breakpoints, exceptions,
+                  and variable access but it is not connected to any real
+                  debugger.
+                </p>
+                <p>
+                  Before delving into the development setup for mock-debug,
+                  let's first install a
+                  <a
+                    href="https://marketplace.visualstudio.com/items/andreweinand.mock-debug"
+                    >pre-built version</a
+                  >
+                  from the VS Code Marketplace and play with it:
+                </p>
+                <ul>
+                  <li>
+                    switch to the Extensions viewlet and type 'mock' to search
+                    for the Mock Debug extension,
+                  </li>
+                  <li>'Install' and 'Reload' the extension.</li>
+                </ul>
+                <p>To try Mock Debug:</p>
+                <ul>
+                  <li>
+                    Create a new empty folder <code>mock test</code> and open it
+                    in VS Code.
+                  </li>
+                  <li>
+                    Create a file <code>readme.md</code> and enter several lines
+                    of arbitrary text.
+                  </li>
+                  <li>Switch to the Debug view and press the gear icon.</li>
+                  <li>
+                    VS Code will let you select an 'environment' in order to
+                    create a default launch configuration. Pick "Mock Debug".
+                  </li>
+                  <li>
+                    Press the green Start button and then Enter to confirm the
+                    suggested file 'readme.md'.
+                  </li>
+                </ul>
+                <p>
+                  A debug session starts and you can 'step' through the readme
+                  file, set and hit breakpoints, and run into exceptions (if the
+                  word <code>exception</code> appears in a line).
+                </p>
+                <p>
+                  <img
+                    alt="Mock Debugger running"
+                    src="../images/example-debuggers/mock-debug.gif"
+                  />
+                </p>
+                <p>
+                  Before using Mock Debug as a starting point for your own
+                  development, we recommend to uninstall the pre-built version
+                  first:
+                </p>
+                <ul>
+                  <li>
+                    switch to the Extensions viewlet and click on the gear icon
+                    of the Mock Debug extension,
+                  </li>
+                  <li>
+                    run the 'Uninstall' action and then 'Reload' the window.
+                  </li>
+                </ul>
+                <h2 id="development-setup-for-mock-debug">
+                  Development Setup for Mock Debug
+                </h2>
+                <p>
+                  Now let's get the source for Mock Debug and start development
+                  on it within VS Code:
+                </p>
+                <pre><code>git clone https://github.com/Microsoft/vscode-mock-debug.git
+cd vscode-mock-debug
+npm install
+</code></pre>
+
+                <p>
+                  Open the project folder <code>vscode-mock-debug</code> in VS
+                  Code.
+                </p>
+                <p>What's in the package?</p>
+                <ul>
+                  <li>
+                    <code>package.json</code> is the manifest for the mock-debug
+                    extension:
+                  </li>
+                  <li>
+                    it lists the contributions of the mock-debug extension,
+                  </li>
+                  <li>
+                    the <code>compile</code> and <code>watch</code> scripts are
+                    used to transpile the TypeScript source into the
+                    <code>out</code> folder and watch for subsequent source
+                    modifications,
+                  </li>
+                  <li>
+                    the dependencies <code>vscode-debugprotocol</code>,
+                    <code>vscode-debugadapter</code>, and
+                    <code>vscode-debugadapter-testsupport</code> are NPM modules
+                    that simplify the development of node-based debug adapters.
+                  </li>
+                  <li>
+                    the implementation of the debug adapter of the extension
+                    lives in <code>src/mockDebug.ts</code>. Here you find the
+                    handlers for the various requests of the VS Code debug
+                    protocol.
+                  </li>
+                  <li>
+                    since the implementation of debug extension lives in the
+                    debug adapter, there is no need to have extension code at
+                    all (i.e. code that runs in the extension host process).
+                    However, Mock Debug has a small
+                    <code>src/extension.ts</code> because it illustrates what
+                    can be done in the extension code of a debug extension.
+                  </li>
+                </ul>
+                <p>
+                  Now build and launch the Mock Debug extension by selecting the
+                  <code>Extension</code> launch configuration and hitting
+                  <code>F5</code>. Initially this will do a full transpile of
+                  the TypeScript sources into the <code>out</code> folder. After
+                  the full build, a 'watcher task' is started that transpiles
+                  any changes you make.
+                </p>
+                <p>
+                  After transpiling the source, a new VS Code window
+                  ('[Extension Development Host]') appears with the Mock Debug
+                  extension now running in debug mode. From that window open
+                  your <code>mock test</code> project with the
+                  <code>readme.md</code> file, start a debug session with 'F5',
+                  and then step through it:
+                </p>
+                <p>
+                  <img
+                    alt="Debugging Extension and Server"
+                    src="../images/example-debuggers/debug-mock-session.png"
+                  />
+                </p>
+                <p>
+                  Since you are running the extension in debug mode, you could
+                  now set and hit breakpoints in
+                  <code>src/extension.ts</code> but as I've mentioned above,
+                  there is not much interesting code executing in the extension.
+                  The interesting code runs in the debug adapter which is a
+                  separate process.
+                </p>
+                <p>
+                  In order to debug the debug adapter itself, we have to run it
+                  in debug mode. This is most easily achieved by running the
+                  debug adapter in 'server mode' and configure VS Code to
+                  connect to it. In your VS Code vscode-mock-debug project
+                  select the launch configuration 'server' from the drop down
+                  menu and press the green Start button.
+                </p>
+                <p>
+                  Since we already had an active debug session for the extension
+                  the VS Code debugger UI now enters 'multi session' mode which
+                  is indicated by seeing the names of the two debug sessions
+                  <strong>Extension</strong> and <strong>Server</strong> showing
+                  up in the CALL STACK view:
+                </p>
+                <p>
+                  <img
+                    alt="Debugging Extension and Server"
+                    src="../images/example-debuggers/debug-extension-server.png"
+                  />
+                </p>
+                <p>
+                  Now we are able to debug both the extension and the debug
+                  adapter simultanously. A faster way to arrive here is by using
+                  the <strong>Extension + Server</strong> launch configuration
+                  which launches both sessions automatically.
+                </p>
+                <p>
+                  Set a breakpoint at the beginning of method
+                  <code>launchRequest(...)</code> in file
+                  <code>src/mockDebug.ts</code> and as a last step configure the
+                  mock debugger to connect to the debug adapter server by adding
+                  a <code>debugServer</code> attribute for port
+                  <code>4711</code> to your mock test launch config:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;type&quot;: &quot;mock&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;mock test&quot;,
+            &quot;program&quot;: &quot;${workspaceRoot}/readme.md&quot;,
+            &quot;stopOnEntry&quot;: true,
+            &quot;debugServer&quot;: 4711
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  If you now launch this debug configuration, VS Code does not
+                  start the mock debug adapter as a separate process but
+                  directly connects to local port 4711 of the already running
+                  server and you should hit the breakpoint in
+                  <code>launchRequest</code>.
+                </p>
+                <p>
+                  With this setup you can now easily edit, transpile, and debug
+                  Mock Debug.
+                </p>
+                <p>
+                  But now the real work begins: you will have to replace the
+                  'mock' implementation of the debug adapter in
+                  <code>src/mockDebug.ts</code> by some 'real' code that talks
+                  to your debugger or runtime. This involves understanding and
+                  implementing the VS Code Debug Protocol. More details about
+                  this can be found
+                  <a
+                    href="https://code.visualstudio.com/docs/extensionAPI/api-debugging"
+                    >here</a
+                  >.
+                </p>
+                <h2 id="anatomy-of-the-packagejson-of-a-debug-extension">
+                  Anatomy of the package.json of a Debug Extension
+                </h2>
+                <p>
+                  Besides providing a debugger specific implementation of the
+                  debug adapter a debugger extension needs a
+                  <code>package.json</code> that contributes to the various
+                  debug related contributions points.
+                </p>
+                <p>
+                  So let's have a closer look at the
+                  <code>package.json</code> of Mock Debug.
+                </p>
+                <p>
+                  Like every VS Code extension, the
+                  <code>package.json</code> declares the fundamental properties
+                  <strong>name</strong>, <strong>publisher</strong>, and
+                  <strong>version</strong> of the extension. Use the
+                  <strong>categories</strong> field to make the extension easier
+                  to find in the VS Code Extension Marketplace.
+                </p>
+                <pre><code class="json">{
+    &quot;name&quot;: &quot;mock-debug&quot;,
+    &quot;version&quot;: &quot;0.17.0&quot;,
+    &quot;publisher&quot;: &quot;andreweinand&quot;,
+    &quot;description&quot;: &quot;Starter extension for developing debug adapters for VS Code.&quot;,
+    &quot;engines&quot;: {
+        &quot;vscode&quot;: &quot;^1.1.0&quot;,
+        &quot;node&quot;: &quot;^6.5.0&quot;
+    },
+    &quot;categories&quot;: [ &quot;Debuggers&quot; ],
+
+    &quot;activationEvents&quot;: [
+        &quot;onCommand:extension.mock-debug.getProgramName&quot;,
+        &quot;onCommand:extension.mock-debug.provideInitialConfigurations&quot;
+    ],
+
+    &quot;contributes&quot;: {
+        &quot;breakpoints&quot;: [
+            {
+                &quot;language&quot;: &quot;markdown&quot;
+            }
+        ],
+        &quot;debuggers&quot;: [{
+            &quot;type&quot;: &quot;mock&quot;,
+            &quot;label&quot;: &quot;Mock Debug&quot;,
+
+            &quot;program&quot;: &quot;./out/mockDebug.js&quot;,
+            &quot;runtime&quot;: &quot;node&quot;,
+
+            &quot;configurationAttributes&quot;: {
+                &quot;launch&quot;: {
+                    &quot;required&quot;: [&quot;program&quot;],
+                    &quot;properties&quot;: {
+                        &quot;program&quot;: {
+                            &quot;type&quot;: &quot;string&quot;,
+                            &quot;description&quot;: &quot;Absolute path to a text file.&quot;,
+                            &quot;default&quot;: &quot;${workspaceRoot}/readme.md&quot;
+                        },
+                        &quot;stopOnEntry&quot;: {
+                            &quot;type&quot;: &quot;boolean&quot;,
+                            &quot;description&quot;: &quot;Automatically stop after launch.&quot;,
+                            &quot;default&quot;: true
+                        }
+                    }
+                }
+            },
+
+            &quot;initialConfigurations&quot;: [
+                {
+                    &quot;type&quot;: &quot;mock&quot;,
+                    &quot;name&quot;: &quot;Mock Debug&quot;,
+                    &quot;request&quot;: &quot;launch&quot;,
+                    &quot;program&quot;: &quot;readme.md&quot;,
+                    &quot;stopOnEntry&quot;: true
+                }
+            ],
+
+            &quot;configurationSnippets&quot;: [
+                {
+                    &quot;label&quot;: &quot;Mock Debug: Launch&quot;,
+                    &quot;description&quot;: &quot;A new configuration for launching a mock debug program&quot;,
+                    &quot;body&quot;: {
+                        &quot;type&quot;: &quot;mock&quot;,
+                        &quot;request&quot;: &quot;launch&quot;,
+                        &quot;name&quot;: &quot;${2:Launch Program}&quot;,
+                        &quot;program&quot;: &quot;^\&quot;\\${workspaceRoot}/${1:Program}\&quot;&quot;
+                    }
+                }
+            ],
+
+            &quot;variables&quot;: {
+                &quot;AskForProgramName&quot;: &quot;extension.mock-debug.getProgramName&quot;
+            }
+        }]
+    }
+}
+</code></pre>
+
+                <p>
+                  Now take a look at the <strong>contributes</strong> section
+                  which contains the contributions specific to debug extensions.
+                </p>
+                <p>
+                  First we use the <strong>breakpoints</strong> contribution
+                  point to list the languages for which setting breakpoints will
+                  be enabled.
+                </p>
+                <p>
+                  Next is the <strong>debuggers</strong> section. Here one
+                  debugger is introduced under a (unique) debug
+                  <strong>type</strong> <code>mock</code>. The user can
+                  reference this type in his launch configurations. The optional
+                  attribute <strong>label</strong> can be used to give the debug
+                  type a nicer name when showing it in the UI.
+                </p>
+                <p>
+                  Since the debug extension uses a debug adapter, a relative
+                  path to this is given as the
+                  <strong>program</strong> attribute. In order to make the
+                  extension self-contained the application must live inside the
+                  extension folder. By convention we keep this applications
+                  inside a folder named <code>out</code> or <code>bin</code> but
+                  you are free to use a different name.
+                </p>
+                <p>
+                  Since VS Code runs on different platforms, we have to make
+                  sure that the debug adapter program supports the different
+                  platforms as well. For this we have the following options:
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      If the program is implemented in a platform independent
+                      way, e.g. as program that runs on a runtime that is
+                      available on all supported platforms, you can specify this
+                      runtime via the <strong>runtime</strong> attribute. As of
+                      today, VS Code supports <code>node</code> and
+                      <code>mono</code> runtimes. Our Mock Debug adapter from
+                      above uses this approach.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If your debug adapter implementation needs different
+                      executables on different platforms, the
+                      <strong>program</strong> attribute can be qualified for
+                      specific platforms like this:
+                    </p>
+                    <p>
+                      <code
+                        >json "debuggers": [{ "type": "gdb", "windows": {
+                        "program": "./bin/gdbDebug.exe", }, "osx": { "program":
+                        "./bin/gdbDebug.sh", }, "linux": { "program":
+                        "./bin/gdbDebug.sh", } }]</code
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      A combination of both approaches is possible too. The
+                      following example is from the Mono Debug adapter which is
+                      implemented as a mono application that needs a runtime on
+                      macOS and Linux but not on Windows:
+                    </p>
+                    <p>
+                      <code
+                        >json "debuggers": [{ "type": "mono", "program":
+                        "./bin/monoDebug.exe", "osx": { "runtime": "mono" },
+                        "linux": { "runtime": "mono" } }]</code
+                      >
+                    </p>
+                  </li>
+                </ol>
+                <p>
+                  <strong>configurationAttributes</strong> represents the schema
+                  for the <code>launch.json</code> attributes that are available
+                  for this debugger. This schema is used for validating the
+                  <code>launch.json</code> and supporting IntelliSense and hover
+                  help when editing the launch configuration.
+                </p>
+                <p>
+                  <strong>initialConfigurations</strong> defines the initial
+                  content of the default <code>launch.json</code> for this
+                  debugger. This information is used when a project does not
+                  have a <code>launch.json</code> and a user starts a debug
+                  session or clicks on the gear icon in the debug viewlet. In
+                  this case VS Code lets the user pick a debugger from the list
+                  of all debuggers and then creates the corresponding
+                  <code>launch.json</code>:
+                </p>
+                <p>
+                  <img
+                    alt="Debugger Quickpick"
+                    src="../images/example-debuggers/debug-init-config.png"
+                  />
+                </p>
+                <p>
+                  Instead of defining the initial content of the
+                  <code>launch.json</code> statically in the
+                  <code>package.json</code> it is possible to 'compute' the
+                  initial content with a command that is implemented in the
+                  extension.
+                </p>
+                <p>
+                  In this case the value for the
+                  <code>initialConfigurations</code> attribute must be set to a
+                  command ID:
+                </p>
+                <pre><code class="json">    // ...
+    &quot;initialConfigurations&quot;: &quot;extension.mock-debug.provideInitialConfigurations&quot;,
+    // ...
+</code></pre>
+
+                <p>
+                  And the implementation of this command lives in
+                  <code>src/extension.ts</code> and returns the content for the
+                  <code>launch.json</code> as a string (which makes it possible
+                  to include comments and precisely control the formatting):
+                </p>
+                <pre><code class="ts">const initialConfigurations = {
+    version: '0.2.0',
+    configurations: [
+        {
+            type: 'mock',
+            request: 'launch',
+            name: 'Mock Debug',
+            program: '${workspaceRoot}/readme.md',
+            stopOnEntry: true
+        }
+    ]
+};
+
+vscode.commands.registerCommand('extension.mock-debug.provideInitialConfigurations', () =&gt; {
+    return [
+        '// Use IntelliSense to learn about possible Mock Debug attributes.',
+        '// Hover to view descriptions of existing attributes.',
+        JSON.stringify(initialConfigurations, null, '\t')
+    ].join('\n');
+});
+</code></pre>
+
+                <p>
+                  <strong>configurationSnippets</strong> define launch
+                  configuration snippets that get surfaced in IntelliSense when
+                  editing the <code>launch.json</code>. The
+                  <code>label</code> attribute of a snippet is prefixed by the
+                  debugger name so that it can be clearly identified when
+                  presented in a list of all snippet proposals.
+                </p>
+                <p>
+                  The <strong>variables</strong> contribution binds 'variables'
+                  to 'commands'. These variables can be used in the launch
+                  configuration using the
+                  <strong>${command.Xxxx}</strong> syntax and the variables are
+                  substituted by the value returned from the bound command when
+                  a debug session is started.
+                </p>
+                <p>
+                  The implementation of a command lives in the extension and it
+                  can range from a simple expression with no UI, to
+                  sophisticated functionality based on the UI features available
+                  in the extension API. Mock Debug binds a variable
+                  <code>AskForProgramName</code> to the command
+                  <code>extension.mock-debug.getProgramName</code>. The
+                  implementation of this command in
+                  <code>src/extension.ts</code> uses the
+                  <code>showInputBox</code> to let the user enter a program
+                  name:
+                </p>
+                <pre><code class="ts">vscode.commands.registerCommand('extension.mock-debug.getProgramName', config =&gt; {
+    return vscode.window.showInputBox({
+        placeHolder: &quot;Please enter the name of a markdown file in the workspace folder&quot;,
+        value: &quot;readme.md&quot;
+    });
+});
+</code></pre>
+
+                <p>
+                  The variable can now be used in any string typed value of a
+                  launch configuration as
+                  <strong>${command.AskForProgramName}</strong>.
+                </p>
+                <h2 id="publishing-your-debug-adapter">
+                  Publishing your Debug Adapter
+                </h2>
+                <p>
+                  Once you have created your debug adapter you can publish it to
+                  the Marketplace:
+                </p>
+                <ul>
+                  <li>
+                    update the attributes in the <code>package.json</code> to
+                    reflect the naming and purpose of your debug adapter.
+                  </li>
+                  <li>
+                    upload to the Marketplace as described in
+                    <a
+                      href="https://vscode.readthedocs.io/docs/extensions/publish-extension.md"
+                      >Share an Extension</a
+                    >
+                    section.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../example-hello-world/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Example hello world"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../debugging-extensions/index.html"
+                  class="btn btn-neutral"
+                  title="Debugging extensions"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- extensions/example-debuggers/  Sat, 30 Oct 2021 04:57:27 -->
+</html>

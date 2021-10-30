@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- editor/codebasics/  Sat, 30 Oct 2021 04:56:38 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Codebasics - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Codebasics";
+      var mkdocs_page_input_path = "editor/codebasics.md";
+      var mkdocs_page_url = "https://vscode.readthedocs.io/editor/codebasics/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Codebasics</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#basic-editing">Basic Editing</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#keyboard-shortcuts"
+                        >Keyboard shortcuts</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#multiple-selections-multi-cursor"
+                        >Multiple selections (multi-cursor)</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#column-box-selection"
+                        >Column (box) selection</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#save-auto-save"
+                        >Save / Auto Save</a
+                      >
+                    </li>
+
+                    <li><a class="toctree-l4" href="#hot-exit">Hot Exit</a></li>
+
+                    <li>
+                      <a class="toctree-l4" href="#search-across-files"
+                        >Search Across Files</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#intellisense"
+                        >IntelliSense</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#formatting">Formatting</a>
+                    </li>
+
+                    <li><a class="toctree-l4" href="#folding">Folding</a></li>
+
+                    <li>
+                      <a class="toctree-l4" href="#indentation">Indentation</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#file-encoding-support"
+                        >File Encoding Support</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#common-questions"
+                        >Common Questions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../command-line/index.html">Command line</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging/index.html">Debugging</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../intellisense/index.html">Intellisense</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1/index.html">Tasks v1</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../whyvscode/index.html">Whyvscode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Editor &raquo;</li>
+
+                <li>Codebasics</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="basic-editing">Basic Editing</h1>
+                <p>
+                  Visual Studio Code is an editor first and foremost and
+                  includes the features you need for highly productive source
+                  code editing. This topic takes you through the basics of the
+                  editor and helps you get moving with your code.
+                </p>
+                <h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
+                <p>
+                  Being able to keep your hands on the keyboard when writing
+                  code is crucial for high productivity. VS Code has a rich set
+                  of default keyboard shortcuts as well as allowing you to
+                  customize them.
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md#keyboard-shortcuts-reference"
+                      >Keyboard Shortcuts Reference</a
+                    >
+                    - Learn the most commonly used and popular keyboard
+                    shortcuts by downloading the reference sheet.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md#keymap-extensions"
+                      >Install a Keymap extension</a
+                    >
+                    - Use the keyboard shortcuts of your old editor (such as
+                    Sublime Text, Atom, and Vim) in VS Code by installing a
+                    Keymap extension.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md#customizing-shortcuts"
+                      >Customize Keyboard Shortcuts</a
+                    >
+                    - Change the default keyboard shortcuts to fit your style.
+                  </li>
+                </ul>
+                <h2 id="multiple-selections-multi-cursor">
+                  Multiple selections (multi-cursor)
+                </h2>
+                <p>
+                  VS Code supports multiple cursors for fast simultaneous edits.
+                  You can add secondary cursors (rendered thinner) with
+                  <code>kbstyle(Alt+Click)</code>. Each cursor operates
+                  independently based on the context it sits in. A common way to
+                  add more cursors is with
+                  <code>kb(editor.action.insertCursorBelow)</code> or
+                  <code>kb(editor.action.insertCursorAbove)</code> that insert
+                  cursors below or above.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> Your graphics card driver (for
+                    example NVIDIA) might overwrite these default shortcuts.
+                  </p>
+                </blockquote>
+                <p>
+                  <img
+                    alt="Multi-cursor"
+                    src="../images/editingevolved/multicursor.gif"
+                  />
+                </p>
+                <p>
+                  <code>kb(editor.action.addSelectionToNextFindMatch)</code>
+                  selects the word at the cursor, or the next occurrence of the
+                  current selection.
+                </p>
+                <p>
+                  <img
+                    alt="Multi-cursor-next-word"
+                    src="../images/editingevolved/multicursor-word.gif"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> You can also add more cursors with
+                    <code>kb(editor.action.selectHighlights)</code>, which will
+                    add a selection at each occurrence of the current selected
+                    text.
+                  </p>
+                </blockquote>
+                <h3 id="multi-cursor-modifier">Multi-cursor modifier</h3>
+                <p>
+                  If you'd like to change the modifier key for applying multiple
+                  cursors to <code>kbstyle(Cmd+Click)</code> on macOS and
+                  <code>kbstyle(Ctrl+Click)</code> on Windows and Linux, you can
+                  do so with the <code>editor.multiCursorModifier</code>
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >setting</a
+                  >. This lets users coming from other editors such as Sublime
+                  Text or Atom continue to use the keyboard modifier they are
+                  familiar with.
+                </p>
+                <p>The setting can be set to:</p>
+                <ul>
+                  <li>
+                    <code>ctrlCmd</code> - Maps to <code>kbstyle(Ctrl)</code> on
+                    Windows and <code>kbstyle(Cmd)</code> on macOS.
+                  </li>
+                  <li>
+                    <code>alt</code> - The existing default
+                    <code>kbstyle(Alt)</code>.
+                  </li>
+                </ul>
+                <p>
+                  There's also a menu item
+                  <strong>Use Ctrl+Click for Multi-Cursor</strong> in the
+                  <strong>Selection</strong> menu to quickly toggle this
+                  setting.
+                </p>
+                <p>
+                  The <strong>Go To Definition</strong> and
+                  <strong>Open Link</strong> gestures will also respect this
+                  setting and adapt such that they do not conflict. For example,
+                  when the setting is <code>ctrlCmd</code>, multiple cursors can
+                  be added with <code>kbstyle(Ctrl/Cmd+Click)</code>, and
+                  opening links or going to definition can be invoked with
+                  <code>kbstyle(Alt+Click)</code>.
+                </p>
+                <h3 id="shrinkexpand-selection">Shrink/expand selection</h3>
+                <p>
+                  Quickly shrink or expand the current selection. Trigger it
+                  with <code>kb(editor.action.smartSelect.shrink)</code> and
+                  <code>kb(editor.action.smartSelect.grow)</code>
+                </p>
+                <p>
+                  Here's an example of expanding the selection with
+                  <code>kb(editor.action.smartSelect.grow)</code>:
+                </p>
+                <p>
+                  <img
+                    alt="Expand selection"
+                    src="../images/editingevolved/expandselection.gif"
+                  />
+                </p>
+                <h2 id="column-box-selection">Column (box) selection</h2>
+                <p>
+                  Hold <code>kbstyle(Shift)</code> and
+                  <code>kbstyle(Alt)</code> while dragging to do column
+                  selection:
+                </p>
+                <p>
+                  <img
+                    alt="Column text selection"
+                    src="../images/editingevolved/column-select.gif"
+                  />
+                </p>
+                <p>
+                  There are also default key bindings for column selection on
+                  Mac and Windows, but not on Linux.
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Key</th>
+                      <th>Command</th>
+                      <th>Command id</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>kb(cursorColumnSelectDown)</code></td>
+                      <td>Column Select Down</td>
+                      <td><code>cursorColumnSelectDown</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(cursorColumnSelectUp)</code></td>
+                      <td>Column Select Up</td>
+                      <td><code>cursorColumnSelectUp</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(cursorColumnSelectLeft)</code></td>
+                      <td>Column Select Left</td>
+                      <td><code>cursorColumnSelectLeft</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(cursorColumnSelectRight)</code></td>
+                      <td>Column Select Right</td>
+                      <td><code>cursorColumnSelectRight</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(cursorColumnSelectPageDown)</code></td>
+                      <td>Column Select Page Down</td>
+                      <td><code>cursorColumnSelectPageDown</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>kb(cursorColumnSelectPageUp)</code></td>
+                      <td>Column Select Page Up</td>
+                      <td><code>cursorColumnSelectPageUp</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  You can
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md"
+                    >edit</a
+                  >
+                  your <code>keybindings.json</code> to bind them to something
+                  more familiar if you wish.
+                </p>
+                <h2 id="save-auto-save">Save / Auto Save</h2>
+                <p>
+                  By default, VS Code requires an explicit action to save your
+                  changes to disk, <code>kb(workbench.action.files.save)</code>.
+                </p>
+                <p>
+                  However, it's easy to turn on <code>Auto Save</code>, which
+                  will save your changes after a configured delay or when focus
+                  leaves the editor. With this option turned on, there is no
+                  need to explicitly save the file. The easiest way to turn on
+                  <code>Auto Save</code> is with the <strong>File</strong> &gt;
+                  <strong>Auto Save</strong> toggle which turns on and off save
+                  after a delay.
+                </p>
+                <p>
+                  For more control over <code>Auto Save</code>, open User or
+                  Workspace
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >settings</a
+                  >
+                  and find the associated settings:
+                </p>
+                <ul>
+                  <li><code>files.autoSave</code>: Can have the values:</li>
+                  <li><code>off</code> - to disable auto save.</li>
+                  <li>
+                    <code>afterDelay</code> - to save files after a configured
+                    delay.
+                  </li>
+                  <li>
+                    <code>onFocusChange</code> - to save files when focus moves
+                    out of the editor of the dirty file.
+                  </li>
+                  <li>
+                    <code>onWindowChange</code> - to save files when the focus
+                    moves out of the VS Code window.
+                  </li>
+                  <li>
+                    <code>files.autoSaveDelay</code>: Configures the delay in
+                    milliseconds when <code>files.autoSave</code> is configured
+                    to <code>afterDelay</code>.
+                  </li>
+                </ul>
+                <h2 id="hot-exit">Hot Exit</h2>
+                <p>
+                  VS Code will remember unsaved changes to files when you exit
+                  by default. Hot exit is triggered when the application is
+                  closed via <strong>File</strong> &gt;
+                  <strong>Exit</strong> (<strong>Code</strong> &gt;
+                  <strong>Quit</strong> on macOS) or when the last window is
+                  closed.
+                </p>
+                <p>
+                  You can configure hot exit by setting
+                  <code>files.hotExit</code> to the following values:
+                </p>
+                <ul>
+                  <li><code>"off"</code>: Disable hot exit.</li>
+                  <li>
+                    <code>"onExit"</code>: Hot exit will be triggered when the
+                    application is closed, that is when the last window is
+                    closed on Windows/Linux or when the
+                    <code>workbench.action.quit</code> command is triggered
+                    (from the <strong>Command Palette</strong>, keyboard
+                    shortcut or menu). All windows with backups will be restored
+                    upon next launch.
+                  </li>
+                  <li>
+                    <code>"onExitAndWindowClose"</code>: Hot exit will be
+                    triggered when the application is closed, that is when the
+                    last window is closed on Windows/Linux or when the
+                    <code>workbench.action.quit</code> command is triggered
+                    (from the <strong>Command Palette</strong>, keyboard
+                    shortcut or menu), and also for any window with a folder
+                    opened regardless of whether it is the last window. All
+                    windows without folders opened will be restored upon next
+                    launch. To restore folder windows as they were before
+                    shutdown, set <code>window.restoreWindows</code> to
+                    <code>all</code>.
+                  </li>
+                </ul>
+                <h2 id="search-across-files">Search Across Files</h2>
+                <p>
+                  VS Code allows you to quickly search over all files in the
+                  currently-opened folder. Press
+                  <code>kb(workbench.view.search)</code> and enter your search
+                  term. Search results are grouped into files containing the
+                  search term, with an indication of the hits in each file and
+                  its location. Expand a file to see a preview of all of the
+                  hits within that file. Then single-click on one of the hits to
+                  view it in the editor.
+                </p>
+                <p>
+                  <img
+                    alt="A simple text search across files"
+                    src="../images/codebasics/search.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> We support regular expression
+                    searching in the search box, too.
+                  </p>
+                </blockquote>
+                <p>
+                  You can configure advanced search options with
+                  <code>kb(workbench.action.search.toggleQueryDetails)</code>.
+                  This will show additional fields to configure the search.
+                </p>
+                <h3 id="advanced-search-options">Advanced Search Options</h3>
+                <p>
+                  <img
+                    alt="Advanced search options"
+                    src="../images/codebasics/searchadvanced.png"
+                  />
+                </p>
+                <p>
+                  In the two input boxes below the search box, you can include
+                  and exclude files. If you enter <code>example</code>, that
+                  will match every folder and file named <code>example</code> in
+                  the workspace. If you enter <code>./example</code>, that will
+                  match the folder <code>example/</code> at the top level of
+                  your workspace. You can also use glob syntax:
+                </p>
+                <ul>
+                  <li>
+                    <code>*</code> to match one or more characters in a path
+                    segment
+                  </li>
+                  <li>
+                    <code>?</code> to match on one character in a path segment
+                  </li>
+                  <li>
+                    <code>**</code> to match any number of path segments,
+                    including none
+                  </li>
+                  <li>
+                    <code>{}</code> to group conditions (e.g.
+                    <code>{**/*.html,**/*.txt}</code> matches all HTML and text
+                    files)
+                  </li>
+                  <li>
+                    <code>[]</code> to declare a range of characters to match
+                    (e.g., <code>example.[0-9]</code> to match on
+                    <code>example.0</code>, <code>example.1</code>, …)
+                  </li>
+                </ul>
+                <p>
+                  VS Code excludes some folders by default to reduce the number
+                  of search results that you are not interested in (for example:
+                  <code>node_modules</code>). Open
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >settings</a
+                  >
+                  to change these rules under the <code>files.exclude</code> and
+                  <code>search.exclude</code> section.
+                </p>
+                <p>
+                  Also note the two toggle buttons in the
+                  <strong>files to exclude</strong> box. The left one determines
+                  whether to exclude files that are ignored by your
+                  <code>.gitignore</code> file. The right determines whether to
+                  exclude files that are matched by your
+                  <code>files.exclude</code> and
+                  <code>search.exclude</code> settings.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> From the Explorer, you can right-click
+                    on a folder and select <strong>Find in Folder</strong> to
+                    search inside a folder only.
+                  </p>
+                </blockquote>
+                <p>
+                  While VS Code does support regular expression searches,
+                  backreferences, lookaround, and multiline matches are not
+                  supported. This is because VS Code depends on the search tool
+                  <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>,
+                  which, while extremely fast, doesn't support these advanced
+                  regex features.
+                </p>
+                <h3 id="search-and-replace">Search and Replace</h3>
+                <p>
+                  You can also Search and Replace across files. Expand the
+                  Search widget to display the Replace text box.
+                </p>
+                <p>
+                  <img
+                    alt="search and replace"
+                    src="../images/codebasics/global-search-replace.png"
+                  />
+                </p>
+                <p>
+                  When you type text into the Replace text box, you will see a
+                  diff display of the pending changes. You can replace across
+                  all files from the Replace text box, replace all in one file
+                  or replace a single change.
+                </p>
+                <p>
+                  <img
+                    alt="search and replace diff view"
+                    src="../images/codebasics/search-replace-example.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> You can quickly reuse a previous
+                    search term by using
+                    <code>kb(search.history.showNext)</code> and
+                    <code>kb(search.history.showPrevious)</code> to navigate
+                    through your search term history.
+                  </p>
+                </blockquote>
+                <h2 id="intellisense">IntelliSense</h2>
+                <p>
+                  We'll always offer word completion, but for the rich
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/overview.md"
+                    >languages</a
+                  >, such as JavaScript, JSON, HTML, CSS, Less, Sass, C# and
+                  TypeScript, we offer a true IntelliSense experience. If a
+                  language service knows possible completions, the IntelliSense
+                  suggestions will pop up as you type. You can always manually
+                  trigger it with <code>kb(editor.action.triggerSuggest)</code>.
+                  By default, <code>kbstyle(Tab)</code> or
+                  <code>kbstyle(Enter)</code> are the accept keyboard triggers
+                  but you can also
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md"
+                    >customize these key bindings</a
+                  >.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> The suggestions filtering supports
+                    CamelCase so you can type the letters which are upper cased
+                    in a method name to limit the suggestions. For example,
+                    "cra" will quickly bring up "createApplication".
+                  </p>
+                  <p>
+                    <strong>Tip:</strong> IntelliSense suggestions can be
+                    configured via the <code>editor.quickSuggestions</code> and
+                    <code>editor.suggestOnTriggerCharacters</code>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                      >settings</a
+                    >.
+                  </p>
+                </blockquote>
+                <p>
+                  JavaScript and TypeScript developers can take advantage of the
+                  <a href="https://www.npmjs.com/">npmjs</a> type declaration
+                  (typings) file repository to get IntelliSense for common
+                  JavaScript libraries (Node.js, React, Angular). You can find a
+                  good explanation on using type declaration files in the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/javascript.md#intellisense"
+                    >JavaScript language</a
+                  >
+                  topic and the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/nodejs/nodejs-tutorial.md"
+                    >Node.js</a
+                  >
+                  tutorial.
+                </p>
+                <p>
+                  Learn more in the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/intellisense.md"
+                    >IntelliSense document</a
+                  >.
+                </p>
+                <h2 id="formatting">Formatting</h2>
+                <p>
+                  VS Code has great support for source code formatting. The
+                  editor has two explicit format actions:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Format Document</strong>
+                    (<code>kb(editor.action.formatDocument)</code>) - Format the
+                    entire active file.
+                  </li>
+                  <li>
+                    <strong>Format Selection</strong>
+                    (<code>kb(editor.action.formatSelection)</code>) - Format
+                    the selected text.
+                  </li>
+                </ul>
+                <p>
+                  You can invoke these from the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>) or the editor
+                  context menu.
+                </p>
+                <p>
+                  VS Code has default formatters for JavaScript, TypeScript,
+                  JSON, and HTML. Each language has specific formatting options
+                  (for example, <code>html.format.indentInnerHtml</code>) which
+                  you can tune to your preference in your user or workspace
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >settings</a
+                  >. You can also disable the default language formatter if you
+                  have another extension installed that provides formatting for
+                  the same language.
+                </p>
+                <pre><code class="json">&quot;html.format.enable&quot;: false
+</code></pre>
+
+                <p>
+                  Along with manually invoking code formatting, you can also
+                  trigger formatting based on user gestures such as typing,
+                  saving or pasting. These are off by default but you can enable
+                  these behaviors through the following
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >settings</a
+                  >:
+                </p>
+                <ul>
+                  <li>
+                    <code>editor.formatOnType</code> - Format the line after
+                    typing.
+                  </li>
+                  <li>
+                    <code>editor.formatOnSave</code> - Format a file on save.
+                  </li>
+                  <li>
+                    <code>editor.formatOnPaste</code> - Format the pasted
+                    content.
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    Note: Not all formatters support format on paste as to do so
+                    they must support formatting a selection or range of text.
+                  </p>
+                </blockquote>
+                <p>
+                  In addition to the default formatters, you can find extensions
+                  on the Marketplace to support other languages or formatting
+                  tools. There is a <code>Formatters</code> category so you can
+                  easily search and find
+                  <a
+                    href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Formatters&amp;sortBy=Downloads"
+                    >formatting extensions</a
+                  >. In the <strong>Extensions</strong> view search box, type
+                  'formatters' or 'category:formatters' to see a filtered list
+                  of extensions within VS Code.
+                </p>
+                <h2 id="folding">Folding</h2>
+                <p>
+                  You can fold regions of source code using the folding icons on
+                  the gutter between line numbers and line start. Move the mouse
+                  over the gutter to fold and unfold regions. The folding
+                  regions are evaluated based on the indentation of lines. A
+                  folding region starts when a line has a smaller indent than
+                  one or more following lines, and ends when there is a line
+                  with the same or smaller indent.
+                </p>
+                <p>You can also use the following actions:</p>
+                <ul>
+                  <li>
+                    Fold (<code>kb(editor.fold)</code>) folds the innermost
+                    uncollapsed region at the cursor
+                  </li>
+                  <li>
+                    Unfold (<code>kb(editor.unfold)</code>) unfolds the
+                    collapsed region at the cursor
+                  </li>
+                  <li>
+                    Fold All (<code>kb(editor.foldAll)</code>) folds all region
+                    in the editor
+                  </li>
+                  <li>
+                    Unfold All (<code>kb(editor.unfoldAll)</code>) unfolds all
+                    regions in the editor
+                  </li>
+                  <li>
+                    Fold Level X (<code>kb(editor.foldLevel2)</code> for level
+                    2) folds all regions of level X, except the region at the
+                    current cursor position
+                  </li>
+                </ul>
+                <p>
+                  <img alt="Folding" src="../images/codebasics/folding.png" />
+                </p>
+                <h2 id="indentation">Indentation</h2>
+                <p>
+                  VS Code lets you control text indentation and whether you'd
+                  like to use spaces or tab stops. By default, VS Code inserts
+                  spaces and uses 4 spaces per <code>kbstyle(Tab)</code> key. If
+                  you'd like to use another default, you can modify the
+                  <code>editor.insertSpaces</code> and
+                  <code>editor.tabSize</code>
+                  <a href="../../docs/getstarted/settings.html">settings</a>.
+                </p>
+                <pre><code class="json">    &quot;editor.insertSpaces&quot;: true,
+    &quot;editor.tabSize&quot;: 4,
+</code></pre>
+
+                <h3 id="auto-detection">Auto-detection</h3>
+                <p>
+                  VS Code analyzes your open file and determines the indentation
+                  used in the document. The auto-detected indentation overrides
+                  your default indentation settings. The detected setting is
+                  displayed on the right side of the Status Bar:
+                </p>
+                <p>
+                  <img
+                    alt="auto detect indentation"
+                    src="../images/codebasics/indentation-detection.png"
+                  />
+                </p>
+                <p>
+                  You can click on the Status Bar indentation display to bring
+                  up a drop-down with indentation commands allowing you to
+                  change the default settings for the open file or convert
+                  between tab stops and spaces.
+                </p>
+                <p>
+                  <img
+                    alt="indentation commands"
+                    src="../images/codebasics/indentation-commands.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> VS Code auto-detection checks for
+                    indentations of 2, 4, 6 or 8 spaces. If your file uses a
+                    different number of spaces, the indentation may not be
+                    correctly detected. For example, if your convention is to
+                    indent with 3 spaces, you may want to turn off
+                    <code>editor.detectIndentation</code> and explicitly set the
+                    tab size to 3.
+                  </p>
+                </blockquote>
+                <pre><code class="json">    &quot;editor.detectIndentation&quot;: false,
+    &quot;editor.tabSize&quot;: 3,
+</code></pre>
+
+                <h2 id="file-encoding-support">File Encoding Support</h2>
+                <p>
+                  Set the file encoding globally or per workspace by using the
+                  <code>files.encoding</code> setting in
+                  <strong>User Settings</strong> or
+                  <strong>Workspace Settings</strong>.
+                </p>
+                <p>
+                  <img
+                    alt="files.encoding setting"
+                    src="../images/codebasics/filesencodingsetting.png"
+                  />
+                </p>
+                <p>You can view the file encoding in the status bar.</p>
+                <p>
+                  <img
+                    alt="Encoding in status bar"
+                    src="../images/codebasics/fileencoding.png"
+                  />
+                </p>
+                <p>
+                  Click on the encoding button in the status bar to reopen or
+                  save the active file with a different encoding.
+                </p>
+                <p>
+                  <img
+                    alt="Reopen or save with a different encoding"
+                    src="../images/codebasics/encodingclicked.png"
+                  />
+                </p>
+                <p>Then choose an encoding.</p>
+                <p>
+                  <img
+                    alt="Select an encoding"
+                    src="../images/codebasics/encodingselection.png"
+                  />
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>
+                  You've covered the basic user interface - there is a lot more
+                  to VS Code. Read on to find out about:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/introvideos/basics.md"
+                      >Intro Video - Setup and Basics</a
+                    >
+                    - Watch a tutorial on the basics of VS Code.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                      >User/Workspace Settings</a
+                    >
+                    - Learn how to configure VS Code to your preferences through
+                    user and workspace settings.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/editingevolved.md"
+                      >Code Navigation</a
+                    >
+                    - Peek and Goto Definition, and more
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/integrated-terminal.md"
+                      >Integrated Terminal</a
+                    >
+                    - Learn about the integrated terminal for quickly performing
+                    command line tasks from within VS Code.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/intellisense.md"
+                      >IntelliSense</a
+                    >
+                    - VS Code brings smart code completions.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/debugging.md"
+                      >Debugging</a
+                    >
+                    - This is where VS Code really shines
+                  </li>
+                </ul>
+                <h2 id="common-questions">Common Questions</h2>
+                <p>
+                  <strong
+                    >Q: Is it possible to globally search and replace?</strong
+                  >
+                </p>
+                <p>
+                  <strong>A:</strong> Yes, expand the Search view text box to
+                  include a replace text field. You can search and replace
+                  across all the files in your workspace. Note that if you did
+                  not open VS Code on a folder, the search will only run on the
+                  currently open files.
+                </p>
+                <p>
+                  <img
+                    alt="global search and replace"
+                    src="../images/codebasics/global-search-replace.png"
+                  />
+                </p>
+                <p><strong>Q: How do I turn on word wrap?</strong></p>
+                <p>
+                  <strong>A:</strong> You can control word wrap through the
+                  <code>editor.wordWrap</code>
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >setting</a
+                  >. By default <code>editor.wordwrap</code> is
+                  <code>off</code> but if you set to it to <code>on</code>, text
+                  will wrap on the editor's viewport width.
+                </p>
+                <pre><code class="json">    &quot;editor.wordwrap&quot;: &quot;on&quot;
+</code></pre>
+
+                <p>
+                  You can toggle word wrap for the VS Code session with
+                  <code>kb(editor.action.toggleWordWrap)</code>. Restarting VS
+                  Code will pick up the persisted
+                  <code>editor.wordwrap</code> value.
+                </p>
+                <p>
+                  You can also add vertical column rulers to the editor with the
+                  <code>editor.rulers</code> setting which takes an array of
+                  column character positions where you'd like vertical rulers.
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../command-line/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Command line"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../accessibility/index.html"
+                  class="btn btn-neutral"
+                  title="Accessibility"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- editor/codebasics/  Sat, 30 Oct 2021 04:56:45 -->
+</html>

@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- editor/intellisense/  Sat, 30 Oct 2021 04:57:02 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Intellisense - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Intellisense";
+      var mkdocs_page_input_path = "editor/intellisense.md";
+      var mkdocs_page_url =
+        "https://vscode.readthedocs.io/editor/intellisense/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../codebasics/index.html">Codebasics</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../command-line/index.html">Command line</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging/index.html">Debugging</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Intellisense</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#intellisense">IntelliSense</a>
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#intellisense-for-your-programming-language"
+                        >IntelliSense for your programming language</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#intellisense-features"
+                        >IntelliSense Features</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#types-of-completions"
+                        >Types of Completions</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#customizing-intellisense"
+                        >Customizing IntelliSense</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#troubleshooting"
+                        >Troubleshooting</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#common-questions"
+                        >Common Questions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1/index.html">Tasks v1</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks/index.html">Tasks</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../whyvscode/index.html">Whyvscode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Editor &raquo;</li>
+
+                <li>Intellisense</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <h1 id="intellisense">IntelliSense</h1>
+                <p>
+                  IntelliSense is a general term for a variety of code editing
+                  features including: code completion, parameter info, quick
+                  info, and member lists. IntelliSense features are sometimes
+                  called by other names such as "code completion", "content
+                  assist", and "code hinting."
+                </p>
+                <p>
+                  <img
+                    alt="IntelliSense demo"
+                    src="../images/intellisense/intellisense.gif"
+                  />
+                </p>
+                <h2 id="intellisense-for-your-programming-language">
+                  IntelliSense for your programming language
+                </h2>
+                <p>
+                  VS Code IntelliSense is provided for JavaScript, TypeScript,
+                  JSON, HTML, CSS, Less, and Sass out of the box. VS Code
+                  supports word based completions for any programming language
+                  but can also be configured to have richer IntelliSense by
+                  installing a language extension.
+                </p>
+                <p>
+                  Below are the most popular language extensions in the
+                  <a href="https://marketplace.visualstudio.com/vscode"
+                    >Marketplace</a
+                  >. Click on an extension tile below to read the description
+                  and reviews to decide which extension is best for you.
+                </p>
+                <div class="marketplace-extensions-languages"></div>
+
+                <h2 id="intellisense-features">IntelliSense Features</h2>
+                <p>
+                  VS Code IntelliSense features are powered by a language
+                  service. A language service provides intelligent code
+                  completions based on language semantics and an analysis of
+                  your source code. If a language service knows possible
+                  completions, the IntelliSense suggestions will pop up as you
+                  type. If you continue typing characters, the list of members
+                  (variables, methods, etc.) is filtered to include only members
+                  containing your typed characters. Pressing
+                  <code>kbstyle(Tab)</code> or <code>kbstyle(Enter)</code> will
+                  insert the selected member.
+                </p>
+                <p>
+                  You can trigger IntelliSense in any editor window by typing
+                  <code>kb(editor.action.triggerSuggest)</code> or by typing a
+                  trigger character (such as the dot character
+                  (<code>kbstyle(.)</code>) in JavaScript).
+                </p>
+                <p>
+                  <img
+                    alt="intellisense in package json"
+                    src="../images/intellisense/intellisense_packagejson.gif"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> The suggestions widget supports
+                    CamelCase filtering meaning you can type the letters which
+                    are upper cased in a method name to limit the suggestions.
+                    For example, "cra" will quickly bring up
+                    "createApplication".
+                  </p>
+                </blockquote>
+                <p>
+                  If you prefer, you can turn off IntelliSense while you type.
+                  See
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/intellisense.md#customizing-intellisense"
+                    >Customizing IntelliSense</a
+                  >
+                  below to learn how to disable or customize VS Code's
+                  IntelliSense features.
+                </p>
+                <p>
+                  As provided by the language service, you can see
+                  <strong>quick info</strong> for each method by either pressing
+                  <code>kb(toggleSuggestionDetails)</code> or clicking the info
+                  icon. The accompanying documentation for the method will now
+                  expand to the side. The expanded documentation will stay so
+                  and will update as you navigate the list. You can close this
+                  by pressing <code>kb(toggleSuggestionDetails)</code> again or
+                  by clicking on the close icon.
+                </p>
+                <p>
+                  <img
+                    alt="quick info"
+                    src="../images/intellisense/intellisense_docs.gif"
+                  />
+                </p>
+                <p>
+                  After choosing a method you are provided with
+                  <strong>parameter info</strong>.
+                </p>
+                <p>
+                  <img
+                    alt="parameter info"
+                    src="../images/intellisense/paramater_info.png"
+                  />
+                </p>
+                <p>
+                  When applicable, a language service will surface the
+                  underlying types in the quick info and method signatures. In
+                  the image above, you can see several <code>any</code> types.
+                  Because JavaScript is dynamic and doesn't need or enforce
+                  types, <code>any</code> suggests that the variable can be of
+                  any type.
+                </p>
+                <h2 id="types-of-completions">Types of Completions</h2>
+                <p>
+                  The JavaScript code below illustrates IntelliSense
+                  completions. IntelliSense gives both inferred proposals and
+                  the global identifiers of the project. The inferred symbols
+                  are presented first, followed by the global identifiers (shown
+                  by the document icon).
+                </p>
+                <p>
+                  <img
+                    alt="intellisense icons"
+                    src="../images/intellisense/intellisense_icons.png"
+                  />
+                </p>
+                <p>
+                  VS Code IntelliSense offers different types of completions,
+                  including language server suggestions, snippets, and simple
+                  word based textual completions.
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img
+                          alt="method icon"
+                          src="../images/intellisense/Method_16x.svg"
+                        />
+                      </td>
+                      <td>Methods, Functions and Constructors</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="variable icon"
+                          src="../images/intellisense/Field_16x.svg"
+                        />
+                      </td>
+                      <td>Variables and Fields</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="class"
+                          src="../images/intellisense/Class_16x.svg"
+                        />
+                      </td>
+                      <td>Classes</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="interface"
+                          src="../images/intellisense/Interface_16x.svg"
+                        />
+                      </td>
+                      <td>Interfaces</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="module"
+                          src="../images/intellisense/Namespace_16x.svg"
+                        />
+                      </td>
+                      <td>Modules</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="property"
+                          src="../images/intellisense/Property_16x.svg"
+                        />
+                      </td>
+                      <td>Properties and Attributes</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="enumeration icon"
+                          src="../images/intellisense/EnumItem_16x.svg"
+                        />
+                      </td>
+                      <td>Values and Enumerations</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="color"
+                          src="../images/intellisense/Enumerator_16x.svg"
+                        />
+                      </td>
+                      <td>References</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="keyword"
+                          src="../images/intellisense/IntelliSenseKeyword_16x.svg"
+                        />
+                      </td>
+                      <td>Keywords</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="global identifiers"
+                          src="../images/intellisense/Document_16x.svg"
+                        />
+                      </td>
+                      <td>Global Identifiers</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="color"
+                          src="../images/intellisense/ColorPalette_16x.svg"
+                        />
+                      </td>
+                      <td>Colors</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="unit"
+                          src="../images/intellisense/Ruler_16x.svg"
+                        />
+                      </td>
+                      <td>Unit</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="a square with ellipses forming the bottom show snippet prefix"
+                          src="../images/intellisense/Snippet_16x.svg"
+                        />
+                      </td>
+                      <td>Snippet Prefixes</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="a square with letters abc word completion"
+                          src="../images/intellisense/String_16x.svg"
+                        />
+                      </td>
+                      <td>Words</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          alt="Miscellaneous"
+                          src="../images/intellisense/Misc_16x.svg"
+                        />
+                      </td>
+                      <td>Miscellaneous</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h2 id="customizing-intellisense">Customizing IntelliSense</h2>
+                <p>
+                  You can customize your IntelliSense experience in settings and
+                  key bindings.
+                </p>
+                <h3 id="settings">Settings</h3>
+                <p>
+                  The settings shown below are the default settings. You can
+                  change these settings in your <code>settings.json</code> file
+                  as described in
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/settings.md"
+                    >User and Workspace Settings</a
+                  >.
+                </p>
+                <pre><code class="javascript">{
+    // Controls if quick suggestions should show up while typing
+    &quot;editor.quickSuggestions&quot;: true,
+
+    // Controls if suggestions should be accepted with &quot;Enter&quot; - in addition to &quot;Tab&quot;. Helps to avoid ambiguity between inserting new lines and accepting suggestions.
+    &quot;editor.acceptSuggestionOnEnter&quot;: true,
+
+    // Controls the delay in ms after which quick suggestions will show up.
+    &quot;editor.quickSuggestionsDelay&quot;: 10,
+
+    // Enable word based suggestions
+    &quot;editor.wordBasedSuggestions&quot;: true,
+
+    // Enable parameter hints
+    &quot;editor.parameterHints&quot;: true
+}
+</code></pre>
+
+                <p>
+                  By default, VS Code shows snippets and completion proposals in
+                  one widget. You can control the behavior with the
+                  <code>editor.snippetSuggestions</code> setting. To remove
+                  snippets from the suggestions widget, set the value to
+                  <code>"none"</code>. If you'd like to see snippets, you can
+                  specify the order relative to suggestions; at the top
+                  (<code>"top"</code>), at the bottom (<code>"bottom"</code>),
+                  or inline ordered alphabetically (<code>"inline"</code>). The
+                  default is <code>"bottom"</code>.
+                </p>
+                <h3 id="key-bindings">Key Bindings</h3>
+                <p>
+                  The key bindings shown below are the default key bindings. You
+                  can change these in your <code>keybindings.json</code> file as
+                  described in
+                  <a
+                    href="https://vscode.readthedocs.io/docs/getstarted/keybindings.md"
+                    >Key Bindings</a
+                  >.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> There are many more key bindings
+                    relating to IntelliSense. Open the
+                    <strong>Default Keyboard Shortcuts</strong> (<strong
+                      >File</strong
+                    >
+                    &gt; <strong>Preferences</strong> &gt;
+                    <strong>Keyboard Shortcuts</strong>) and search for
+                    "suggest".
+                  </p>
+                </blockquote>
+                <pre><code class="json">{
+    {
+       &quot;key&quot;: &quot;ctrl+space&quot;,
+       &quot;command&quot;: &quot;editor.action.triggerSuggest&quot;,
+        &quot;when&quot;: &quot;editorHasCompletionItemProvider &amp;&amp; editorTextFocus &amp;&amp; !editorReadonly&quot;
+    },
+    {
+        &quot;key&quot;: &quot;ctrl+space&quot;,
+        &quot;command&quot;: &quot;toggleSuggestionDetails&quot;,
+        &quot;when&quot;: &quot;editorTextFocus &amp;&amp; suggestWidgetVisible&quot;
+    },
+    {
+        &quot;key&quot;: &quot;ctrl+alt+space&quot;,
+        &quot;command&quot;: &quot;toggleSuggestionFocus&quot;,
+        &quot;when&quot;: &quot;editorTextFocus &amp;&amp; suggestWidgetVisible&quot; },
+    }
+</code></pre>
+
+                <h2 id="troubleshooting">Troubleshooting</h2>
+                <p>
+                  If you find IntelliSense has stopped working, the language
+                  service may not be running. Try restarting VS Code and this
+                  should solve the issue. If you are still missing IntelliSense
+                  features after installing a language extension, open an issue
+                  in the repository of the language extension.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> For configuring and troubleshooting
+                    JavaScript IntelliSense see
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/javascript.md#intellisense"
+                      >here</a
+                    >.
+                  </p>
+                </blockquote>
+                <p>
+                  A particular language extension may not support all the VS
+                  Code IntelliSense features. Review the extension's README to
+                  find out what is supported. If you think there are issues with
+                  a language extension, you can usually find the issue
+                  repository for an extension through the
+                  <a href="https://marketplace.visualstudio.com/vscode"
+                    >Marketplace</a
+                  >. Navigate to the extension's detail page and click the
+                  <code>Support</code> link.
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>
+                  IntelliSense is just one of VS Code's powerful features. Read
+                  on to learn more:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/javascript.md"
+                      >JavaScript</a
+                    >
+                    - Get the most out of your JavaScript development, including
+                    configuring IntelliSense.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/nodejs/nodejs-tutorial.md"
+                      >Node.js</a
+                    >
+                    - See an example of IntelliSense in action in the Node.js
+                    walkthrough.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/debugging.md"
+                      >Debugging</a
+                    >
+                    - Learn how to set up debugging for your application.
+                  </li>
+                </ul>
+                <h2 id="common-questions">Common Questions</h2>
+                <p><strong>Q: Why am I not getting any suggestions?</strong></p>
+                <p>
+                  <img
+                    alt="image of IntelliSense not working"
+                    src="../images/intellisense/intellisense_error.png"
+                  />
+                </p>
+                <p>
+                  <strong>A:</strong> This can be caused by a variety of
+                  reasons. First, try restarting VS Code. If the problem
+                  persists, consult the language extension's documentation. For
+                  JavaScript specific troubleshooting, please see the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/javascript.md#intellisense"
+                    >JavaScript language topic</a
+                  >.
+                </p>
+                <p>
+                  <strong
+                    >Q: Why am I not seeing method and variable
+                    suggestions?</strong
+                  >
+                </p>
+                <p>
+                  <img
+                    alt="image of IntelliSense showing no useful suggestions"
+                    src="../images/intellisense/missing_typings.png"
+                  />
+                </p>
+                <p>
+                  <strong>A:</strong> This issue is caused by missing type
+                  declaration (typings) files in JavaScript. You can check if a
+                  type declaration file package is available for a specific
+                  library by using the
+                  <a href="https://microsoft.github.io/TypeSearch"
+                    >TypeSearch</a
+                  >
+                  site. There is more information about this issue in the
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/javascript.md#intellisense"
+                    >JavaScript language topic</a
+                  >. For other languages, please consult the extension's
+                  documentation.
+                </p>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../tasks-appendix/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Tasks appendix"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../integrated-terminal/index.html"
+                  class="btn btn-neutral"
+                  title="Integrated terminal"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- editor/intellisense/  Sat, 30 Oct 2021 04:57:07 -->
+</html>

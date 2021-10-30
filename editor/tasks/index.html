@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <!-- editor/tasks/  Sat, 30 Oct 2021 04:57:09 -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tasks - vscode</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css" />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/badge_only.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../../../assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Tasks";
+      var mkdocs_page_input_path = "editor/tasks.md";
+      var mkdocs_page_url = "https://vscode.readthedocs.io/editor/tasks/";
+    </script>
+
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../readthedocs-data.js"></script>
+    <script src="../../readthedocs-dynamic-include.js"></script>
+    <script src="../../../../../assets.readthedocs.org/static/static/core/js/readthedocs-doc-embed.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> vscode</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="#" method="get">
+              <input type="text" name="q" placeholder="Search docs" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="wy-menu wy-menu-vertical"
+          data-spy="affix"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <ul class="current">
+            <li></li>
+            <li class="toctree-l1">
+              <a class="" href="../../index.html">Home</a>
+            </li>
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Customization</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../customization/keyboard-shortcuts/index.html"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Editor</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../accessibility/index.html"
+                    >Accessibility</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../codebasics/index.html">Codebasics</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../command-line/index.html">Command line</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../debugging/index.html">Debugging</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../editingevolved/index.html"
+                    >Editingevolved</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../emmet/index.html">Emmet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../extension-gallery/index.html"
+                    >Extension gallery</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../integrated-terminal/index.html"
+                    >Integrated terminal</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../intellisense/index.html">Intellisense</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-appendix/index.html"
+                    >Tasks appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1-appendix/index.html"
+                    >Tasks v1 appendix</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../tasks-v1/index.html">Tasks v1</a>
+                </li>
+
+                <li class="toctree-l1 current">
+                  <a class="current" href="index.html">Tasks</a>
+
+                  <ul>
+                    <li class="toctree-l3">
+                      <a href="#integrate-with-external-tools-via-tasks"
+                        >Integrate with External Tools via Tasks</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#typescript-hello-world"
+                        >TypeScript Hello World</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#task-auto-detection"
+                        >Task auto-detection</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#custom-tasks"
+                        >Custom tasks</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#output-behavior"
+                        >Output behavior</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#customizing-auto-detected-tasks"
+                        >Customizing auto-detected tasks</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#processing-task-output-with-problem-matchers"
+                        >Processing task output with problem matchers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#binding-keyboard-shortcuts-to-tasks"
+                        >Binding keyboard shortcuts to tasks</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#variable-substitution"
+                        >Variable substitution</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#operating-system-specific-properties"
+                        >Operating system specific properties</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#examples-of-tasks-in-action"
+                        >Examples of tasks in action</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#defining-a-problem-matcher"
+                        >Defining a problem matcher</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="toctree-l4"
+                        href="#defining-a-multi-line-problem-matcher"
+                        >Defining a multi-line problem matcher</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#background-watching-tasks"
+                        >Background / watching tasks</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#convert-from-010-to-200"
+                        >Convert from "0.1.0" to "2.0.0"</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="toctree-l4" href="#next-steps">Next Steps</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../userdefinedsnippets/index.html"
+                    >Userdefinedsnippets</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../whyvscode/index.html">Whyvscode</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>extensionAPI</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/activation-events/index.html"
+                    >Activation events</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-debugging/index.html"
+                    >Api debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-markdown/index.html"
+                    >Api markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/api-scm/index.html"
+                    >Api scm</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-manifest/index.html"
+                    >Extension manifest</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/extension-points/index.html"
+                    >Extension points</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/language-support/index.html"
+                    >Language support</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/patterns-and-principles/index.html"
+                    >Patterns and principles</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensionAPI/vscode-api-commands/index.html"
+                    >Vscode api commands</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensionAPI/vscode-api/index.html"
+                    >Vscode api</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Extensions</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/debugging-extensions/index.html"
+                    >Debugging extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-debuggers/index.html"
+                    >Example debuggers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-hello-world/index.html"
+                    >Example hello world</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-language-server/index.html"
+                    >Example language server</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/example-word-count/index.html"
+                    >Example word count</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/publish-extension/index.html"
+                    >Publish extension</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/samples/index.html"
+                    >Samples</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/testing-extensions/index.html"
+                    >Testing extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../extensions/themes-snippets-colorizers/index.html"
+                    >Themes snippets colorizers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../extensions/yocode/index.html"
+                    >Yocode</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Getstarted</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/introvideos/index.html"
+                    >Introvideos</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/keybindings/index.html"
+                    >Keybindings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/locales/index.html"
+                    >Locales</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/settings/index.html"
+                    >Settings</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../getstarted/theme-color-reference/index.html"
+                    >Theme color reference</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/themes/index.html"
+                    >Themes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../getstarted/userinterface/index.html"
+                    >Userinterface</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Introvideos</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/basics/index.html"
+                    >Basics</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/codeediting/index.html"
+                    >Codeediting</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/configure/index.html"
+                    >Configure</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/debugging/index.html"
+                    >Debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/extend/index.html"
+                    >Extend</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/intellisense/index.html"
+                    >Intellisense</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/quicktour/index.html"
+                    >Quicktour</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../introvideos/versioncontrol/index.html"
+                    >Versioncontrol</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Languages</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/cpp/index.html">Cpp</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/csharp/index.html"
+                    >Csharp</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/css/index.html">Css</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/dockerfile/index.html"
+                    >Dockerfile</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/go/index.html">Go</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/html/index.html">Html</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/identifiers/index.html"
+                    >Identifiers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/javascript/index.html"
+                    >Javascript</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/jsconfig/index.html"
+                    >Jsconfig</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/json/index.html">Json</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/markdown/index.html"
+                    >Markdown</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/php/index.html">Php</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/python/index.html"
+                    >Python</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/tsql/index.html">Tsql</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../languages/typescript/index.html"
+                    >Typescript</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Nodejs</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/angular-tutorial/index.html"
+                    >Angular tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/extensions/index.html"
+                    >Extensions</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/javascript-transpilers/index.html"
+                    >Javascript transpilers</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-debugging/index.html"
+                    >Nodejs debugging</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-deployment/index.html"
+                    >Nodejs deployment</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/nodejs-tutorial/index.html"
+                    >Nodejs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../nodejs/other-javascript-runtimes/index.html"
+                    >Other javascript runtimes</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/overview/index.html"
+                    >Overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/reactjs-tutorial/index.html"
+                    >Reactjs tutorial</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../nodejs/tasks/index.html">Tasks</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Other</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/dotnet/index.html">Dotnet</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/office/index.html">Office</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../other/unity/index.html">Unity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Setup</span></li>
+
+                <li class="toctree-l1">
+                  <a
+                    class=""
+                    href="../../setup/additional-components/index.html"
+                    >Additional components</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/linux/index.html">Linux</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/mac/index.html">Mac</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/network/index.html">Network</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/setup-overview/index.html"
+                    >Setup overview</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../setup/windows/index.html">Windows</a>
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+
+            <li>
+              <ul class="subnav">
+                <li><span>Supporting</span></li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/errors/index.html"
+                    >Errors</a
+                  >
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/faq/index.html">Faq</a>
+                </li>
+
+                <li class="toctree-l1">
+                  <a class="" href="../../supporting/requirements/index.html"
+                    >Requirements</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">vscode</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="breadcrumbs navigation">
+              <ul class="wy-breadcrumbs">
+                <li><a href="../../index.html">Docs</a> &raquo;</li>
+
+                <li>Editor &raquo;</li>
+
+                <li>Tasks</li>
+                <li class="wy-breadcrumbs-aside"></li>
+              </ul>
+              <hr />
+            </div>
+            <div role="main">
+              <div class="section">
+                <p>
+                  ﻿﻿--- Order: 10 Area: editor TOCTitle: Tasks ContentId:
+                  F5EA1A52-1EF2-4127-ABA6-6CEF5447C608 PageTitle: Tasks in
+                  Visual Studio Code DateApproved: 9/7/2017 MetaDescription:
+                  Expand your development workflow with task integration in
+                  Visual Studio Code.
+                </p>
+                <hr />
+                <h1 id="integrate-with-external-tools-via-tasks">
+                  Integrate with External Tools via Tasks
+                </h1>
+                <hr />
+                <p>
+                  If you are using Visual Studio Code version 1.13 or earlier,
+                  please refer to the previous version of the Tasks
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/tasks-v1.md"
+                    >documentation</a
+                  >.
+                </p>
+                <hr />
+                <p>
+                  Lots of tools exist to automate tasks like linting, building,
+                  packaging, testing or deploying software systems. Examples
+                  include the
+                  <a href="https://www.typescriptlang.org/"
+                    >TypeScript Compiler</a
+                  >, linters like <a href="http://eslint.org/">ESLint</a> and
+                  <a href="https://palantir.github.io/tslint/">TSLint</a> as
+                  well as build systems like
+                  <a href="https://en.wikipedia.org/wiki/Make_software">Make</a
+                  >, <a href="https://ant.apache.org/">Ant</a>,
+                  <a href="http://gulpjs.com/">Gulp</a>,
+                  <a href="http://jakejs.com/">Jake</a>,
+                  <a href="https://ruby.github.io/rake/">Rake</a> and
+                  <a href="https://github.com/Microsoft/msbuild">MSBuild</a>.
+                </p>
+                <p>
+                  <img
+                    alt="VS Code can talk to a variety of external tools"
+                    src="../images/tasks/tasks_hero.png"
+                  />
+                </p>
+                <p>
+                  These tools are mostly run from the command line and automate
+                  jobs inside and outside the inner software development loop
+                  (edit, compile, test, and debug). Given their importance in
+                  the development life-cycle, it is very helpful to be able to
+                  run tools and analyze their results from within VS Code.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> Task support is only available when
+                    working on a workspace folder. It is not available when
+                    editing single files.
+                  </p>
+                </blockquote>
+                <h2 id="typescript-hello-world">TypeScript Hello World</h2>
+                <p>
+                  Let's start with a simple "Hello World" TypeScript program
+                  that we want to compile to JavaScript.
+                </p>
+                <p>
+                  Create an empty folder "mytask", generate a
+                  <code>tsconfig.json</code> file and start VS Code from that
+                  folder.
+                </p>
+                <pre><code class="bash">mkdir mytask
+cd mytask
+tsc --init
+code .
+</code></pre>
+
+                <p>
+                  Now create a <code>HelloWorld.ts</code> file with the
+                  following content
+                </p>
+                <pre><code class="ts">class Startup {
+    public static main(): number {
+        console.log('Hello World');
+        return 0;
+    }
+}
+
+Startup.main();
+</code></pre>
+
+                <p>
+                  Pressing <code>kb(workbench.action.tasks.build)</code> or
+                  running <strong>Run Build Task...</strong> from the global
+                  <strong>Tasks</strong> menu show the following picker:
+                </p>
+                <p>
+                  <img
+                    alt="TypeScript Build Task"
+                    src="../images/tasks/typescript-build.png"
+                  />
+                </p>
+                <p>
+                  Selecting the entry executes the TypeScript compiler and
+                  translates the TypeScript file to a JavaScript file. When the
+                  compiler has finished, there should be a
+                  <code>HelloWorld.js</code> file.
+                </p>
+                <p>
+                  You can also define the TypeScript build task as the default
+                  build task so that it is executed directly when triggering
+                  <strong>Run Build Task</strong>
+                  (<code>kb(workbench.action.tasks.build)</code>). To do so,
+                  select <strong>Configure Default Build Task</strong> from the
+                  global <strong>Tasks</strong> menu. This shows you a picker
+                  with the available build tasks. Select
+                  <strong>TypeScript</strong> and VS Code will generate the
+                  following <code>tasks.json</code> file:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;type&quot;: &quot;typescript&quot;,
+            &quot;tsconfig&quot;: &quot;tsconfig.json&quot;,
+            &quot;problemMatcher&quot;: [
+                &quot;$tsc&quot;
+            ],
+            &quot;group&quot;: {
+                &quot;kind&quot;: &quot;build&quot;,
+                &quot;isDefault&quot;: true
+            }
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  Unlike the previous <code>0.1.0</code> version of the
+                  <code>tasks.json</code> file, this does not define a new task.
+                  It annotates the TypeScript compile tasks contributed by VS
+                  Code's TypeScript extension to be the default build task. You
+                  can now execute the TypeScript compiler by simply pressing
+                  <code>kb(workbench.action.tasks.build)</code>.
+                </p>
+                <h2 id="task-auto-detection">Task auto-detection</h2>
+                <p>
+                  VS Code currently auto-detects tasks for the following
+                  systems: Gulp, Grunt, Jake and npm. We are working with the
+                  corresponding extension authors to add support for Maven and
+                  the C# <code>dotnet</code> command as well. If you develop a
+                  JavaScript application using Node.js as the runtime, you
+                  usually have a <code>package.json</code> file describing your
+                  dependencies and the scripts to run. If you have cloned the
+                  <a href="https://github.com/spicydonuts/eslint-starter"
+                    >eslint-starter</a
+                  >
+                  example, then executing <strong>Run Tasks</strong> from the
+                  global menu shows the following list:
+                </p>
+                <p>
+                  <img
+                    alt="Tasks ESLint starter"
+                    src="../images/tasks/eslint-starter.png"
+                  />
+                </p>
+                <p>
+                  Select <strong>npm: install</strong> to install the necessary
+                  Node.js modules. When prompted to select a problem matcher,
+                  select
+                  <strong>Continue without scanning the build output</strong>.
+                  This will install all necessary Node.js modules.
+                </p>
+                <p>
+                  Now open the <code>server.js</code> file and add a semicolon
+                  to the end of a statement (note the ESLint starter assumes
+                  statements without a semicolon) and execute the
+                  <strong>Run Tasks</strong> again. This time select the
+                  <strong>npm: run lint</strong> task. When prompted for the
+                  problem matcher to use, select <strong>ESLint stylish</strong>
+                </p>
+                <p>
+                  <img
+                    alt="Tasks ESLint Problem Matcher Selection"
+                    src="../images/tasks/eslint-problem-matcher-selection.png"
+                  />
+                </p>
+                <p>
+                  Executing the task produces one error shown in the
+                  <strong>Problems</strong> view:
+                </p>
+                <p>
+                  <img
+                    alt="Tasks ESLint Problem"
+                    src="../images/tasks/eslint-problem.png"
+                  />
+                </p>
+                <p>
+                  In additon, VS Code created a <code>tasks.json</code> file
+                  with the following content:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;type&quot;: &quot;npm&quot;,
+            &quot;script&quot;: &quot;lint&quot;,
+            &quot;problemMatcher&quot;: [
+                &quot;$eslint-stylish&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  This instructs VS Code to scan the output of the
+                  <strong>npm lint</strong> script for problems using the ESLint
+                  stylish format.
+                </p>
+                <p>
+                  For Gulp, Grunt, and Jake, the task auto-detection works the
+                  same. Below is an example of the tasks detected for the
+                  <a href="https://github.com/Microsoft/vscode-node-debug"
+                    >vscode-node-debug</a
+                  >
+                  extension.
+                </p>
+                <p>
+                  <img
+                    alt="Gulp task auto-detection"
+                    src="../images/tasks/gulp-auto-detect.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> You can run your task through
+                    <strong>Quick Open</strong>
+                    (<code>kb(workbench.action.quickOpen)</code>) by typing
+                    'task', <code>kbstyle(Space)</code> and the command name. In
+                    this case, 'task lint'.
+                  </p>
+                </blockquote>
+                <h2 id="custom-tasks">Custom tasks</h2>
+                <p>
+                  Not all tasks or scripts can be auto-detected in your
+                  workspace. Sometimes it is necessary to define your own custom
+                  tasks. Assume you have a script to run your tests since it is
+                  necessary to setup some environment correctly. The script is
+                  stored in a script folder inside your workspace and named
+                  <code>test.sh</code> for Linux and macOS and
+                  <code>test.cmd</code> for Windows. Run
+                  <strong>Configure Tasks</strong> from the global
+                  <strong>Tasks</strong> menu. This opens the following picker:
+                </p>
+                <p>
+                  <img
+                    alt="Configure Task Runner"
+                    src="../images/tasks/configure-task-runner.png"
+                  />
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> If you don't see the list of task
+                    runner templates, you may already have a
+                    <code>tasks.json</code> file in your folder and its contents
+                    will be open in the editor. Close the file and either delete
+                    or rename it for this example.
+                  </p>
+                </blockquote>
+                <p>
+                  We are working on more auto-detection support, so this list
+                  will get smaller and smaller in the future. Since we want to
+                  write our own custom task, select <strong>Others</strong> from
+                  the list. This opens the <code>tasks.json</code> file with a
+                  task skeleton. Replace the contents with the following:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;Run tests&quot;,
+            &quot;type&quot;: &quot;shell&quot;,
+            &quot;command&quot;: &quot;./scripts/test.sh&quot;,
+            &quot;windows&quot;: {
+                &quot;command&quot;: &quot;.\\scripts\\test.cmd&quot;
+            },
+            &quot;group&quot;: &quot;test&quot;,
+            &quot;presentation&quot;: {
+                &quot;reveal&quot;: &quot;always&quot;,
+                &quot;panel&quot;: &quot;new&quot;
+            }
+        }
+    ]
+}
+</code></pre>
+
+                <p>The task's properties have the following semantic:</p>
+                <ul>
+                  <li>
+                    <strong>taskName</strong>: The tasks's name used in the user
+                    interface.
+                  </li>
+                  <li>
+                    <strong>type</strong>: The task's type. For a custom task,
+                    this can either be <code>shell</code> or
+                    <code>process</code>. If <code>shell</code> is specified,
+                    the command is interpreted as a shell command (for example:
+                    bash, cmd, or PowerShell). If <code>process</code> is
+                    specified, the command is interpreted as a process to
+                    execute. If <code>shell</code> is used, any arguments to the
+                    command should be embedded into the
+                    <code>command</code> property to support proper argument
+                    quoting. For example, if the test script accepts a
+                    <code>--debug</code> argument then the command property
+                    would be: <code>./scripts/test.sh --debug</code>.
+                  </li>
+                  <li>
+                    <strong>command</strong>: The actual command to execute.
+                  </li>
+                  <li>
+                    <strong>windows</strong>: Any Windows specific properties.
+                    Will be used instead of the default properties when the
+                    command is executed on the Windows operating system.
+                  </li>
+                  <li>
+                    <strong>group</strong>: Defines to which group the task
+                    belongs. In the example, it belongs to the
+                    <code>test</code> group. Tasks that belong to the test group
+                    can be executed by running
+                    <strong>Run Test Task</strong> from the
+                    <strong>Command Palette</strong>.
+                  </li>
+                  <li>
+                    <strong>presentation</strong>: Defines how the task output
+                    is handled in the user interface. In this example, the
+                    Integrated Terminal showing the output is
+                    <code>always</code> revealed and a <code>new</code> terminal
+                    is created on every task run.
+                  </li>
+                </ul>
+                <p>
+                  There are more task properties to configure your workflow. You
+                  can use IntelliSense with
+                  <code>kb(editor.action.triggerSuggest)</code> to get an
+                  overview of the valid properties.
+                </p>
+                <p>
+                  <img
+                    alt="Tasks IntelliSense"
+                    src="../images/tasks/intellisense.png"
+                  />
+                </p>
+                <p>
+                  In addition to the global menu bar, task commands can be
+                  accessed using the
+                  <strong>Command Palette</strong>
+                  (<code>kb(workbench.action.showCommands)</code>). You can
+                  filter on 'task' and can see the various task related
+                  commands.
+                </p>
+                <p>
+                  <img
+                    alt="tasks in command palette"
+                    src="../images/tasks/command-palette.png"
+                  />
+                </p>
+                <h2 id="output-behavior">Output behavior</h2>
+                <p>
+                  Sometimes you want to control how the Integrated Terminal
+                  panel behaves when running tasks. For instance, you may want
+                  to maximize editor space and only look at task output if you
+                  think there is a problem. The behavior of the terminal can be
+                  controled using the <code>presentation</code> property of a
+                  task. It offers the following properties:
+                </p>
+                <ul>
+                  <li>
+                    <strong>reveal</strong>: Controls whether the Integrated
+                    Terminal panel is brought to front. Valid values are:
+                  </li>
+                  <li>
+                    <em>always</em> - The panel is always brought to front. This
+                    is the default.
+                  </li>
+                  <li>
+                    <em>never</em> - The user must explicitly bring the terminal
+                    panel to the front using the <strong>View</strong> &gt;
+                    <strong>Integrated Terminal</strong> command
+                    (<code>kb(workbench.action.terminal.toggleTerminal)</code>).
+                  </li>
+                  <li>
+                    <em>silent</em> - The terminal panel is brought to front
+                    only if the output is not scanned for errors and warnings.
+                  </li>
+                  <li>
+                    <strong>focus</strong>: Controls whether the teminal is
+                    taking input focus or not. Default is <code>false</code>.
+                  </li>
+                  <li>
+                    <strong>echo</strong>: Controls whether the executed command
+                    is echoed in the terminal. Default is <code>true</code>.
+                  </li>
+                  <li>
+                    <strong>panel</strong>: Controls whether the terminal
+                    instance is shared between task runs. Possible values are:
+                  </li>
+                  <li>
+                    <em>shared</em>: The terminal is shared and the output of
+                    other task runs are added to the same terminal.
+                  </li>
+                  <li>
+                    <em>dedicated</em>: The terminal is dedicated to a specific
+                    task. If that task is executed again, the terminal is
+                    reused. However the output of a different task is presented
+                    in a different terminal.
+                  </li>
+                  <li>
+                    <em>new</em>: Every execution of that task is using a new
+                    clean terminal.
+                  </li>
+                </ul>
+                <p>
+                  You can modify the terminal panel behavior for auto-detected
+                  tasks as well. For example, if you want to change the output
+                  behavior for the <strong>npm: run lint</strong> from the
+                  ESLint example from above, simply add the
+                  <code>presentation</code> property to it:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;type&quot;: &quot;npm&quot;,
+            &quot;script&quot;: &quot;lint&quot;,
+            &quot;problemMatcher&quot;: [
+                &quot;$eslint-stylish&quot;
+            ],
+            &quot;presentation&quot;: {
+                &quot;reveal&quot;: &quot;never&quot;
+            }
+        }
+    ]
+}
+
+</code></pre>
+
+                <p>
+                  You can also mix custom tasks with configurations for detected
+                  tasks. A <code>tasks.json</code> that configures the
+                  <strong>npm: run lint</strong> task and adds a custom
+                  <strong>Run Test</strong> tasks looks like this:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;type&quot;: &quot;npm&quot;,
+            &quot;script&quot;: &quot;lint&quot;,
+            &quot;problemMatcher&quot;: [
+                &quot;$eslint-stylish&quot;
+            ],
+            &quot;presentation&quot;: {
+                &quot;reveal&quot;: &quot;never&quot;
+            },
+        },
+        {
+            &quot;taskName&quot;: &quot;Run tests&quot;,
+            &quot;type&quot;: &quot;shell&quot;,
+            &quot;command&quot;: &quot;./scripts/test.sh&quot;,
+            &quot;windows&quot;: {
+                &quot;command&quot;: &quot;.\\scripts\\test.cmd&quot;
+            },
+            &quot;group&quot;: &quot;test&quot;,
+            &quot;presentation&quot;: {
+                &quot;reveal&quot;: &quot;always&quot;,
+                &quot;panel&quot;: &quot;new&quot;
+            }
+        }
+    ]
+}
+
+</code></pre>
+
+                <h2 id="customizing-auto-detected-tasks">
+                  Customizing auto-detected tasks
+                </h2>
+                <p>
+                  As mentioned above, you can customize auto-detected tasks in
+                  the <code>tasks.json</code> file. You usually do so to modify
+                  presentation properties or to attach a problem matcher to scan
+                  the task's output for errors and warnings. You can customize a
+                  task directly from the <strong>Run Task</strong> list by
+                  pressing the gear icon to the right to insert the
+                  corresponding task reference into the
+                  <code>tasks.json</code> file. Assume you have the following
+                  Gulp file to lint JavaScript files using ESLint (the file is
+                  taken from https://github.com/adametry/gulp-eslint):
+                </p>
+                <pre><code class="js">const gulp = require('gulp');
+const eslint = require('gulp-eslint');
+
+gulp.task('lint', () =&gt; {
+    // ESLint ignores files with &quot;node_modules&quot; paths.
+    // So, it's best to have gulp ignore the directory as well.
+    // Also, Be sure to return the stream from the task;
+    // Otherwise, the task may end before the stream has finished.
+    return gulp.src(['**/*.js','!node_modules/**'])
+        // eslint() attaches the lint output to the &quot;eslint&quot; property
+        // of the file object so it can be used by other modules.
+        .pipe(eslint())
+        // eslint.format() outputs the lint results to the console.
+        // Alternatively use eslint.formatEach() (see Docs).
+        .pipe(eslint.format())
+        // To have the process exit with an error code (1) on
+        // lint error, return the stream and pipe to failAfterError last.
+        .pipe(eslint.failAfterError());
+});
+
+gulp.task('default', ['lint'], function () {
+    // This will only run if the lint task is successful...
+});
+</code></pre>
+
+                <p>
+                  Executing <strong>Run Task</strong> from the global
+                  <strong>Tasks</strong> menu will show the following picker:
+                </p>
+                <p>
+                  <img
+                    alt="Configure Task"
+                    src="../images/tasks/configure-tasks.png"
+                  />
+                </p>
+                <p>
+                  Press the gear icon. This will create the following
+                  <code>tasks.json</code> file:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;type&quot;: &quot;gulp&quot;,
+            &quot;task&quot;: &quot;default&quot;,
+            &quot;problemMatcher&quot;: []
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  Usually you would now add a problem matcher (in this case
+                  <code>$eslint-stylish</code>) or modify the presentation
+                  settings.
+                </p>
+                <h2 id="processing-task-output-with-problem-matchers">
+                  Processing task output with problem matchers
+                </h2>
+                <p>
+                  VS Code can process the output from a task with a problem
+                  matcher and we ship with a number of them 'in-the-box':
+                </p>
+                <ul>
+                  <li>
+                    <strong>TypeScript</strong>: <code>$tsc</code> assumes that
+                    file names in the output are relative to the opened folder.
+                  </li>
+                  <li>
+                    <strong>TypeScript Watch</strong>:
+                    <code>$tsc-watch</code> matches problems reported from the
+                    <code>tsc</code> compiler when executed in watch mode.
+                  </li>
+                  <li>
+                    <strong>JSHint</strong>: <code>$jshint</code> assumes that
+                    file names are reported as an absolute path.
+                  </li>
+                  <li>
+                    <strong>JSHint Stylish</strong>:
+                    <code>$jshint-stylish</code> assumes that file names are
+                    reported as an absolute path.
+                  </li>
+                  <li>
+                    <strong>ESLint Compact</strong>:
+                    <code>$eslint-compact</code> assumes that file names in the
+                    output are relative to the opened folder.
+                  </li>
+                  <li>
+                    <strong>ESLint Stylish</strong>:
+                    <code>$eslint-stylish</code> assumes that file names in the
+                    output are relative to the opened folder.
+                  </li>
+                  <li>
+                    <strong>Go</strong>: <code>$go</code> matches problems
+                    reported from the <code>go</code> compiler. Assumes that
+                    file names are relative to the opened folder.
+                  </li>
+                  <li>
+                    <strong>CSharp and VB Compiler</strong>:
+                    <code>$mscompile</code> assumes that file names are reported
+                    as an absolute path.
+                  </li>
+                  <li>
+                    <strong>Less</strong>: <code>$lessCompile</code> assumes
+                    that file names are reported as absolute path.
+                  </li>
+                </ul>
+                <p>
+                  Problem matchers scan the task output text for known warning
+                  or error strings and report these inline in the editor and in
+                  the Problems panel.
+                </p>
+                <p>
+                  You can also create your own problem matcher which we'll
+                  discuss
+                  <a
+                    href="https://vscode.readthedocs.io/docs/editor/tasks.md#defining-a-problem-matcher"
+                    >in a later section</a
+                  >.
+                </p>
+                <h2 id="binding-keyboard-shortcuts-to-tasks">
+                  Binding keyboard shortcuts to tasks
+                </h2>
+                <p>
+                  If you need to run a task frequently, you can define a
+                  keyboard shortcut for the task.
+                </p>
+                <p>
+                  For example, to bind <code>Ctrl+H</code> to the
+                  <strong>Run tests</strong> task from above, add the following
+                  to your <code>keybindings.json</code> file:
+                </p>
+                <pre><code class="json">{
+    &quot;key&quot;: &quot;ctrl+h&quot;,
+    &quot;command&quot;: &quot;workbench.action.tasks.runTask&quot;,
+    &quot;args&quot;: &quot;Run tests&quot;
+}
+</code></pre>
+
+                <h2 id="variable-substitution">Variable substitution</h2>
+                <p>
+                  When authoring tasks configurations, it is often useful to
+                  have a set of predefined common variables. VS Code supports
+                  variable substitution inside strings in the
+                  <code>tasks.json</code> file and has the following predefined
+                  variables:
+                </p>
+                <ul>
+                  <li>
+                    <strong>${workspaceRoot}</strong> the path of the folder
+                    opened in VS Code
+                  </li>
+                  <li>
+                    <strong>${workspaceRootFolderName}</strong> the name of the
+                    folder opened in VS Code without any slashes (/)
+                  </li>
+                  <li><strong>${file}</strong> the current opened file</li>
+                  <li>
+                    <strong>${relativeFile}</strong> the current opened file
+                    relative to <code>workspaceRoot</code>
+                  </li>
+                  <li>
+                    <strong>${fileBasename}</strong> the current opened file's
+                    basename
+                  </li>
+                  <li>
+                    <strong>${fileBasenameNoExtension}</strong> the current
+                    opened file's basename without the extension
+                  </li>
+                  <li>
+                    <strong>${fileDirname}</strong> the current opened file's
+                    dirname
+                  </li>
+                  <li>
+                    <strong>${fileExtname}</strong> the current opened file's
+                    extension
+                  </li>
+                  <li>
+                    <strong>${cwd}</strong> the task runner's current working
+                    directory on startup
+                  </li>
+                  <li>
+                    <strong>${lineNumber}</strong> the current selected line
+                    number in the active file
+                  </li>
+                </ul>
+                <p>
+                  You can also reference environment variables through
+                  <strong>${env:Name}</strong> (for example, ${env:PATH}). Be
+                  sure to match the environment variable name's casing, for
+                  example <code>${env:Path}</code> on Windows.
+                </p>
+                <p>
+                  Below is an example of a custom task configuration that passes
+                  the current opened file to the TypeScript compiler.
+                </p>
+                <pre><code class="json">{
+    &quot;taskName&quot;: &quot;TypeScript compile&quot;,
+    &quot;type&quot;: &quot;shell&quot;,
+    &quot;command&quot;: &quot;tsc ${file}&quot;,
+    &quot;problemMatcher&quot;: [
+        &quot;$tsc&quot;
+    ]
+}
+</code></pre>
+
+                <h2 id="operating-system-specific-properties">
+                  Operating system specific properties
+                </h2>
+                <p>
+                  The task system supports defining values (for example, the
+                  command to be executed) specific to an operating system. To do
+                  so, put an operating system specific literal into the
+                  <code>tasks.json</code> file and specify the corresponding
+                  properties inside that literal.
+                </p>
+                <p>
+                  Below is an example that uses the Node.js executable as a
+                  command and is treated differently on Windows and Linux:
+                </p>
+                <pre><code class="json">{
+    &quot;taskName&quot;: &quot;Run Node&quot;,
+    &quot;type&quot;: &quot;process&quot;,
+    &quot;windows&quot;: {
+        &quot;command&quot;: &quot;C:\\Program Files\\nodejs\\node.exe&quot;
+    },
+    &quot;linux&quot;: {
+        &quot;command&quot;: &quot;/usr/bin/node&quot;
+    }
+}
+</code></pre>
+
+                <p>
+                  Valid operating properties are <code>windows</code> for
+                  Windows, <code>linux</code> for Linux, and
+                  <code>osx</code> for macOS. Properties defined in an operating
+                  system specific scope override properties defined in the task
+                  or global scope.
+                </p>
+                <p>
+                  Task properties can also be defined in the global scope. If
+                  present, they will be used for specific tasks unless they
+                  define the same property with a different value. In the
+                  example below, there is a global
+                  <code>presentation</code> property that defines that all tasks
+                  should be executed in a new panel:
+                </p>
+                <pre><code class="json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;presentation&quot;: {
+        &quot;panel&quot;: &quot;new&quot;
+    },
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;TS - Compile current file&quot;,
+            &quot;type&quot;: &quot;shell&quot;,
+            &quot;command&quot;: &quot;tsc ${file}&quot;,
+            &quot;problemMatcher&quot;: [
+                &quot;$tsc&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+                <h2 id="examples-of-tasks-in-action">
+                  Examples of tasks in action
+                </h2>
+                <p>
+                  To highlight the power of tasks, here are a few examples of
+                  how VS Code can use tasks to integrate external tools like
+                  linters and compilers.
+                </p>
+                <h3 id="transpiling-typescript-to-javascript">
+                  Transpiling TypeScript to JavaScript
+                </h3>
+                <p>
+                  The
+                  <a
+                    href="https://vscode.readthedocs.io/docs/languages/typescript.md#transpiling-typescript-into-javascript"
+                    >TypeScript topic</a
+                  >
+                  includes an example that creates a task to transpile
+                  TypeScript to JavaScript and observe any related errors from
+                  within VS Code.
+                </p>
+                <h3 id="compiling-markdown-to-html">
+                  Compiling Markdown to HTML
+                </h3>
+                <p>
+                  The Markdown topic provides two examples for compiling
+                  Markdown to HTML:
+                </p>
+                <ol>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/markdown.md#compiling-markdown-into-html"
+                      >Manually compiling with a Build task</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/markdown.md#automating-markdown-compilation"
+                      >Automating the compile step with a file watcher</a
+                    >
+                  </li>
+                </ol>
+                <h3 id="transpiling-less-and-sass-into-css">
+                  Transpiling Less and Sass into CSS
+                </h3>
+                <p>
+                  The CSS topic provides examples of how to use Tasks to
+                  generate CSS files.
+                </p>
+                <ol>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/css.md#transpiling-sass-and-less-into-css"
+                      >Manually transpiling with a Build task</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/css.md#automating-sassless-compilation"
+                      >Automation of the compile step with a file watcher</a
+                    >
+                  </li>
+                </ol>
+                <h2 id="defining-a-problem-matcher">
+                  Defining a problem matcher
+                </h2>
+                <p>
+                  VS Code ships some of the most common problem matchers
+                  'in-the-box'. However, there are lots of compilers and linting
+                  tools out there, all of which produce their own style of
+                  errors and warnings so you may want to create your own problem
+                  matcher.
+                </p>
+                <p>
+                  We have a <code>helloWorld.c</code> program in which the
+                  developer mistyped <strong>printf</strong> as
+                  <strong>prinft</strong>. Compiling it with
+                  <a href="https://gcc.gnu.org/">gcc</a> will produce the
+                  following warning:
+                </p>
+                <pre><code class="bash">helloWorld.c:5:3: warning: implicit declaration of function ‘prinft’
+</code></pre>
+
+                <p>
+                  We want to produce a problem matcher that can capture the
+                  message in the output and show a corresponding problem in VS
+                  Code. Problem matchers heavily rely on
+                  <a href="https://en.wikipedia.org/wiki/Regular_expression"
+                    >regular expressions</a
+                  >. The section below assumes you are familiar with regular
+                  expressions.
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Tip:</strong> We have found the
+                    <a href="https://regex101.com/">RegEx101 playground</a> to
+                    be a great way to develop and test regular expressions.
+                  </p>
+                </blockquote>
+                <p>
+                  A matcher that captures the above warning (and errors) looks
+                  like this:
+                </p>
+                <pre><code class="json">{
+    // The problem is owned by the cpp language service.
+    &quot;owner&quot;: &quot;cpp&quot;,
+    // The file name for reported problems is relative to the opened folder.
+    &quot;fileLocation&quot;: [&quot;relative&quot;, &quot;${workspaceRoot}&quot;],
+    // The actual pattern to match problems in the output.
+    &quot;pattern&quot;: {
+        // The regular expression. Example to match: helloWorld.c:5:3: warning: implicit declaration of function ‘prinft’ [-Wimplicit-function-declaration]
+        &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,
+        // The first match group matches the file name which is relative.
+        &quot;file&quot;: 1,
+        // The second match group matches the line on which the problem occurred.
+        &quot;line&quot;: 2,
+        // The third match group matches the column at which the problem occurred.
+        &quot;column&quot;: 3,
+        // The fourth match group matches the problem's severity. Can be ignored. Then all problems are captured as errors.
+        &quot;severity&quot;: 4,
+        // The fifth match group matches the message.
+        &quot;message&quot;: 5
+    }
+}
+</code></pre>
+
+                <p>
+                  Please note that the file, line and message properties are
+                  mandatory.
+                </p>
+                <p>
+                  Here is a finished <code>tasks.json</code> file with the code
+                  above (comments removed) wrapped with the actual task details:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;command&quot;: &quot;gcc&quot;,
+    &quot;args&quot;: [&quot;-Wall&quot;, &quot;helloWorld.c&quot;, &quot;-o&quot;, &quot;helloWorld&quot;],
+    &quot;problemMatcher&quot;: {
+        &quot;owner&quot;: &quot;cpp&quot;,
+        &quot;fileLocation&quot;: [&quot;relative&quot;, &quot;${workspaceRoot}&quot;],
+        &quot;pattern&quot;: {
+            &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,
+            &quot;file&quot;: 1,
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 3,
+            &quot;severity&quot;: 4,
+            &quot;message&quot;: 5
+        }
+    }
+}
+</code></pre>
+
+                <p>
+                  Running it inside VS Code and pressing
+                  <code>kb(workbench.actions.view.problems)</code> to get the
+                  list of problems gives you the following output:
+                </p>
+                <p>
+                  <img
+                    alt="GCC Problem Matcher"
+                    src="../images/tasks/problemmatcher.png"
+                  />
+                </p>
+                <p>
+                  There are a couple more properties that can be used inside a
+                  pattern. These are:
+                </p>
+                <ul>
+                  <li>
+                    <strong>location</strong> if the problem location is line or
+                    line,column or startLine,startColumn,endLine,endColumn then
+                    our generic location match group can be used.
+                  </li>
+                  <li>
+                    <strong>endLine</strong> the match group index for the
+                    problem's end line. Can be omitted if no end line value is
+                    provided by the compiler.
+                  </li>
+                  <li>
+                    <strong>endColumn</strong> the match group index for the
+                    problem's end column. Can be omitted if no end column value
+                    is provided by the compiler.
+                  </li>
+                  <li>
+                    <strong>code</strong> the match group index for the
+                    problem's code. Can be omitted if no code value is provided
+                    by the compiler.
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    <strong>Note:</strong> A functional pattern must at least
+                    provide a match group for file, message and line or
+                    location.
+                  </p>
+                </blockquote>
+                <h2 id="defining-a-multi-line-problem-matcher">
+                  Defining a multi-line problem matcher
+                </h2>
+                <p>
+                  Some tools spread problems found in a source file over several
+                  lines, especially if stylish reporters are used. An example is
+                  <a href="http://eslint.org/">ESLint</a>; in stylish mode it
+                  produces output like this:
+                </p>
+                <pre><code class="bash">test.js
+  1:0   error  Missing &quot;use strict&quot; statement                 strict
+✖ 1 problems (1 errors, 0 warnings)
+</code></pre>
+
+                <p>
+                  Our problem matcher is line-based so we need to capture the
+                  file name (test.js) with a different regular expression than
+                  the actual problem location and message (1:0 error Missing
+                  "use strict" statement).
+                </p>
+                <p>
+                  To do this we use an array of problem patterns for the
+                  <code>pattern</code> property. This way you define a pattern
+                  per each line you want to match.
+                </p>
+                <p>
+                  The following problem pattern matches the output from ESLint
+                  in stylish mode - but still has one small issue which we will
+                  resolve next. The code below has a first regular expression to
+                  capture the file name and the second to capture the line,
+                  column, severity, message and error code:
+                </p>
+                <pre><code class="json">{
+    &quot;owner&quot;: &quot;javascript&quot;,
+    &quot;fileLocation&quot;: [&quot;relative&quot;, &quot;${workspaceRoot}&quot;],
+    &quot;pattern&quot;: [
+        {
+            &quot;regexp&quot;: &quot;^([^\\s].*)$&quot;,
+            &quot;file&quot;: 1
+        },
+        {
+            &quot;regexp&quot;: &quot;^\\s+(\\d+):(\\d+)\\s+(error|warning|info)\\s+(.*)\\s\\s+(.*)$&quot;,
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 2,
+            &quot;severity&quot;: 3,
+            &quot;message&quot;: 4,
+            &quot;code&quot;: 5
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  However, this pattern will not work if there is more than one
+                  problem on a resource. For instance, imagine the following
+                  output from ESLint:
+                </p>
+                <pre><code class="bash">test.js
+  1:0   error  Missing &quot;use strict&quot; statement                 strict
+  1:9   error  foo is defined but never used                  no-unused-vars
+  2:5   error  x is defined but never used                    no-unused-vars
+  2:11  error  Missing semicolon                              semi
+  3:1   error  &quot;bar&quot; is not defined                           no-undef
+  4:1   error  Newline required at end of file but not found  eol-last
+✖ 6 problems (6 errors, 0 warnings)
+</code></pre>
+
+                <p>
+                  The pattern's first regular expression will match "test.js",
+                  the second "1:0 error ...". The next line "1:9 error ..." is
+                  processed but not matched by the first regular expression and
+                  so no problem is captured.
+                </p>
+                <p>
+                  To make this work, the last regular expression of a multi-line
+                  pattern can specify the <code>loop</code> property. If set to
+                  true, it instructs the task system to apply the last pattern
+                  of a multi-line matcher to the lines in the output as long as
+                  the regular expression matches.
+                </p>
+                <p>
+                  The information captured by all previous patterns is combined
+                  with the information captured by the last pattern and turned
+                  into a problem inside VS Code.
+                </p>
+                <p>
+                  Here is a problem matcher to fully capture ESLint stylish
+                  problems:
+                </p>
+                <pre><code class="json">{
+    &quot;owner&quot;: &quot;javascript&quot;,
+    &quot;fileLocation&quot;: [&quot;relative&quot;, &quot;${workspaceRoot}&quot;],
+    &quot;pattern&quot;: [
+        {
+            &quot;regexp&quot;: &quot;^([^\\s].*)$&quot;,
+            &quot;file&quot;: 1
+        },
+        {
+            &quot;regexp&quot;: &quot;^\\s+(\\d+):(\\d+)\\s+(error|warning|info)\\s+(.*)\\s\\s+(.*)$&quot;,
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 2,
+            &quot;severity&quot;: 3,
+            &quot;message&quot;: 4,
+            &quot;code&quot;: 5,
+            &quot;loop&quot;: true
+        }
+    ]
+}
+</code></pre>
+
+                <h2 id="background-watching-tasks">
+                  Background / watching tasks
+                </h2>
+                <p>
+                  Some tools support running in the background while watching
+                  the file system for changes and then triggering an action when
+                  a file changes on disk. With <code>Gulp</code> such
+                  functionality is provided through the npm module
+                  <a href="https://www.npmjs.com/package/gulp-watch"
+                    >gulp-watch</a
+                  >. The TypeScript compiler <code>tsc</code> has built in
+                  support for this via the <code>--watch command</code> line
+                  option.
+                </p>
+                <p>
+                  To provide feedback that a background task is active in VS
+                  Code and producing problem results, a problem matcher has to
+                  use additional information to detect these
+                  <code>state</code> changes in the output. Let's take the
+                  <code>tsc</code> compiler as an example. When the compiler is
+                  started in watch mode, it prints the following additional
+                  information to the console:
+                </p>
+                <pre><code>&gt; tsc --watch
+12:30:36 PM - Compilation complete. Watching for file changes.
+</code></pre>
+
+                <p>
+                  When a file changes on disk which contains a problem, the
+                  following output appears:
+                </p>
+                <pre><code>12:32:35 PM - File change detected. Starting incremental compilation...
+src/messages.ts(276,9): error TS2304: Cannot find name 'candidate'.
+12:32:35 PM - Compilation complete. Watching for file changes.
+</code></pre>
+
+                <p>Looking at the output shows the following pattern:</p>
+                <ul>
+                  <li>
+                    The compiler runs when
+                    <code
+                      >File change detected. Starting incremental
+                      compilation...</code
+                    >
+                    is printed to the console.
+                  </li>
+                  <li>
+                    The compiler stops when
+                    <code
+                      >Compilation complete. Watching for file changes.</code
+                    >
+                    is printed to the console.
+                  </li>
+                  <li>Between those two strings problems are reported.</li>
+                  <li>
+                    The compiler also runs once the initial start (without
+                    printing
+                    <code
+                      >File change detected. Starting incremental
+                      compilation...</code
+                    >
+                    to the console).
+                  </li>
+                </ul>
+                <p>
+                  To capture this information, a problem matcher can provide a
+                  <code>watching</code> property.
+                </p>
+                <p>
+                  For the <code>tsc</code> compiler, an appropriate
+                  <code>watching</code> property looks like this:
+                </p>
+                <pre><code class="json">&quot;watching&quot;: {
+    &quot;activeOnStart&quot;: true,
+    &quot;beginsPattern&quot;: &quot;^\\s*\\d{1,2}:\\d{1,2}:\\d{1,2}(?: AM| PM)? - File change detected\\. Starting incremental compilation\\.\\.\\.&quot;,
+    &quot;endsPattern&quot;: &quot;^\\s*\\d{1,2}:\\d{1,2}:\\d{1,2}(?: AM| PM)? - Compilation complete\\. Watching for file changes\\.&quot;
+}
+</code></pre>
+
+                <p>
+                  In addition to the <code>watching</code> property on the
+                  problem matcher, the task itself has to be marked as
+                  <code>isBackground</code> so that the task keeps running in
+                  the background.
+                </p>
+                <p>
+                  A full handcrafted <code>tasks.json</code> for a
+                  <code>tsc</code> task running in watch mode looks like this:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;command&quot;: &quot;tsc&quot;,
+    &quot;suppressTaskName&quot;: true,
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;watch&quot;,
+            &quot;args&quot;: [&quot;--watch&quot;],
+            &quot;isBackground&quot;: true,
+            &quot;problemMatcher&quot;: {
+                &quot;owner&quot;: &quot;typescript&quot;,
+                &quot;fileLocation&quot;: &quot;relative&quot;,
+                &quot;pattern&quot;: {
+                    &quot;regexp&quot;: &quot;^([^\\s].*)\\((\\d+|\\,\\d+|\\d+,\\d+,\\d+,\\d+)\\):\\s+(error|warning|info)\\s+(TS\\d+)\\s*:\\s*(.*)$&quot;,
+                    &quot;file&quot;: 1,
+                    &quot;location&quot;: 2,
+                    &quot;severity&quot;: 3,
+                    &quot;code&quot;: 4,
+                    &quot;message&quot;: 5
+                },
+                &quot;watching&quot;: {
+                    &quot;activeOnStart&quot;: true,
+                    &quot;beginsPattern&quot;: &quot;^\\s*\\d{1,2}:\\d{1,2}:\\d{1,2}(?: AM| PM)? - File change detected\\. Starting incremental compilation\\.\\.\\.&quot;,
+                    &quot;endsPattern&quot;: &quot;^\\s*\\d{1,2}:\\d{1,2}:\\d{1,2}(?: AM| PM)? - Compilation complete\\. Watching for file changes\\.&quot;
+                }
+            }
+        }
+    ]
+}
+</code></pre>
+
+                <h2 id="convert-from-010-to-200">
+                  Convert from "0.1.0" to "2.0.0"
+                </h2>
+                <p>
+                  Since the <code>2.0.0</code> version comes with lots of new
+                  auto-detection features, you can try removing an existing
+                  <code>tasks.json</code> file to see which tasks still work.
+                  Simply rename the existing <code>tasks.json</code> to
+                  <code>tasks.json.off</code>. If you have lots of
+                  customizations then you can switch by changing the version
+                  attribute to <code>"2.0.0"</code>. After doing so, you might
+                  encounter warnings because some old properties are now
+                  deprecated. Here is how to get rid of the deprecations:
+                </p>
+                <ul>
+                  <li>
+                    <strong>isShellCommand</strong>: Use the
+                    <code>"type": "shell"</code> property instead.
+                  </li>
+                  <li>
+                    <strong>isBuildCommand</strong>: Use the
+                    <code>"group": "build"</code> property instead.
+                  </li>
+                  <li>
+                    <strong>isTestCommand</strong>: Use the
+                    <code>"group": "test"</code> property instead.
+                  </li>
+                  <li>
+                    <strong>echoCommand</strong>: Use the
+                    <code>"presentation" : { "echo": "..." }</code> property
+                    instead.
+                  </li>
+                  <li>
+                    <strong>showOutput</strong>: Use the
+                    <code>"presentation" : { "reveal": "..." }</code> property
+                    instead.
+                  </li>
+                  <li>
+                    <strong>suppressTaskName</strong>: By default, the task name
+                    gets appended to the list of arguments when running a task
+                    version <code>0.1.0</code>. Since version
+                    <code>2.0.0</code> supports commands per task, simply inline
+                    the command into the task and specify the arguments
+                    accordingly.
+                  </li>
+                </ul>
+                <p>Consider the following <code>0.1.0</code> configuration:</p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;isShellCommand&quot;: true,
+    &quot;command&quot;: &quot;script&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;Run tests&quot;,
+            &quot;suppressTaskName&quot;: true,
+            &quot;args&quot;: [
+                &quot;test&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  The corresponding <code>2.0.0</code> configuration would look
+                  like this:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;Run tests&quot;,
+            &quot;type&quot;: &quot;shell&quot;,
+            &quot;command&quot;: &quot;script test&quot;
+        }
+    ]
+}
+</code></pre>
+
+                <ul>
+                  <li>
+                    <strong>taskSelector</strong>: Move the command into the
+                    task and specify the task selector inside the command.
+                  </li>
+                </ul>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;command&quot;: &quot;msbuild&quot;,
+    &quot;args&quot;: [
+        &quot;/property:GenerateFullPaths=true&quot;
+    ],
+    &quot;taskSelector&quot;: &quot;/t:&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;build&quot;
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  A corresponding <code>2.0.0</code> configuration would look
+                  like this:
+                </p>
+                <pre><code class="json">{
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;tasks&quot;: [
+        {
+            &quot;taskName&quot;: &quot;build&quot;,
+            &quot;command&quot;: &quot;msbuild&quot;,
+            &quot;args&quot;: [
+                &quot;/property:GenerateFullPaths=true&quot;,
+                &quot;/t:build&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+                <p>
+                  If you want to use a <code>0.1.0</code> version of the
+                  <code>tasks.json</code> file with the new terminal runner, you
+                  can add the <code>runner</code> property to the
+                  <code>tasks.json</code> file:
+                  <code>"runner": "terminal"</code>.
+                </p>
+                <h2 id="next-steps">Next Steps</h2>
+                <p>That was tasks - let's keep going...</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/tasks-appendix.md"
+                      >tasks.json Schema</a
+                    >
+                    - You can review the full <code>tasks.json</code> schema and
+                    descriptions.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/codebasics.md"
+                      >Basic Editing</a
+                    >
+                    - Learn about the powerful VS Code editor.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/editingevolved.md"
+                      >Code Navigation</a
+                    >
+                    - Move quickly through your source code.*
+                    <a
+                      href="https://vscode.readthedocs.io/docs/languages/overview.md"
+                      >Language Support</a
+                    >
+                    - Learn about our supported programming languages, both
+                    shipped with VS Code and through community extensions.
+                  </li>
+                  <li>
+                    <a
+                      href="https://vscode.readthedocs.io/docs/editor/debugging.md"
+                      >Debugging</a
+                    >
+                    - Debug your source code directly in the VS Code editor.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="footer navigation"
+              >
+                <a
+                  href="../userdefinedsnippets/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Userdefinedsnippets"
+                  >Next <span class="icon icon-circle-arrow-right"></span
+                ></a>
+
+                <a
+                  href="../tasks-v1/index.html"
+                  class="btn btn-neutral"
+                  title="Tasks v1"
+                  ><span class="icon icon-circle-arrow-left"></span> Previous</a
+                >
+              </div>
+
+              <hr />
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="rst-versions"
+      data-toggle="rst-versions"
+      role="note"
+      aria-label="versions"
+    >
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Read the Docs</span>
+        <span class="fa fa-caret-down"></span>
+      </span>
+      <div class="rst-other-versions"></div>
+    </div>
+  </body>
+
+  <!-- editor/tasks/  Sat, 30 Oct 2021 04:57:11 -->
+</html>
